@@ -11,4 +11,4 @@ enum class TMessageType : uint8_t
 	ONEWAY = 4
 };
 
-#endif  // THRIFT_MESSAGE_TYPE_H
+#endif  // !THRIFT_MESSAGE_TYPE_H
