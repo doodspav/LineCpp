@@ -22,4 +22,4 @@ enum class TCompactType : uint8_t
 	STRUCT = 12
 };
 
-#endif  // THRIFT_COMPACT_TYPE_H
+#endif  // !THRIFT_COMPACT_TYPE_H
