@@ -605,11 +605,19 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                     cppBuffer += indentation + '}\n';
                     cppBuffer += indentation + 'else { TCompactProtocol::skip(_buffer, _compactType_placeholder, false); }\n'
                 }
+                cppBuffer += indentation + 'break;\n';
                 DECREASE_INDENTATION();
                 cppBuffer += indentation + '}\n';
             }
             // default case
-            cppBuffer += indentation + 'default: { TCompactProtocol::skip(_buffer, _compactType_placeholder, false); }\n';
+            cppBuffer += indentation + 'default:\n';
+            cppBuffer += indentation + '{\n';
+            INCREASE_INDENTATION();
+            cppBuffer += indentation + 'TCompactProtocol::skip(_buffer, _compactType_placeholder, false);\n';
+            cppBuffer += indentation + 'break;\n';
+            DECREASE_INDENTATION();
+            cppBuffer += indentation + '}\n';
+            // end switch and while
             cppBuffer += indentation + '}\n';
             DECREASE_INDENTATION();
             cppBuffer += indentation + '}\n';
@@ -674,11 +682,19 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                     cppBuffer += indentation + '}\n';
                     cppBuffer += indentation + 'else { TCompactProtocol::skip(_buffer, _compactType_placeholder, false); }\n'
                 }
+                cppBuffer += indentation + 'break;\n';
                 DECREASE_INDENTATION();
                 cppBuffer += indentation + '}\n';
             }
             // default case
-            cppBuffer += indentation + 'default: { TCompactProtocol::skip(_buffer, _compactType_placeholder, false); }\n';
+            cppBuffer += indentation + 'default:\n';
+            cppBuffer += indentation + '{\n';
+            INCREASE_INDENTATION();
+            cppBuffer += indentation + 'TCompactProtocol::skip(_buffer, _compactType_placeholder, false);\n';
+            cppBuffer += indentation + 'break;\n';
+            DECREASE_INDENTATION();
+            cppBuffer += indentation + '}\n';
+            // end while and switch
             cppBuffer += indentation + '}\n';
             DECREASE_INDENTATION();
             cppBuffer += indentation + '}\n';
@@ -708,7 +724,7 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
         }
         loopName = '_' + loopName + '_';
         // write variables
-        cppBuffer += indentation + 'uint_fast32_t ' + loopName + 'list_size = 0;\n';
+        cppBuffer += indentation + 'uint32_t ' + loopName + 'list_size = 0;\n';
         cppBuffer += indentation + getCppType(type.valueType) + ' ' + loopName + 'placeholder;\n';
         if (getCompactType(type.valueType) === 'STRUCT') { cppBuffer += indentation + getCppType(type.valueType) + ' ' + loopName + 'blank;\n'; }
         // read data
@@ -732,7 +748,7 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
         }
         loopName = '_' + loopName + '_';
         // write variables
-        cppBuffer += indentation + 'uint_fast32_t ' + loopName + 'set_size = 0;\n';
+        cppBuffer += indentation + 'uint32_t ' + loopName + 'set_size = 0;\n';
         cppBuffer += indentation + getCppType(type.valueType) + ' ' + loopName + 'placeholder;\n';
         if (getCompactType(type.valueType) === 'STRUCT') { cppBuffer += indentation + getCppType(type.valueType) + ' ' + loopName + 'blank;\n'; }
         // read data
@@ -756,7 +772,7 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
         }
         loopName = '_' + loopName + '_';
         // write variables
-        cppBuffer += indentation + 'uint_fast32_t ' + loopName + 'map_size = 0;\n';
+        cppBuffer += indentation + 'uint32_t ' + loopName + 'map_size = 0;\n';
         cppBuffer += indentation + getCppType(type.keyType) + ' ' + loopName + 'key_placeholder;\n';
         cppBuffer += indentation + getCppType(type.valueType) + ' ' + loopName + 'value_placeholder;\n';
         if (getCompactType(type.valueType) === 'STRUCT') { cppBuffer += indentation + getCppType(type.keyType) + ' ' + loopName + 'key_blank;\n'; }
@@ -981,11 +997,18 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                                 cppBuffer += indentation + '}\n';
                                 cppBuffer += indentation + 'else { TCompactProtocol::skip(_buffer, _compactType_placeholder, false); }\n'
                             }
+                            cppBuffer += indentation + 'break;\n';
                             DECREASE_INDENTATION();
                             cppBuffer += indentation + '}\n';
                         }
                         // default case
-                        cppBuffer += indentation + 'default: { TCompactProtocol::skip(_buffer, _compactType_placeholder, false); }\n';
+                        cppBuffer += indentation + 'default:\n';
+                        cppBuffer += indentation + '{\n';
+                        INCREASE_INDENTATION();
+                        cppBuffer += indentation + 'TCompactProtocol::skip(_buffer, _compactType_placeholder, false);\n';
+                        cppBuffer += indentation + 'break;\n';
+                        DECREASE_INDENTATION();
+                        cppBuffer += indentation + '}\n';
                         // end of switch and loop
                         cppBuffer += indentation + '}\n';
                         DECREASE_INDENTATION();
