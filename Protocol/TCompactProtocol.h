@@ -90,7 +90,7 @@ public:
 	{
 		lastField.push(0);
 	}
-	static void writeFieldBegin(std::string& buffer, std::stack<uint16_t>& lastField, const TCompactType fieldType, const uint16_t fieldId, const bool boolValue = NULL)
+	static void writeFieldBegin(std::string& buffer, std::stack<uint16_t>& lastField, const TCompactType fieldType, const uint16_t fieldId, const bool boolValue = false)
 	{
 		uint8_t typeToWrite = static_cast<uint8_t>((fieldType == TCompactType::BOOL) ? (boolValue ? TCompactType::TRUE : TCompactType::FALSE) : fieldType);
 		uint16_t lastFieldId = lastField.top();
