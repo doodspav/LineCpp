@@ -1,6 +1,6 @@
 namespace php LineService
 namespace py LineService
-namespace cpp LineService
+namespace cpp protocol
 namespace go LineService
 namespace js LineService
 
