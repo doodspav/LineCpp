@@ -1,7 +1,7 @@
 let options = {};
 // filename options
 options.name = 'LINE'; // without extension
-options.protocolHeaderPath = 'TCompactProtocol.h';
+options.protocolHeaderPath = 'Protocol/TCompactProtocol.h';
 // default value for primitive thrift types and enums
 // all enums are uint32_t and real values must be in positive range of i32
 options.defaults = {
@@ -23,12 +23,12 @@ options.stdOptionalForDefault = true;
 // generates writeResult and readResult for oneway functions
 options.generateResultForOneWay = false;
 // whether to check both fid and ftype or just fid on read
-options.checkFtypeOnRead = true;
+options.checkFtypeOnRead = false;
 // whether to raise exception for things
 options.exceptions = {
     'missingDefaultOnWrite': false,  // will access garbage data (UB) or default value if missing and is false
-    'missingRequiredOnRead': true,  // variable will be set to default value if false
-    'missingFunctionFieldsOnRead': true,  // variable will be set to default if false - also applies to return field
+    'missingRequiredOnRead': false,  // variable will be set to default value if false
+    'missingFunctionFieldsOnRead': false,  // variable will be set to default if false - also applies to return field
     'thriftExceptionOnRead': true  // function will return bool if set to false
 };
 // namespace rather than name extension for read/write and request/result
