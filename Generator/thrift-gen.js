@@ -861,8 +861,9 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         cppBuffer += indentation + 'void ' + preposition + func.name + supposition + '(std::string& _buffer, ';
                         // write field arguments
                         for (const arg of func.args) {
-                            hBuffer += getCppType(arg.type) + '& ' + arg.name + ', ';
-                            cppBuffer += getCppType(arg.type) + '& ' + arg.name + ', ';
+                            let isPod = idlPrimitiveTypes.includes(arg.type) && !['string', 'binary'].includes(arg.type);
+                            hBuffer += getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
+                            cppBuffer += getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
                         }
                         // finish declaration
                         hBuffer = hBuffer.slice(0, -2) + ');\n\n';
@@ -902,8 +903,9 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         // write field arguments
                         let isVoid = (func.type === 'void');
                         if (!isVoid) {
-                            hBuffer += getCppType(func.type) + '& _result, ';
-                            cppBuffer += getCppType(func.type) + '& _result, ';
+                            let isPod = idlPrimitiveTypes.includes(func.type) && !['string', 'binary'].includes(func.type);
+                            hBuffer += getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
+                            cppBuffer += getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
                         }
                         // finish declaration
                         hBuffer = hBuffer.slice(0, -2) + ');\n\n';
