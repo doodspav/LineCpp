@@ -222,6 +222,11 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
         }
         return requiredFieldCount;
     };
+    const checkIsPodType = (type) => {
+        if (idlPrimitiveTypes.includes(type) && !['string', 'binary'].includes(type)) { return true; }
+        else if (ast.hasOwnProperty('enum')) { return Object.keys(ast.enum).includes(type); }
+        else { return false; }
+    };
 
     // write enums
     const writeEnums = () => {
@@ -861,7 +866,7 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         cppBuffer += indentation + 'void ' + preposition + func.name + supposition + '(std::string& _buffer, ';
                         // write field arguments
                         for (const arg of func.args) {
-                            let isPod = idlPrimitiveTypes.includes(arg.type) && !['string', 'binary'].includes(arg.type);
+                            let isPod = checkIsPodType(arg.type);
                             hBuffer += getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
                             cppBuffer += getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
                         }
@@ -903,7 +908,7 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         // write field arguments
                         let isVoid = (func.type === 'void');
                         if (!isVoid) {
-                            let isPod = idlPrimitiveTypes.includes(func.type) && !['string', 'binary'].includes(func.type);
+                            let isPod = checkIsPodType(func.type);
                             hBuffer += getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
                             cppBuffer += getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
                         }
