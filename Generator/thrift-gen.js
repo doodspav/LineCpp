@@ -867,8 +867,8 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         // write field arguments
                         for (const arg of func.args) {
                             let isPod = checkIsPodType(arg.type);
-                            hBuffer += getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
-                            cppBuffer += getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
+                            hBuffer += 'const ' + getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
+                            cppBuffer += 'const ' + getCppType(arg.type) + (isPod ? ' ' : '& ') + arg.name + ', ';
                         }
                         // finish declaration
                         hBuffer = hBuffer.slice(0, -2) + ');\n\n';
@@ -909,8 +909,8 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         let isVoid = (func.type === 'void');
                         if (!isVoid) {
                             let isPod = checkIsPodType(func.type);
-                            hBuffer += getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
-                            cppBuffer += getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
+                            hBuffer += 'const ' + getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
+                            cppBuffer += 'const ' + getCppType(func.type) + (isPod ? ' ' : '& ') + '_result, ';
                         }
                         // finish declaration
                         hBuffer = hBuffer.slice(0, -2) + ');\n\n';
