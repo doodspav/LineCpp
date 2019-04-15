@@ -943,8 +943,8 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         let func = ast.service[serviceName].functions[funcName];
                         // write name
                         let retValue = options.exceptions.thriftExceptionOnRead ? 'void ' : 'bool ';
-                        hBuffer += indentation + retValue + preposition + func.name + supposition + '(char const*& _buffer, ';
-                        cppBuffer += indentation + retValue + preposition + func.name + supposition + '(char const*& _buffer, ';
+                        hBuffer += indentation + retValue + preposition + func.name + supposition + '(char const* _buffer, ';
+                        cppBuffer += indentation + retValue + preposition + func.name + supposition + '(char const* _buffer, ';
                         // write field arguments
                         for (const arg of func.args) {
                             hBuffer += getCppType(arg.type) + '& ' + arg.name + ', ';
@@ -1054,8 +1054,8 @@ module.exports = (ast, name, protocolHeaderPath, options) => {
                         if (func.oneway && (!options.generateResultForOneWay)) { continue; }
                         // write name
                         let retValue = options.exceptions.thriftExceptionOnRead ? 'void ' : 'bool ';
-                        hBuffer += indentation + retValue + preposition + func.name + supposition + '(char const*& _buffer, ';
-                        cppBuffer += indentation + retValue + preposition + func.name + supposition + '(char const*& _buffer, ';
+                        hBuffer += indentation + retValue + preposition + func.name + supposition + '(char const* _buffer, ';
+                        cppBuffer += indentation + retValue + preposition + func.name + supposition + '(char const* _buffer, ';
                         // write field arguments
                         let isVoid = (func.type === 'void');
                         if (!isVoid) {
