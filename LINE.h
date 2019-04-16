@@ -3026,1075 +3026,1075 @@ namespace protocol {
 
         namespace request {
 
-            void getMoretabRecommend(char const*& _buffer);
+            void getMoretabRecommend(char const* _buffer);
 
-            void requestBanPageForUser(char const*& _buffer);
+            void requestBanPageForUser(char const* _buffer);
 
-            void requestBanPage(char const*& _buffer);
+            void requestBanPage(char const* _buffer);
 
-            void reserveCoinPurchase(char const*& _buffer, CoinPurchaseReservation& request);
+            void reserveCoinPurchase(char const* _buffer, CoinPurchaseReservation& request);
 
-            void getProductCategories(char const*& _buffer, std::string& language, std::string& country);
+            void getProductCategories(char const* _buffer, std::string& language, std::string& country);
 
-            void getProductList(char const*& _buffer, std::vector<std::string>& productIdList, std::string& language, std::string& country);
+            void getProductList(char const* _buffer, std::vector<std::string>& productIdList, std::string& language, std::string& country);
 
-            void getCoinPurchaseHistory(char const*& _buffer, CoinHistoryCondition& request);
+            void getCoinPurchaseHistory(char const* _buffer, CoinHistoryCondition& request);
 
-            void buyFreeProduct(char const*& _buffer, std::string& receiverMid, std::string& productId, uint32_t& messageTemplate, std::string& language, std::string& country, uint64_t& packageId);
+            void buyFreeProduct(char const* _buffer, std::string& receiverMid, std::string& productId, uint32_t& messageTemplate, std::string& language, std::string& country, uint64_t& packageId);
 
-            void getProductListWithCarrier(char const*& _buffer, std::vector<std::string>& productIdList, std::string& language, std::string& country, std::string& carrierCode);
+            void getProductListWithCarrier(char const* _buffer, std::vector<std::string>& productIdList, std::string& language, std::string& country, std::string& carrierCode);
 
-            void getDefaultProducts(char const*& _buffer, std::string& language, std::string& country, std::string& carrierCode);
+            void getDefaultProducts(char const* _buffer, std::string& language, std::string& country, std::string& carrierCode);
 
-            void getProductsForCategory(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country, uint64_t& category);
+            void getProductsForCategory(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country, uint64_t& category);
 
-            void notifyDownloaded(char const*& _buffer, uint64_t& packageId, std::string& language);
+            void notifyDownloaded(char const* _buffer, uint64_t& packageId, std::string& language);
 
-            void getFreePackagesWithoutEvent(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getFreePackagesWithoutEvent(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getProduct(char const*& _buffer, uint64_t& packageID, std::string& language, std::string& country);
+            void getProduct(char const* _buffer, uint64_t& packageID, std::string& language, std::string& country);
 
-            void getEventPackages(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getEventPackages(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getActivePurchaseVersions(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getActivePurchaseVersions(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getCoinProductsByPgCode(char const*& _buffer, PaymentType& appStoreCode, PaymentPgType& pgCode, std::string& country, std::string& language);
+            void getCoinProductsByPgCode(char const* _buffer, PaymentType& appStoreCode, PaymentPgType& pgCode, std::string& country, std::string& language);
 
-            void getNewlyReleasedPackages(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getNewlyReleasedPackages(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getDownloads(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getDownloads(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getCoinProducts(char const*& _buffer, PaymentType& appStoreCode, std::string& country, std::string& language);
+            void getCoinProducts(char const* _buffer, PaymentType& appStoreCode, std::string& country, std::string& language);
 
-            void searchProducts(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country, std::string& query);
+            void searchProducts(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country, std::string& query);
 
-            void buyMustbuyProduct(char const*& _buffer, std::string& receiverMid, std::string& productId, uint32_t& messageTemplate, std::string& language, std::string& country, uint64_t& packageId, std::string& serialNumber);
+            void buyMustbuyProduct(char const* _buffer, std::string& receiverMid, std::string& productId, uint32_t& messageTemplate, std::string& language, std::string& country, uint64_t& packageId, std::string& serialNumber);
 
-            void getRecommendationsForProduct(char const*& _buffer, uint64_t& packageID, uint32_t& offset, uint32_t& limit, std::string& language, std::string& country);
+            void getRecommendationsForProduct(char const* _buffer, uint64_t& packageID, uint32_t& offset, uint32_t& limit, std::string& language, std::string& country);
 
-            void getUpdates(char const*& _buffer, std::string& language, std::string& country, uint64_t& localVersion);
+            void getUpdates(char const* _buffer, std::string& language, std::string& country, uint64_t& localVersion);
 
-            void getActivePurchases(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getActivePurchases(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getProductWithCarrier(char const*& _buffer, uint64_t& packageID, std::string& language, std::string& country, std::string& carrierCode);
+            void getProductWithCarrier(char const* _buffer, uint64_t& packageID, std::string& language, std::string& country, std::string& carrierCode);
 
-            void buyCoinProduct(char const*& _buffer, PaymentReservation& paymentReservation);
+            void buyCoinProduct(char const* _buffer, PaymentReservation& paymentReservation);
 
-            void getPopularPackages(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPopularPackages(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void reservePayment(char const*& _buffer, PaymentReservation& paymentReservation);
+            void reservePayment(char const* _buffer, PaymentReservation& paymentReservation);
 
-            void getPresentsSent(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPresentsSent(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void checkCanReceivePresent(char const*& _buffer, std::string& recipientMid, uint64_t& packageId, std::string& language, std::string& country);
+            void checkCanReceivePresent(char const* _buffer, std::string& recipientMid, uint64_t& packageId, std::string& language, std::string& country);
 
-            void getFreePackages(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getFreePackages(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getPurchaseHistory(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPurchaseHistory(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getTotalBalance(char const*& _buffer, PaymentType& appStoreCode);
+            void getTotalBalance(char const* _buffer, PaymentType& appStoreCode);
 
-            void getCoinUseAndRefundHistory(char const*& _buffer, CoinHistoryCondition& request);
+            void getCoinUseAndRefundHistory(char const* _buffer, CoinHistoryCondition& request);
 
-            void getPresentsReceived(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPresentsReceived(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
 
-            void getPlaceSearchInfo(char const*& _buffer, PlaceSearchProvider& provider, std::string& keyword, std::string& clientLocale, double& latitude, double& longitude, uint32_t& radius);
+            void getPlaceSearchInfo(char const* _buffer, PlaceSearchProvider& provider, std::string& keyword, std::string& clientLocale, double& latitude, double& longitude, uint32_t& radius);
 
-            void getUserStatus(char const*& _buffer, std::string& mid);
+            void getUserStatus(char const* _buffer, std::string& mid);
 
-            void updateProfileAttributeForChannel(char const*& _buffer, ProfileAttribute& profileAttribute, std::string& value);
+            void updateProfileAttributeForChannel(char const* _buffer, ProfileAttribute& profileAttribute, std::string& value);
 
-            void getAllSimpleChannelContacts(char const*& _buffer, bool& statusSticonFallbackDisabled);
+            void getAllSimpleChannelContacts(char const* _buffer, bool& statusSticonFallbackDisabled);
 
-            void getUserIdentities(char const*& _buffer);
+            void getUserIdentities(char const* _buffer);
 
-            void markPaidCallAd(char const*& _buffer, std::string& dialedNumber, std::string& language, bool& disableCallerId);
+            void markPaidCallAd(char const* _buffer, std::string& dialedNumber, std::string& language, bool& disableCallerId);
 
-            void isGroupMember(char const*& _buffer, std::string& groupId);
+            void isGroupMember(char const* _buffer, std::string& groupId);
 
-            void getPhoneInfoFromPhoneNumber(char const*& _buffer, std::string& region, std::string& phoneNumber);
+            void getPhoneInfoFromPhoneNumber(char const* _buffer, std::string& region, std::string& phoneNumber);
 
-            void redeemPaidCallVoucher(char const*& _buffer, std::string& serial, std::string& language);
+            void redeemPaidCallVoucher(char const* _buffer, std::string& serial, std::string& language);
 
-            void getPreferredDisplayName(char const*& _buffer, std::vector<std::string>& mids);
+            void getPreferredDisplayName(char const* _buffer, std::vector<std::string>& mids);
 
-            void getContactsForChannel(char const*& _buffer, std::vector<std::string>& ids);
+            void getContactsForChannel(char const* _buffer, std::vector<std::string>& ids);
 
-            void getCallCreditProducts(char const*& _buffer, PaymentType& appStoreCode, PaymentPgType& pgCode, std::string& country, std::string& language);
+            void getCallCreditProducts(char const* _buffer, PaymentType& appStoreCode, PaymentPgType& pgCode, std::string& country, std::string& language);
 
-            void getCompactContacts(char const*& _buffer, uint64_t& lastModifiedTimestamp);
+            void getCompactContacts(char const* _buffer, uint64_t& lastModifiedTimestamp);
 
-            void notifyNotiCenterEvent(char const*& _buffer, NotiCenterEventData& event);
+            void notifyNotiCenterEvent(char const* _buffer, NotiCenterEventData& event);
 
-            void isInContact(char const*& _buffer, std::string& mid);
+            void isInContact(char const* _buffer, std::string& mid);
 
-            void lookupGroupMembers(char const*& _buffer, std::string& groupId, std::vector<std::string>& mids);
+            void lookupGroupMembers(char const* _buffer, std::string& groupId, std::vector<std::string>& mids);
 
-            void getRoomInformation(char const*& _buffer, std::string& roomMid);
+            void getRoomInformation(char const* _buffer, std::string& roomMid);
 
-            void getGroupCall(char const*& _buffer, std::string& chatMid);
+            void getGroupCall(char const* _buffer, std::string& chatMid);
 
-            void isAllowSecondaryDeviceLogin(char const*& _buffer);
+            void isAllowSecondaryDeviceLogin(char const* _buffer);
 
-            void getPrimaryClientForChannel(char const*& _buffer);
+            void getPrimaryClientForChannel(char const* _buffer);
 
-            void createRoomWithBuddy(char const*& _buffer, uint32_t& reqSeq, std::string& buddyMid, std::vector<std::string>& contactIds);
+            void createRoomWithBuddy(char const* _buffer, uint32_t& reqSeq, std::string& buddyMid, std::vector<std::string>& contactIds);
 
-            void getDisplayName(char const*& _buffer, std::string& mid);
+            void getDisplayName(char const* _buffer, std::string& mid);
 
-            void getPaidCallMetadata(char const*& _buffer, std::string& language);
+            void getPaidCallMetadata(char const* _buffer, std::string& language);
 
-            void getMid(char const*& _buffer);
+            void getMid(char const* _buffer);
 
-            void getUserCountryForBilling(char const*& _buffer, std::string& country, std::string& remoteIp);
+            void getUserCountryForBilling(char const* _buffer, std::string& country, std::string& remoteIp);
 
-            void getFavoriteGroupIdsForChannel(char const*& _buffer);
+            void getFavoriteGroupIdsForChannel(char const* _buffer);
 
-            void getPaidCallHistory(char const*& _buffer, uint64_t& start, uint32_t& size, std::string& language);
+            void getPaidCallHistory(char const* _buffer, uint64_t& start, uint32_t& size, std::string& language);
 
-            void sendPinCodeOperation(char const*& _buffer, std::string& verifier);
+            void sendPinCodeOperation(char const* _buffer, std::string& verifier);
 
-            void inviteIntoGroupCall(char const*& _buffer, std::string& chatMid, std::vector<std::string>& memberMids, GroupCallMediaType& mediaType);
+            void inviteIntoGroupCall(char const* _buffer, std::string& chatMid, std::vector<std::string>& memberMids, GroupCallMediaType& mediaType);
 
-            void getFriendMids(char const*& _buffer);
+            void getFriendMids(char const* _buffer);
 
-            void getMetaProfile(char const*& _buffer);
+            void getMetaProfile(char const* _buffer);
 
-            void sendMessageForChannel(char const*& _buffer, Message& message);
+            void sendMessageForChannel(char const* _buffer, Message& message);
 
-            void activeBuddySubscriberCount(char const*& _buffer);
+            void activeBuddySubscriberCount(char const* _buffer);
 
-            void getCallCreditPurchaseHistory(char const*& _buffer, CoinHistoryCondition& request);
+            void getCallCreditPurchaseHistory(char const* _buffer, CoinHistoryCondition& request);
 
-            void isRoomMember(char const*& _buffer, std::string& roomId);
+            void isRoomMember(char const* _buffer, std::string& roomId);
 
-            void sendSystemOAMessage(char const*& _buffer, Message& message);
+            void sendSystemOAMessage(char const* _buffer, Message& message);
 
-            void acquirePaidCallRoute(char const*& _buffer, PaidCallType& paidCallType, std::string& dialedNumber, std::string& language, std::string& networkCode, bool& disableCallerId, std::string& referer, std::string& adSessionId);
+            void acquirePaidCallRoute(char const* _buffer, PaidCallType& paidCallType, std::string& dialedNumber, std::string& language, std::string& networkCode, bool& disableCallerId, std::string& referer, std::string& adSessionId);
 
-            void getGroupsForChannel(char const*& _buffer, std::vector<std::string>& groupIds);
+            void getGroupsForChannel(char const* _buffer, std::vector<std::string>& groupIds);
 
-            void getUserCreateTime(char const*& _buffer);
+            void getUserCreateTime(char const* _buffer);
 
-            void registerChannelCP(char const*& _buffer, std::string& cpId, std::string& registerPassword);
+            void registerChannelCP(char const* _buffer, std::string& cpId, std::string& registerPassword);
 
-            void reserveCallCreditPurchase(char const*& _buffer, CoinPurchaseReservation& request);
+            void reserveCallCreditPurchase(char const* _buffer, CoinPurchaseReservation& request);
 
-            void acquirePaidCallCurrencyExchangeRate(char const*& _buffer, std::string& language);
+            void acquirePaidCallCurrencyExchangeRate(char const* _buffer, std::string& language);
 
-            void getRoomMemberMidsForAppPlatform(char const*& _buffer, std::string& roomId);
+            void getRoomMemberMidsForAppPlatform(char const* _buffer, std::string& roomId);
 
-            void getPaidCallBalanceList(char const*& _buffer, std::string& language);
+            void getPaidCallBalanceList(char const* _buffer, std::string& language);
 
-            void getPersonalInfos(char const*& _buffer, std::set<PersonalInfo>& requiredPersonalInfos);
+            void getPersonalInfos(char const* _buffer, std::set<PersonalInfo>& requiredPersonalInfos);
 
-            void getPrimaryClientsForChannel(char const*& _buffer, std::vector<std::string>& userMids);
+            void getPrimaryClientsForChannel(char const* _buffer, std::vector<std::string>& userMids);
 
-            void addBuddyToContact(char const*& _buffer, std::string& buddyMid);
+            void addBuddyToContact(char const* _buffer, std::string& buddyMid);
 
-            void getGroupMemberMidsForAppPlatform(char const*& _buffer, std::string& groupId);
+            void getGroupMemberMidsForAppPlatform(char const* _buffer, std::string& groupId);
 
-            void getUserLanguage(char const*& _buffer);
+            void getUserLanguage(char const* _buffer);
 
-            void lookupPaidCall(char const*& _buffer, std::string& dialedNumber, std::string& language, std::string& referer);
+            void lookupPaidCall(char const* _buffer, std::string& dialedNumber, std::string& language, std::string& referer);
 
-            void getReverseCompactContacts(char const*& _buffer, std::vector<std::string>& ids);
+            void getReverseCompactContacts(char const* _buffer, std::vector<std::string>& ids);
 
-            void getPaidCallAdStatus(char const*& _buffer);
+            void getPaidCallAdStatus(char const* _buffer);
 
-            void findContactByUseridWithoutAbuseBlockForChannel(char const*& _buffer, std::string& userid);
+            void findContactByUseridWithoutAbuseBlockForChannel(char const* _buffer, std::string& userid);
 
-            void getGroupMemberMids(char const*& _buffer, std::string& groupId);
+            void getGroupMemberMids(char const* _buffer, std::string& groupId);
 
-            void sendMessageWithoutRelationship(char const*& _buffer, Message& message);
+            void sendMessageWithoutRelationship(char const* _buffer, Message& message);
 
-            void displayBuddySubscriberCountInBulk(char const*& _buffer, std::vector<std::string>& mids);
+            void displayBuddySubscriberCountInBulk(char const* _buffer, std::vector<std::string>& mids);
 
-            void lookupRoomMembers(char const*& _buffer, std::string& roomId, std::vector<std::string>& mids);
+            void lookupRoomMembers(char const* _buffer, std::string& roomId, std::vector<std::string>& mids);
 
-            void getFavoriteMidsForChannel(char const*& _buffer);
+            void getFavoriteMidsForChannel(char const* _buffer);
 
-            void getAllContactIdsForChannel(char const*& _buffer);
+            void getAllContactIdsForChannel(char const* _buffer);
 
-            void displayBuddySubscriberCount(char const*& _buffer);
+            void displayBuddySubscriberCount(char const* _buffer);
 
-            void getProfileForChannel(char const*& _buffer);
+            void getProfileForChannel(char const* _buffer);
 
-            void getUserTickets(char const*& _buffer, std::vector<std::string>& userMids);
+            void getUserTickets(char const* _buffer, std::vector<std::string>& userMids);
 
-            void getOAFriendMids(char const*& _buffer);
+            void getOAFriendMids(char const* _buffer);
 
-            void searchPaidCallUserRate(char const*& _buffer, std::string& countryCode, std::string& language);
+            void searchPaidCallUserRate(char const* _buffer, std::string& countryCode, std::string& language);
 
-            void getJoinedGroupIdsForChannel(char const*& _buffer);
+            void getJoinedGroupIdsForChannel(char const* _buffer);
 
-            void acquireGroupCallRoute(char const*& _buffer, std::string& chatMid, GroupCallMediaType& mediaType);
+            void acquireGroupCallRoute(char const* _buffer, std::string& chatMid, GroupCallMediaType& mediaType);
 
-            void getUserMidsWhoAddedMe(char const*& _buffer);
+            void getUserMidsWhoAddedMe(char const* _buffer);
 
-            void getIdentityCredential(char const*& _buffer);
+            void getIdentityCredential(char const* _buffer);
 
-            void addOperationForChannel(char const*& _buffer, OpType& opType, std::string& param1, std::string& param2, std::string& param3);
+            void addOperationForChannel(char const* _buffer, OpType& opType, std::string& param1, std::string& param2, std::string& param3);
 
-            void getSimpleChannelContacts(char const*& _buffer, std::vector<std::string>& ids, bool& statusSticonFallbackDisabled);
+            void getSimpleChannelContacts(char const* _buffer, std::vector<std::string>& ids, bool& statusSticonFallbackDisabled);
 
-            void getUserLastSentMessageTimeStamp(char const*& _buffer, std::string& mid);
+            void getUserLastSentMessageTimeStamp(char const* _buffer, std::string& mid);
 
-            void registerVirtualAccount(char const*& _buffer, std::string& locale, std::string& encryptedVirtualUserId, std::string& encryptedPassword);
+            void registerVirtualAccount(char const* _buffer, std::string& locale, std::string& encryptedVirtualUserId, std::string& encryptedPassword);
 
-            void unregisterVirtualAccount(char const*& _buffer, std::string& virtualMid);
+            void unregisterVirtualAccount(char const* _buffer, std::string& virtualMid);
 
-            void requestVirtualAccountPasswordChange(char const*& _buffer, std::string& virtualMid, std::string& encryptedVirtualUserId, std::string& encryptedOldPassword, std::string& encryptedNewPassword);
+            void requestVirtualAccountPasswordChange(char const* _buffer, std::string& virtualMid, std::string& encryptedVirtualUserId, std::string& encryptedOldPassword, std::string& encryptedNewPassword);
 
-            void notifyEmailConfirmationResult(char const*& _buffer, std::map<std::string, std::string>& parameterMap);
+            void notifyEmailConfirmationResult(char const* _buffer, std::map<std::string, std::string>& parameterMap);
 
-            void requestVirtualAccountPasswordSet(char const*& _buffer, std::string& virtualMid, std::string& encryptedVirtualUserId, std::string& encryptedNewPassword);
+            void requestVirtualAccountPasswordSet(char const* _buffer, std::string& virtualMid, std::string& encryptedVirtualUserId, std::string& encryptedNewPassword);
 
-            void getRSAKey(char const*& _buffer);
+            void getRSAKey(char const* _buffer);
 
-            void queryBeaconActions(char const*& _buffer, std::string& hwid, std::string& secureMessage, ApplicationType& applicationType, std::string& applicationVersion, std::string& lang);
+            void queryBeaconActions(char const* _buffer, std::string& hwid, std::string& secureMessage, ApplicationType& applicationType, std::string& applicationVersion, std::string& lang);
 
-            void notifyBeaconDetected(char const*& _buffer, std::string& hwid, std::string& secureMessage, BeaconNotificationType& notificationType);
+            void notifyBeaconDetected(char const* _buffer, std::string& hwid, std::string& secureMessage, BeaconNotificationType& notificationType);
 
-            void getDomains(char const*& _buffer, uint64_t& lastSynced);
+            void getDomains(char const* _buffer, uint64_t& lastSynced);
 
-            void approveChannelAndIssueRequestToken(char const*& _buffer, std::string& channelId, std::string& otpId);
+            void approveChannelAndIssueRequestToken(char const* _buffer, std::string& channelId, std::string& otpId);
 
-            void issueOTP(char const*& _buffer, std::string& channelId);
+            void issueOTP(char const* _buffer, std::string& channelId);
 
-            void getChannelSettings(char const*& _buffer);
+            void getChannelSettings(char const* _buffer);
 
-            void getChannelNotificationSettings(char const*& _buffer, std::string& locale);
+            void getChannelNotificationSettings(char const* _buffer, std::string& locale);
 
-            void updateChannelNotificationSetting(char const*& _buffer, std::vector<ChannelNotificationSetting>& setting);
+            void updateChannelNotificationSetting(char const* _buffer, std::vector<ChannelNotificationSetting>& setting);
 
-            void updateChannelSettings(char const*& _buffer, ChannelSettings& channelSettings);
+            void updateChannelSettings(char const* _buffer, ChannelSettings& channelSettings);
 
-            void getCommonDomains(char const*& _buffer, uint64_t& lastSynced);
+            void getCommonDomains(char const* _buffer, uint64_t& lastSynced);
 
-            void issueRequestTokenWithAuthScheme(char const*& _buffer, std::string& channelId, std::string& otpId, std::vector<std::string>& authScheme, std::string& returnUrl);
+            void issueRequestTokenWithAuthScheme(char const* _buffer, std::string& channelId, std::string& otpId, std::vector<std::string>& authScheme, std::string& returnUrl);
 
-            void getChannelNotificationSetting(char const*& _buffer, std::string& channelId, std::string& locale);
+            void getChannelNotificationSetting(char const* _buffer, std::string& channelId, std::string& locale);
 
-            void issueChannelToken(char const*& _buffer, std::string& channelId);
+            void issueChannelToken(char const* _buffer, std::string& channelId);
 
-            void getChannels(char const*& _buffer, uint64_t& lastSynced, std::string& locale);
+            void getChannels(char const* _buffer, uint64_t& lastSynced, std::string& locale);
 
-            void fetchNotificationItems(char const*& _buffer, uint64_t& localRev);
+            void fetchNotificationItems(char const* _buffer, uint64_t& localRev);
 
-            void getChannelInfo(char const*& _buffer, std::string& channelId, std::string& locale);
+            void getChannelInfo(char const* _buffer, std::string& channelId, std::string& locale);
 
-            void getNotificationBadgeCount(char const*& _buffer, uint64_t& localRev);
+            void getNotificationBadgeCount(char const* _buffer, uint64_t& localRev);
 
-            void issueRequestToken(char const*& _buffer, std::string& channelId, std::string& otpId);
+            void issueRequestToken(char const* _buffer, std::string& channelId, std::string& otpId);
 
-            void revokeChannel(char const*& _buffer, std::string& channelId);
+            void revokeChannel(char const* _buffer, std::string& channelId);
 
-            void getApprovedChannels(char const*& _buffer, uint64_t& lastSynced, std::string& locale);
+            void getApprovedChannels(char const* _buffer, uint64_t& lastSynced, std::string& locale);
 
-            void getFriendChannelMatrices(char const*& _buffer, std::vector<std::string>& channelIds);
+            void getFriendChannelMatrices(char const* _buffer, std::vector<std::string>& channelIds);
 
-            void issueRequestTokenForAutoLogin(char const*& _buffer, std::string& channelId, std::string& otpId, std::string& redirectUrl);
+            void issueRequestTokenForAutoLogin(char const* _buffer, std::string& channelId, std::string& otpId, std::string& redirectUrl);
 
-            void getUpdatedChannelIds(char const*& _buffer, std::vector<ChannelIdWithLastUpdated>& channelIds);
+            void getUpdatedChannelIds(char const* _buffer, std::vector<ChannelIdWithLastUpdated>& channelIds);
 
-            void reserveCoinUse(char const*& _buffer, CoinUseReservation& request, std::string& locale);
+            void reserveCoinUse(char const* _buffer, CoinUseReservation& request, std::string& locale);
 
-            void syncChannelData(char const*& _buffer, uint64_t& lastSynced, std::string& locale);
+            void syncChannelData(char const* _buffer, uint64_t& lastSynced, std::string& locale);
 
-            void approveChannelAndIssueChannelToken(char const*& _buffer, std::string& channelId);
+            void approveChannelAndIssueChannelToken(char const* _buffer, std::string& channelId);
 
-            void getSnsFriends(char const*& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, uint32_t& startIdx, uint32_t& limit);
+            void getSnsFriends(char const* _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, uint32_t& startIdx, uint32_t& limit);
 
-            void getSnsMyProfile(char const*& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken);
+            void getSnsMyProfile(char const* _buffer, SnsIdType& snsIdType, std::string& snsAccessToken);
 
-            void postSnsInvitationMessage(char const*& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& toSnsUserId);
+            void postSnsInvitationMessage(char const* _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& toSnsUserId);
 
-            void reportDeviceState(char const*& _buffer, std::map<DeviceBooleanStateKey, bool>& booleanState, std::map<DeviceStringStateKey, std::string>& stringState);
+            void reportDeviceState(char const* _buffer, std::map<DeviceBooleanStateKey, bool>& booleanState, std::map<DeviceStringStateKey, std::string>& stringState);
 
-            void notifySleepV2(char const*& _buffer, std::map<ServiceCode, ClientLastStatus>& lastStatusMap);
+            void notifySleepV2(char const* _buffer, std::map<ServiceCode, ClientLastStatus>& lastStatusMap);
 
-            void updateNotificationToken(char const*& _buffer, std::string& token, NotificationType& type);
+            void updateNotificationToken(char const* _buffer, std::string& token, NotificationType& type);
 
-            void updateGroup(char const*& _buffer, uint32_t& reqSeq, Group& group);
+            void updateGroup(char const* _buffer, uint32_t& reqSeq, Group& group);
 
-            void verifyAccountMigrationPincode(char const*& _buffer, std::string& migrationPincodeSessionId, std::string& accountMigrationPincode);
+            void verifyAccountMigrationPincode(char const* _buffer, std::string& migrationPincodeSessionId, std::string& accountMigrationPincode);
 
-            void registerWithExistingSnsIdAndIdentityCredential(char const*& _buffer, IdentityCredential& identityCredential, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& migrationPincodeSessionId);
+            void registerWithExistingSnsIdAndIdentityCredential(char const* _buffer, IdentityCredential& identityCredential, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& migrationPincodeSessionId);
 
-            void registerDeviceWithoutPhoneNumber(char const*& _buffer, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo);
+            void registerDeviceWithoutPhoneNumber(char const* _buffer, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo);
 
-            void changeVerificationMethod(char const*& _buffer, std::string& sessionId, VerificationMethod& method);
+            void changeVerificationMethod(char const* _buffer, std::string& sessionId, VerificationMethod& method);
 
-            void setBuddyLocation(char const*& _buffer, std::string& mid, uint32_t& index, Geolocation& location);
+            void setBuddyLocation(char const* _buffer, std::string& mid, uint32_t& index, Geolocation& location);
 
-            void getFriendRequests(char const*& _buffer, FriendRequestDirection& direction, uint64_t& lastSeenSeqId);
+            void getFriendRequests(char const* _buffer, FriendRequestDirection& direction, uint64_t& lastSeenSeqId);
 
-            void kickoutFromGroup(char const*& _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
+            void kickoutFromGroup(char const* _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
 
-            void verifyIdentityCredentialWithResult(char const*& _buffer, IdentityCredential& identityCredential, std::string& migrationPincodeSessionId);
+            void verifyIdentityCredentialWithResult(char const* _buffer, IdentityCredential& identityCredential, std::string& migrationPincodeSessionId);
 
-            void sendEchoPush(char const*& _buffer, std::string& text);
+            void sendEchoPush(char const* _buffer, std::string& text);
 
-            void createSession(char const*& _buffer);
+            void createSession(char const* _buffer);
 
-            void reissueDeviceCredential(char const*& _buffer);
+            void reissueDeviceCredential(char const* _buffer);
 
-            void getRecommendationIds(char const*& _buffer);
+            void getRecommendationIds(char const* _buffer);
 
-            void inviteViaEmail(char const*& _buffer, uint32_t& reqSeq, std::string& email, std::string& name);
+            void inviteViaEmail(char const* _buffer, uint32_t& reqSeq, std::string& email, std::string& name);
 
-            void getRoomsV2(char const*& _buffer, std::vector<std::string>& roomIds);
+            void getRoomsV2(char const* _buffer, std::vector<std::string>& roomIds);
 
-            void getReadMessageOps(char const*& _buffer, std::string& chatId);
+            void getReadMessageOps(char const* _buffer, std::string& chatId);
 
-            void getSettingsAttributes(char const*& _buffer, uint32_t& attrBitset);
+            void getSettingsAttributes(char const* _buffer, uint32_t& attrBitset);
 
-            void requestIdentityUnbind(char const*& _buffer, std::string& identifier, IdentityProvider& provider);
+            void requestIdentityUnbind(char const* _buffer, std::string& identifier, IdentityProvider& provider);
 
-            void getMessagesBySequenceNumber(char const*& _buffer, std::string& channelId, std::string& messageBoxId, uint64_t& startSeq, uint64_t& endSeq);
+            void getMessagesBySequenceNumber(char const* _buffer, std::string& channelId, std::string& messageBoxId, uint64_t& startSeq, uint64_t& endSeq);
 
-            void inviteIntoRoom(char const*& _buffer, uint32_t& reqSeq, std::string& roomId, std::vector<std::string>& contactIds);
+            void inviteIntoRoom(char const* _buffer, uint32_t& reqSeq, std::string& roomId, std::vector<std::string>& contactIds);
 
-            void sendChatChecked(char const*& _buffer, uint32_t& seq, std::string& consumer, std::string& lastMessageId, uint32_t& sessionId);
+            void sendChatChecked(char const* _buffer, uint32_t& seq, std::string& consumer, std::string& lastMessageId, uint32_t& sessionId);
 
-            void removeSnsId(char const*& _buffer, SnsIdType& snsIdType);
+            void removeSnsId(char const* _buffer, SnsIdType& snsIdType);
 
-            void reportSpammer(char const*& _buffer, std::string& spammerMid, std::vector<SpammerReason>& spammerReasons, std::vector<std::string>& spamMessageIds, std::vector<std::string>& spamMessages);
+            void reportSpammer(char const* _buffer, std::string& spammerMid, std::vector<SpammerReason>& spammerReasons, std::vector<std::string>& spamMessageIds, std::vector<std::string>& spamMessages);
 
-            void findAndAddContactsByEmail(char const*& _buffer, uint32_t& reqSeq, std::set<std::string>& emails);
+            void findAndAddContactsByEmail(char const* _buffer, uint32_t& reqSeq, std::set<std::string>& emails);
 
-            void getCompactGroups(char const*& _buffer, std::vector<std::string>& groupIds);
+            void getCompactGroups(char const* _buffer, std::vector<std::string>& groupIds);
 
-            void sendMessage(char const*& _buffer, uint32_t& seq, Message& message);
+            void sendMessage(char const* _buffer, uint32_t& seq, Message& message);
 
-            void getRooms(char const*& _buffer, std::vector<std::string>& roomIds);
+            void getRooms(char const* _buffer, std::vector<std::string>& roomIds);
 
-            void updateC2DMRegistrationId(char const*& _buffer, std::string& registrationId);
+            void updateC2DMRegistrationId(char const* _buffer, std::string& registrationId);
 
-            void sendPostback(char const*& _buffer, SendPostbackRequest& request);
+            void sendPostback(char const* _buffer, SendPostbackRequest& request);
 
-            void getReadMessageOpsInBulk(char const*& _buffer, std::vector<std::string>& chatIds);
+            void getReadMessageOpsInBulk(char const* _buffer, std::vector<std::string>& chatIds);
 
-            void sendMessageIgnored(char const*& _buffer, uint32_t& seq, std::string& consumer, std::vector<std::string>& messageIds);
+            void sendMessageIgnored(char const* _buffer, uint32_t& seq, std::string& consumer, std::vector<std::string>& messageIds);
 
-            void getMessageBoxWrapUpListV2(char const*& _buffer, uint32_t& messageBoxOffset, uint32_t& messageBoxCount);
+            void getMessageBoxWrapUpListV2(char const* _buffer, uint32_t& messageBoxOffset, uint32_t& messageBoxCount);
 
-            void getOldReadMessageOpsWithRange(char const*& _buffer, uint64_t& startRev, uint64_t& endRev);
+            void getOldReadMessageOpsWithRange(char const* _buffer, uint64_t& startRev, uint64_t& endRev);
 
-            void getRSAKeyInfo(char const*& _buffer, IdentityProvider& provider);
+            void getRSAKeyInfo(char const* _buffer, IdentityProvider& provider);
 
-            void updateProfileAttribute(char const*& _buffer, uint32_t& reqSeq, ProfileAttribute& attr, std::string& value);
+            void updateProfileAttribute(char const* _buffer, uint32_t& reqSeq, ProfileAttribute& attr, std::string& value);
 
-            void createAccountMigrationPincodeSession(char const*& _buffer);
+            void createAccountMigrationPincodeSession(char const* _buffer);
 
-            void notifiedRedirect(char const*& _buffer, std::map<std::string, std::string>& paramMap);
+            void notifiedRedirect(char const* _buffer, std::map<std::string, std::string>& paramMap);
 
-            void notifyIndividualEvent(char const*& _buffer, NotificationStatus& notificationStatus, std::vector<std::string>& receiverMids);
+            void notifyIndividualEvent(char const* _buffer, NotificationStatus& notificationStatus, std::vector<std::string>& receiverMids);
 
-            void updateApnsDeviceToken(char const*& _buffer, std::string& apnsDeviceToken);
+            void updateApnsDeviceToken(char const* _buffer, std::string& apnsDeviceToken);
 
-            void getMessageBoxCompactWrapUpListV2(char const*& _buffer, uint32_t& messageBoxOffset, uint32_t& messageBoxCount);
+            void getMessageBoxCompactWrapUpListV2(char const* _buffer, uint32_t& messageBoxOffset, uint32_t& messageBoxCount);
 
-            void requestEmailConfirmation(char const*& _buffer, EmailConfirmation& emailConfirmation);
+            void requestEmailConfirmation(char const* _buffer, EmailConfirmation& emailConfirmation);
 
-            void registerWithSnsIdAndIdentityCredential(char const*& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, IdentityCredential& identityCredential, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& migrationPincodeSessionId);
+            void registerWithSnsIdAndIdentityCredential(char const* _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, IdentityCredential& identityCredential, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& migrationPincodeSessionId);
 
-            void getMessageBoxCompactWrapUp(char const*& _buffer, std::string& mid);
+            void getMessageBoxCompactWrapUp(char const* _buffer, std::string& mid);
 
-            void findContactByUserTicket(char const*& _buffer, std::string& ticketIdWithTag);
+            void findContactByUserTicket(char const* _buffer, std::string& ticketIdWithTag);
 
-            void updateAccountMigrationPincode(char const*& _buffer, std::string& accountMigrationPincode);
+            void updateAccountMigrationPincode(char const* _buffer, std::string& accountMigrationPincode);
 
-            void registerBuddyUser(char const*& _buffer, std::string& buddyId, std::string& registrarPassword);
+            void registerBuddyUser(char const* _buffer, std::string& buddyId, std::string& registrarPassword);
 
-            void updateSettingsV2(char const*& _buffer, uint32_t& reqSeq, Settings& settings);
+            void updateSettingsV2(char const* _buffer, uint32_t& reqSeq, Settings& settings);
 
-            void getUserTicket(char const*& _buffer);
+            void getUserTicket(char const* _buffer);
 
-            void fetchOps(char const*& _buffer, uint64_t& localRev, uint32_t& count, uint64_t& globalRev, uint64_t& individualRev);
+            void fetchOps(char const* _buffer, uint64_t& localRev, uint32_t& count, uint64_t& globalRev, uint64_t& individualRev);
 
-            void commitSendMessagesToMid(char const*& _buffer, CommitSendMessagesToMidRequest& request);
+            void commitSendMessagesToMid(char const* _buffer, CommitSendMessagesToMidRequest& request);
 
-            void getMessageBoxV2(char const*& _buffer, std::string& messageBoxId, uint32_t& lastMessagesCount);
+            void getMessageBoxV2(char const* _buffer, std::string& messageBoxId, uint32_t& lastMessagesCount);
 
-            void requestResendMessage(char const*& _buffer, uint32_t& reqSeq, std::string& senderMid, std::string& messageId);
+            void requestResendMessage(char const* _buffer, uint32_t& reqSeq, std::string& senderMid, std::string& messageId);
 
-            void getGroupWithoutMembers(char const*& _buffer, std::string& groupId);
+            void getGroupWithoutMembers(char const* _buffer, std::string& groupId);
 
-            void removeAllMessages(char const*& _buffer, uint32_t& seq, std::string& lastMessageId);
+            void removeAllMessages(char const* _buffer, uint32_t& seq, std::string& lastMessageId);
 
-            void verifyAccountMigration(char const*& _buffer, std::string& migrationSessionId);
+            void verifyAccountMigration(char const* _buffer, std::string& migrationSessionId);
 
-            void reissueGroupTicket(char const*& _buffer, std::string& groupMid);
+            void reissueGroupTicket(char const* _buffer, std::string& groupMid);
 
-            void logoutSession(char const*& _buffer, std::string& tokenKey);
+            void logoutSession(char const* _buffer, std::string& tokenKey);
 
-            void getBuddyLocation(char const*& _buffer, std::string& mid, uint32_t& index);
+            void getBuddyLocation(char const* _buffer, std::string& mid, uint32_t& index);
 
-            void getWapInvitation(char const*& _buffer, std::string& invitationHash);
+            void getWapInvitation(char const* _buffer, std::string& invitationHash);
 
-            void registerDevice(char const*& _buffer, std::string& sessionId, std::string& migrationPincodeSessionId);
+            void registerDevice(char const* _buffer, std::string& sessionId, std::string& migrationPincodeSessionId);
 
-            void clearMessageBox(char const*& _buffer, std::string& channelId, std::string& messageBoxId);
+            void clearMessageBox(char const* _buffer, std::string& channelId, std::string& messageBoxId);
 
-            void loginWithIdentityCredentialForCertificate(char const*& _buffer, std::string& identifier, std::string& password, bool& keepLoggedIn, std::string& accessLocation, std::string& systemName, IdentityProvider& identityProvider, std::string& certificate);
+            void loginWithIdentityCredentialForCertificate(char const* _buffer, std::string& identifier, std::string& password, bool& keepLoggedIn, std::string& accessLocation, std::string& systemName, IdentityProvider& identityProvider, std::string& certificate);
 
-            void getSuggestSettings(char const*& _buffer, std::string& locale);
+            void getSuggestSettings(char const* _buffer, std::string& locale);
 
-            void updateAndGetNearby(char const*& _buffer, double& latitude, double& longitude);
+            void updateAndGetNearby(char const* _buffer, double& latitude, double& longitude);
 
-            void syncContactBySnsIds(char const*& _buffer, uint32_t& reqSeq, std::vector<SnsFriendModification>& modifications);
+            void syncContactBySnsIds(char const* _buffer, uint32_t& reqSeq, std::vector<SnsFriendModification>& modifications);
 
-            void getContacts(char const*& _buffer, std::vector<std::string>& ids);
+            void getContacts(char const* _buffer, std::vector<std::string>& ids);
 
-            void getMessageBoxCompactWrapUpList(char const*& _buffer, uint32_t& start, uint32_t& messageBoxCount);
+            void getMessageBoxCompactWrapUpList(char const* _buffer, uint32_t& start, uint32_t& messageBoxCount);
 
-            void getProximityMatchCandidates(char const*& _buffer, std::string& sessionId);
+            void getProximityMatchCandidates(char const* _buffer, std::string& sessionId);
 
-            void updateExtendedProfileAttribute(char const*& _buffer, uint32_t& reqSeq, ExtendedProfileAttribute& attr, ExtendedProfile& extendedProfile);
+            void updateExtendedProfileAttribute(char const* _buffer, uint32_t& reqSeq, ExtendedProfileAttribute& attr, ExtendedProfile& extendedProfile);
 
-            void resendPinCode(char const*& _buffer, std::string& sessionId);
+            void resendPinCode(char const* _buffer, std::string& sessionId);
 
-            void reportSettings(char const*& _buffer, uint64_t& syncOpRevision, Settings& settings);
+            void reportSettings(char const* _buffer, uint64_t& syncOpRevision, Settings& settings);
 
-            void registerBuddyUserid(char const*& _buffer, uint32_t& seq, std::string& userid);
+            void registerBuddyUserid(char const* _buffer, uint32_t& seq, std::string& userid);
 
-            void findGroupByTicket(char const*& _buffer, std::string& ticketId);
+            void findGroupByTicket(char const* _buffer, std::string& ticketId);
 
-            void registerDeviceWithIdentityCredential(char const*& _buffer, std::string& sessionId, std::string& identifier, std::string& verifier, IdentityProvider& provider, std::string& migrationPincodeSessionId);
+            void registerDeviceWithIdentityCredential(char const* _buffer, std::string& sessionId, std::string& identifier, std::string& verifier, IdentityProvider& provider, std::string& migrationPincodeSessionId);
 
-            void invalidateUserTicket(char const*& _buffer);
+            void invalidateUserTicket(char const* _buffer);
 
-            void sendEvent(char const*& _buffer, uint32_t& seq, Message& message);
+            void sendEvent(char const* _buffer, uint32_t& seq, Message& message);
 
-            void sendMessageToMyHome(char const*& _buffer, uint32_t& seq, Message& message);
+            void sendMessageToMyHome(char const* _buffer, uint32_t& seq, Message& message);
 
-            void sendContentPreviewUpdated(char const*& _buffer, uint32_t& esq, std::string& messageId, std::vector<std::string>& receiverMids);
+            void sendContentPreviewUpdated(char const* _buffer, uint32_t& esq, std::string& messageId, std::vector<std::string>& receiverMids);
 
-            void loginWithVerifier(char const*& _buffer, std::string& verifier);
+            void loginWithVerifier(char const* _buffer, std::string& verifier);
 
-            void removeBuddySubscriptionAndNotifyBuddyUnregistered(char const*& _buffer, std::vector<std::string>& subscriberMids);
+            void removeBuddySubscriptionAndNotifyBuddyUnregistered(char const* _buffer, std::vector<std::string>& subscriberMids);
 
-            void unblockContact(char const*& _buffer, uint32_t& reqSeq, std::string& id, std::string& reference);
+            void unblockContact(char const* _buffer, uint32_t& reqSeq, std::string& id, std::string& reference);
 
-            void removeBuddyLocation(char const*& _buffer, std::string& mid, uint32_t& index);
+            void removeBuddyLocation(char const* _buffer, std::string& mid, uint32_t& index);
 
-            void getRingbackTone(char const*& _buffer);
+            void getRingbackTone(char const* _buffer);
 
-            void getConfigurations(char const*& _buffer, uint64_t& revision, std::string& regionOfUsim, std::string& regionOfTelephone, std::string& regionOfLocale, std::string& carrier);
+            void getConfigurations(char const* _buffer, uint64_t& revision, std::string& regionOfUsim, std::string& regionOfTelephone, std::string& regionOfLocale, std::string& carrier);
 
-            void getProximityMatchCandidateList(char const*& _buffer, std::string& sessionId);
+            void getProximityMatchCandidateList(char const* _buffer, std::string& sessionId);
 
-            void requestAccountPasswordReset(char const*& _buffer, std::string& identifier, IdentityProvider& provider, std::string& locale);
+            void requestAccountPasswordReset(char const* _buffer, std::string& identifier, IdentityProvider& provider, std::string& locale);
 
-            void getNextMessages(char const*& _buffer, std::string& messageBoxId, uint64_t& startSeq, uint32_t& messagesCount);
+            void getNextMessages(char const* _buffer, std::string& messageBoxId, uint64_t& startSeq, uint32_t& messagesCount);
 
-            void reportProfile(char const*& _buffer, uint64_t& syncOpRevision, Profile& profile);
+            void reportProfile(char const* _buffer, uint64_t& syncOpRevision, Profile& profile);
 
-            void getCompactRoom(char const*& _buffer, std::string& roomId);
+            void getCompactRoom(char const* _buffer, std::string& roomId);
 
-            void getLastOpRevision(char const*& _buffer);
+            void getLastOpRevision(char const* _buffer);
 
-            void getPreviousMessagesV2(char const*& _buffer, std::string& messageBoxId, MessageBoxV2MessageId& endMessageId, uint32_t& messagesCount);
+            void getPreviousMessagesV2(char const* _buffer, std::string& messageBoxId, MessageBoxV2MessageId& endMessageId, uint32_t& messagesCount);
 
-            void fetchAnnouncements(char const*& _buffer, uint32_t& lastFetchedIndex);
+            void fetchAnnouncements(char const* _buffer, uint32_t& lastFetchedIndex);
 
-            void acquireCallRoute(char const*& _buffer, std::string& to);
+            void acquireCallRoute(char const* _buffer, std::string& to);
 
-            void updateSettingsAttribute(char const*& _buffer, uint32_t& reqSeq, SettingsAttribute& attr, std::string& value);
+            void updateSettingsAttribute(char const* _buffer, uint32_t& reqSeq, SettingsAttribute& attr, std::string& value);
 
-            void createGroupV2(char const*& _buffer, uint32_t& seq, std::string& name, std::vector<std::string>& contactIds);
+            void createGroupV2(char const* _buffer, uint32_t& seq, std::string& name, std::vector<std::string>& contactIds);
 
-            void isIdentityIdentifierAvailable(char const*& _buffer, std::string& identifier, IdentityProvider& provider);
+            void isIdentityIdentifierAvailable(char const* _buffer, std::string& identifier, IdentityProvider& provider);
 
-            void blockContact(char const*& _buffer, uint32_t& reqSeq, std::string& id);
+            void blockContact(char const* _buffer, uint32_t& reqSeq, std::string& id);
 
-            void commitUpdateProfile(char const*& _buffer, uint32_t& seq, std::vector<ProfileAttribute>& attrs, std::vector<std::string>& receiverMids);
+            void commitUpdateProfile(char const* _buffer, uint32_t& seq, std::vector<ProfileAttribute>& attrs, std::vector<std::string>& receiverMids);
 
-            void registerWithSnsId(char const*& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& mid, std::string& migrationPincodeSessionId);
+            void registerWithSnsId(char const* _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& mid, std::string& migrationPincodeSessionId);
 
-            void updatePublicKeychain(char const*& _buffer, PublicKeychain& publicKeychain);
+            void updatePublicKeychain(char const* _buffer, PublicKeychain& publicKeychain);
 
-            void loginWithVerifierForCerificate(char const*& _buffer, std::string& verifier);
+            void loginWithVerifierForCerificate(char const* _buffer, std::string& verifier);
 
-            void tryFriendRequest(char const*& _buffer, std::string& midOrEMid, FriendRequestMethod& method, std::string& friendRequestParams);
+            void tryFriendRequest(char const* _buffer, std::string& midOrEMid, FriendRequestMethod& method, std::string& friendRequestParams);
 
-            void getBlockedRecommendationIds(char const*& _buffer);
+            void getBlockedRecommendationIds(char const* _buffer);
 
-            void getGroupIdsInvited(char const*& _buffer);
+            void getGroupIdsInvited(char const* _buffer);
 
-            void getSuggestIncrements(char const*& _buffer, SuggestDictionaryRevisions& revisions);
+            void getSuggestIncrements(char const* _buffer, SuggestDictionaryRevisions& revisions);
 
-            void resendPinCodeBySMS(char const*& _buffer, std::string& sessionId);
+            void resendPinCodeBySMS(char const* _buffer, std::string& sessionId);
 
-            void registerWithPhoneNumber(char const*& _buffer, std::string& sessionId, std::string& migrationPincodeSessionId);
+            void registerWithPhoneNumber(char const* _buffer, std::string& sessionId, std::string& migrationPincodeSessionId);
 
-            void getActiveBuddySubscriberIds(char const*& _buffer);
+            void getActiveBuddySubscriberIds(char const* _buffer);
 
-            void createRoom(char const*& _buffer, uint32_t& reqSeq, std::vector<std::string>& contactIds);
+            void createRoom(char const* _buffer, uint32_t& reqSeq, std::vector<std::string>& contactIds);
 
-            void verifyPhoneNumberForLogin(char const*& _buffer, std::string& verifierFromPhone, std::string& pinCodeForPhone, std::string& verifierFromLogin);
+            void verifyPhoneNumberForLogin(char const* _buffer, std::string& verifierFromPhone, std::string& pinCodeForPhone, std::string& verifierFromLogin);
 
-            void addSnsId(char const*& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken);
+            void addSnsId(char const* _buffer, SnsIdType& snsIdType, std::string& snsAccessToken);
 
-            void finishUpdateVerification(char const*& _buffer, std::string& sessionId);
+            void finishUpdateVerification(char const* _buffer, std::string& sessionId);
 
-            void validateContactsOnBot(char const*& _buffer, std::vector<std::string>& contacts);
+            void validateContactsOnBot(char const* _buffer, std::vector<std::string>& contacts);
 
-            void getRoom(char const*& _buffer, std::string& roomId);
+            void getRoom(char const* _buffer, std::string& roomId);
 
-            void closeProximityMatch(char const*& _buffer, std::string& sessionId);
+            void closeProximityMatch(char const* _buffer, std::string& sessionId);
 
-            void getCompactGroup(char const*& _buffer, std::string& groupId);
+            void getCompactGroup(char const* _buffer, std::string& groupId);
 
-            void getBlockedContactIdsByRange(char const*& _buffer, uint32_t& start, uint32_t& count);
+            void getBlockedContactIdsByRange(char const* _buffer, uint32_t& start, uint32_t& count);
 
-            void getRecentMessagesV2(char const*& _buffer, std::string& messageBoxId, uint32_t& messagesCount);
+            void getRecentMessagesV2(char const* _buffer, std::string& messageBoxId, uint32_t& messagesCount);
 
-            void reissueUserTicket(char const*& _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
+            void reissueUserTicket(char const* _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
 
-            void getMessageReadRange(char const*& _buffer, std::vector<std::string>& chatIds);
+            void getMessageReadRange(char const* _buffer, std::vector<std::string>& chatIds);
 
-            void clearRingbackTone(char const*& _buffer);
+            void clearRingbackTone(char const* _buffer);
 
-            void setIdentityCredential(char const*& _buffer, std::string& identifier, std::string& verifier, IdentityProvider& provider);
+            void setIdentityCredential(char const* _buffer, std::string& identifier, std::string& verifier, IdentityProvider& provider);
 
-            void getMessageBoxCompactWrapUpV2(char const*& _buffer, std::string& messageBoxId);
+            void getMessageBoxCompactWrapUpV2(char const* _buffer, std::string& messageBoxId);
 
-            void getServerTime(char const*& _buffer);
+            void getServerTime(char const* _buffer);
 
-            void trySendMessage(char const*& _buffer, uint32_t& seq, Message& message);
+            void trySendMessage(char const* _buffer, uint32_t& seq, Message& message);
 
-            void getNextMessagesV2(char const*& _buffer, std::string& messageBoxId, MessageBoxV2MessageId& startMessageId, uint32_t& messagesCount);
+            void getNextMessagesV2(char const* _buffer, std::string& messageBoxId, MessageBoxV2MessageId& startMessageId, uint32_t& messagesCount);
 
-            void notifySleep(char const*& _buffer, uint64_t& lastRev, uint32_t& badge);
+            void notifySleep(char const* _buffer, uint64_t& lastRev, uint32_t& badge);
 
-            void getBuddyBlockerIds(char const*& _buffer);
+            void getBuddyBlockerIds(char const* _buffer);
 
-            void removeE2EEPublicKey(char const*& _buffer, E2EEPublicKey& publicKey);
+            void removeE2EEPublicKey(char const* _buffer, E2EEPublicKey& publicKey);
 
-            void reissueTrackingTicket(char const*& _buffer, TrackingType& type);
+            void reissueTrackingTicket(char const* _buffer, TrackingType& type);
 
-            void cancelGroupInvitation(char const*& _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
+            void cancelGroupInvitation(char const* _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
 
-            void removeMessage(char const*& _buffer, std::string& messageId);
+            void removeMessage(char const* _buffer, std::string& messageId);
 
-            void getAllReadMessageOps(char const*& _buffer);
+            void getAllReadMessageOps(char const* _buffer);
 
-            void unregisterUserAndDevice(char const*& _buffer);
+            void unregisterUserAndDevice(char const* _buffer);
 
-            void acceptGroupInvitation(char const*& _buffer, uint32_t& reqSeq, std::string& groupId);
+            void acceptGroupInvitation(char const* _buffer, uint32_t& reqSeq, std::string& groupId);
 
-            void getCompactContactsModifiedSince(char const*& _buffer, uint64_t& timestamp);
+            void getCompactContactsModifiedSince(char const* _buffer, uint64_t& timestamp);
 
-            void releaseSession(char const*& _buffer);
+            void releaseSession(char const* _buffer);
 
-            void findContactsByPhone(char const*& _buffer, std::set<std::string>& phones);
+            void findContactsByPhone(char const* _buffer, std::set<std::string>& phones);
 
-            void getHiddenContactMids(char const*& _buffer);
+            void getHiddenContactMids(char const* _buffer);
 
-            void getEncryptedIdentity(char const*& _buffer);
+            void getEncryptedIdentity(char const* _buffer);
 
-            void updateProfile(char const*& _buffer, uint32_t& reqSeq, Profile& profile);
+            void updateProfile(char const* _buffer, uint32_t& reqSeq, Profile& profile);
 
-            void reportSpam(char const*& _buffer, std::string& chatMid, std::vector<std::string>& memberMids, std::vector<SpammerReason>& spammerReasons, std::vector<std::string>& senderMids, std::vector<std::string>& spamMessageIds, std::vector<std::string>& spamMessages);
+            void reportSpam(char const* _buffer, std::string& chatMid, std::vector<std::string>& memberMids, std::vector<SpammerReason>& spammerReasons, std::vector<std::string>& senderMids, std::vector<std::string>& spamMessageIds, std::vector<std::string>& spamMessages);
 
-            void getSuggestRevisions(char const*& _buffer);
+            void getSuggestRevisions(char const* _buffer);
 
-            void getPreviousMessagesV2WithReadCount(char const*& _buffer, std::string& messageBoxId, MessageBoxV2MessageId& endMessageId, uint32_t& messagesCount);
+            void getPreviousMessagesV2WithReadCount(char const* _buffer, std::string& messageBoxId, MessageBoxV2MessageId& endMessageId, uint32_t& messagesCount);
 
-            void fetchOperations(char const*& _buffer, uint64_t& localRev, uint32_t& count);
+            void fetchOperations(char const* _buffer, uint64_t& localRev, uint32_t& count);
 
-            void registerWapDevice(char const*& _buffer, std::string& invitationHash, std::string& guidHash, std::string& email, DeviceInfo& deviceInfo);
+            void registerWapDevice(char const* _buffer, std::string& invitationHash, std::string& guidHash, std::string& email, DeviceInfo& deviceInfo);
 
-            void getRecentFriendRequests(char const*& _buffer);
+            void getRecentFriendRequests(char const* _buffer);
 
-            void notifyBuddyOnAir(char const*& _buffer, uint32_t& seq, std::vector<std::string>& receiverMids);
+            void notifyBuddyOnAir(char const* _buffer, uint32_t& seq, std::vector<std::string>& receiverMids);
 
-            void getLastAnnouncementIndex(char const*& _buffer);
+            void getLastAnnouncementIndex(char const* _buffer);
 
-            void sendMessageAwaitCommit(char const*& _buffer, uint32_t& seq, Message& message);
+            void sendMessageAwaitCommit(char const* _buffer, uint32_t& seq, Message& message);
 
-            void negotiateE2EEPublicKey(char const*& _buffer, std::string& mid);
+            void negotiateE2EEPublicKey(char const* _buffer, std::string& mid);
 
-            void registerE2EEGroupKey(char const*& _buffer, uint32_t& version, std::string& chatMid, std::vector<std::string>& members, std::vector<uint32_t>& keyIds, std::vector<std::string>& encryptedSharedKeys);
+            void registerE2EEGroupKey(char const* _buffer, uint32_t& version, std::string& chatMid, std::vector<std::string>& members, std::vector<uint32_t>& keyIds, std::vector<std::string>& encryptedSharedKeys);
 
-            void findSnsIdUserStatus(char const*& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& udidHash, std::string& migrationPincodeSessionId, std::string& oldUdidHash);
+            void findSnsIdUserStatus(char const* _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& udidHash, std::string& migrationPincodeSessionId, std::string& oldUdidHash);
 
-            void notifyUpdated(char const*& _buffer, uint64_t& lastRev, DeviceInfo& deviceInfo, std::string& udidHash, std::string& oldUdidHash);
+            void notifyUpdated(char const* _buffer, uint64_t& lastRev, DeviceInfo& deviceInfo, std::string& udidHash, std::string& oldUdidHash);
 
-            void reportGroups(char const*& _buffer, uint64_t& syncOpRevision, std::vector<Group>& groups);
+            void reportGroups(char const* _buffer, uint64_t& syncOpRevision, std::vector<Group>& groups);
 
-            void getNotificationPolicy(char const*& _buffer, CarrierCode& carrier);
+            void getNotificationPolicy(char const* _buffer, CarrierCode& carrier);
 
-            void findAndAddContactsByUserid(char const*& _buffer, uint32_t& reqSeq, std::set<std::string>& userids);
+            void findAndAddContactsByUserid(char const* _buffer, uint32_t& reqSeq, std::set<std::string>& userids);
 
-            void getLastE2EEGroupSharedKey(char const*& _buffer, uint32_t& version, std::string& chatMid);
+            void getLastE2EEGroupSharedKey(char const* _buffer, uint32_t& version, std::string& chatMid);
 
-            void notifyUpdatePublicKeychain(char const*& _buffer, std::string& mid);
+            void notifyUpdatePublicKeychain(char const* _buffer, std::string& mid);
 
-            void report(char const*& _buffer, uint64_t& syncOpRevision, SyncCategory& category, std::string& report);
+            void report(char const* _buffer, uint64_t& syncOpRevision, SyncCategory& category, std::string& report);
 
-            void acceptGroupInvitationByTicket(char const*& _buffer, uint32_t& reqSeq, std::string& groupMid, std::string& ticketId);
+            void acceptGroupInvitationByTicket(char const* _buffer, uint32_t& reqSeq, std::string& groupMid, std::string& ticketId);
 
-            void getContactRegistration(char const*& _buffer, std::string& id, ContactType& type);
+            void getContactRegistration(char const* _buffer, std::string& id, ContactType& type);
 
-            void updateContactSetting(char const*& _buffer, uint32_t& reqSeq, std::string& mid, ContactSetting& flag, std::string& value);
+            void updateContactSetting(char const* _buffer, uint32_t& reqSeq, std::string& mid, ContactSetting& flag, std::string& value);
 
-            void getContactWithFriendRequestStatus(char const*& _buffer, std::string& id);
+            void getContactWithFriendRequestStatus(char const* _buffer, std::string& id);
 
-            void getMessageBoxListByStatus(char const*& _buffer, std::string& channelId, uint32_t& lastMessagesCount, uint32_t& status);
+            void getMessageBoxListByStatus(char const* _buffer, std::string& channelId, uint32_t& lastMessagesCount, uint32_t& status);
 
-            void openProximityMatch(char const*& _buffer, Location& location);
+            void openProximityMatch(char const* _buffer, Location& location);
 
-            void logout(char const*& _buffer);
+            void logout(char const* _buffer);
 
-            void getE2EEPublicKey(char const*& _buffer, std::string& mid, uint32_t& version, uint32_t& keyId);
+            void getE2EEPublicKey(char const* _buffer, std::string& mid, uint32_t& version, uint32_t& keyId);
 
-            void registerUserid(char const*& _buffer, uint32_t& reqSeq, std::string& userid);
+            void registerUserid(char const* _buffer, uint32_t& reqSeq, std::string& userid);
 
-            void reportContacts(char const*& _buffer, uint64_t& syncOpRevision, SyncCategory& category, std::vector<ContactReport>& contactReports, SyncActionType& actionType);
+            void reportContacts(char const* _buffer, uint64_t& syncOpRevision, SyncCategory& category, std::vector<ContactReport>& contactReports, SyncActionType& actionType);
 
-            void getPublicKeychain(char const*& _buffer, std::string& mid);
+            void getPublicKeychain(char const* _buffer, std::string& mid);
 
-            void sendContentReceipt(char const*& _buffer, uint32_t& seq, std::string& consumer, std::string& messageId);
+            void sendContentReceipt(char const* _buffer, uint32_t& seq, std::string& consumer, std::string& messageId);
 
-            void respondResendMessage(char const*& _buffer, uint32_t& reqSeq, std::string& receiverMid, std::string& originalMessageId, Message& resendMessage, ErrorCode& errorCode);
+            void respondResendMessage(char const* _buffer, uint32_t& reqSeq, std::string& receiverMid, std::string& originalMessageId, Message& resendMessage, ErrorCode& errorCode);
 
-            void getAllRoomIds(char const*& _buffer);
+            void getAllRoomIds(char const* _buffer);
 
-            void requestE2EEKeyExchange(char const*& _buffer, uint32_t& reqSeq, std::string& temporalPublicKey, E2EEPublicKey& publicKey, std::string& verifier);
+            void requestE2EEKeyExchange(char const* _buffer, uint32_t& reqSeq, std::string& temporalPublicKey, E2EEPublicKey& publicKey, std::string& verifier);
 
-            void disableNearby(char const*& _buffer);
+            void disableNearby(char const* _buffer);
 
-            void createQrcodeBase64Image(char const*& _buffer, std::string& url, std::string& characterSet, uint32_t& imageSize, uint32_t& x, uint32_t& y, uint32_t& width, uint32_t& height);
+            void createQrcodeBase64Image(char const* _buffer, std::string& url, std::string& characterSet, uint32_t& imageSize, uint32_t& x, uint32_t& y, uint32_t& width, uint32_t& height);
 
-            void getMessageBoxList(char const*& _buffer, std::string& channelId, uint32_t& lastMessagesCount);
+            void getMessageBoxList(char const* _buffer, std::string& channelId, uint32_t& lastMessagesCount);
 
-            void respondE2EEKeyExchange(char const*& _buffer, uint32_t& reqSeq, std::string& encryptedKeyChain, std::string& hashKeyChain);
+            void respondE2EEKeyExchange(char const* _buffer, uint32_t& reqSeq, std::string& encryptedKeyChain, std::string& hashKeyChain);
 
-            void verifyQrcode(char const*& _buffer, std::string& verifier, std::string& pinCode);
+            void verifyQrcode(char const* _buffer, std::string& verifier, std::string& pinCode);
 
-            void updateNotificationTokenWithBytes(char const*& _buffer, std::string& token, NotificationType& type);
+            void updateNotificationTokenWithBytes(char const* _buffer, std::string& token, NotificationType& type);
 
-            void getPreviousMessages(char const*& _buffer, std::string& messageBoxId, uint64_t& endSeq, uint32_t& messagesCount);
+            void getPreviousMessages(char const* _buffer, std::string& messageBoxId, uint64_t& endSeq, uint32_t& messagesCount);
 
-            void getSettings(char const*& _buffer);
+            void getSettings(char const* _buffer);
 
-            void getLastE2EEPublicKeys(char const*& _buffer, std::string& chatMid);
+            void getLastE2EEPublicKeys(char const* _buffer, std::string& chatMid);
 
-            void registerE2EEPublicKey(char const*& _buffer, uint32_t& reqSeq, E2EEPublicKey& publicKey);
+            void registerE2EEPublicKey(char const* _buffer, uint32_t& reqSeq, E2EEPublicKey& publicKey);
 
-            void acquireCallTicket(char const*& _buffer, std::string& to);
+            void acquireCallTicket(char const* _buffer, std::string& to);
 
-            void inviteIntoGroup(char const*& _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
+            void inviteIntoGroup(char const* _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
 
-            void makeUserAddMyselfAsContact(char const*& _buffer, std::string& contactOwnerMid);
+            void makeUserAddMyselfAsContact(char const* _buffer, std::string& contactOwnerMid);
 
-            void removeMessageFromMyHome(char const*& _buffer, std::string& messageId);
+            void removeMessageFromMyHome(char const* _buffer, std::string& messageId);
 
-            void commitSendMessages(char const*& _buffer, uint32_t& seq, std::vector<std::string>& messageIds, std::vector<std::string>& receiverMids, bool& onlyToFollowers);
+            void commitSendMessages(char const* _buffer, uint32_t& seq, std::vector<std::string>& messageIds, std::vector<std::string>& receiverMids, bool& onlyToFollowers);
 
-            void registerWithPhoneNumberAndPassword(char const*& _buffer, std::string& sessionId, std::string& keynm, std::string& encrypted);
+            void registerWithPhoneNumberAndPassword(char const* _buffer, std::string& sessionId, std::string& keynm, std::string& encrypted);
 
-            void leaveGroup(char const*& _buffer, uint32_t& reqSeq, std::string& groupId);
+            void leaveGroup(char const* _buffer, uint32_t& reqSeq, std::string& groupId);
 
-            void getAnalyticsInfo(char const*& _buffer);
+            void getAnalyticsInfo(char const* _buffer);
 
-            void reportClientStatistics(char const*& _buffer, uint32_t& reqSeq, ReportCategory& category, uint32_t& count);
+            void reportClientStatistics(char const* _buffer, uint32_t& reqSeq, ReportCategory& category, uint32_t& count);
 
-            void acceptProximityMatches(char const*& _buffer, std::string& sessionId, std::set<std::string>& ids);
+            void acceptProximityMatches(char const* _buffer, std::string& sessionId, std::set<std::string>& ids);
 
-            void getGroup(char const*& _buffer, std::string& groupId);
+            void getGroup(char const* _buffer, std::string& groupId);
 
-            void clearIdentityCredential(char const*& _buffer);
+            void clearIdentityCredential(char const* _buffer);
 
-            void getUpdatedMessageBoxIds(char const*& _buffer, MessageBoxV2MessageId& startMessageId, std::string& startMessageBoxId, uint32_t& messageBoxCount);
+            void getUpdatedMessageBoxIds(char const* _buffer, MessageBoxV2MessageId& startMessageId, std::string& startMessageBoxId, uint32_t& messageBoxCount);
 
-            void getGroups(char const*& _buffer, std::vector<std::string>& groupIds);
+            void getGroups(char const* _buffer, std::vector<std::string>& groupIds);
 
-            void sendMessageReceipt(char const*& _buffer, uint32_t& seq, std::string& consumer, std::vector<std::string>& messageIds);
+            void sendMessageReceipt(char const* _buffer, uint32_t& seq, std::string& consumer, std::vector<std::string>& messageIds);
 
-            void findContactByMetaTag(char const*& _buffer, std::string& userid, std::string& reference);
+            void findContactByMetaTag(char const* _buffer, std::string& userid, std::string& reference);
 
-            void destroyMessage(char const*& _buffer, uint32_t& seq, std::string& chatId, std::string& messageId, uint32_t& sessionId);
+            void destroyMessage(char const* _buffer, uint32_t& seq, std::string& chatId, std::string& messageId, uint32_t& sessionId);
 
-            void generateUserTicket(char const*& _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
+            void generateUserTicket(char const* _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
 
-            void registerDeviceWithoutPhoneNumberWithIdentityCredential(char const*& _buffer, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, IdentityProvider& provider, std::string& identifier, std::string& verifier, std::string& mid, std::string& migrationPincodeSessionId);
+            void registerDeviceWithoutPhoneNumberWithIdentityCredential(char const* _buffer, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, IdentityProvider& provider, std::string& identifier, std::string& verifier, std::string& mid, std::string& migrationPincodeSessionId);
 
-            void getFavoriteMids(char const*& _buffer);
+            void getFavoriteMids(char const* _buffer);
 
-            void getAcceptedProximityMatches(char const*& _buffer, std::string& sessionId);
+            void getAcceptedProximityMatches(char const* _buffer, std::string& sessionId);
 
-            void notifyInstalled(char const*& _buffer, std::string& udidHash, std::string& applicationTypeWithExtensions);
+            void notifyInstalled(char const* _buffer, std::string& udidHash, std::string& applicationTypeWithExtensions);
 
-            void getCountryWithRequestIp(char const*& _buffer);
+            void getCountryWithRequestIp(char const* _buffer);
 
-            void getGroupsV2(char const*& _buffer, std::vector<std::string>& groupIds);
+            void getGroupsV2(char const* _buffer, std::vector<std::string>& groupIds);
 
-            void loginWithIdentityCredential(char const*& _buffer, std::string& identifier, std::string& password, bool& keepLoggedIn, std::string& accessLocation, std::string& systemName, IdentityProvider& identityProvider, std::string& certificate);
+            void loginWithIdentityCredential(char const* _buffer, std::string& identifier, std::string& password, bool& keepLoggedIn, std::string& accessLocation, std::string& systemName, IdentityProvider& identityProvider, std::string& certificate);
 
-            void startUpdateVerification(char const*& _buffer, std::string& region, CarrierCode& carrier, std::string& phone, std::string& udidHash, DeviceInfo& deviceInfo, std::string& networkCode, std::string& locale, SIMInfo& simInfo);
+            void startUpdateVerification(char const* _buffer, std::string& region, CarrierCode& carrier, std::string& phone, std::string& udidHash, DeviceInfo& deviceInfo, std::string& networkCode, std::string& locale, SIMInfo& simInfo);
 
-            void getSessions(char const*& _buffer);
+            void getSessions(char const* _buffer);
 
-            void updateSettings(char const*& _buffer, uint32_t& reqSeq, Settings& settings);
+            void updateSettings(char const* _buffer, uint32_t& reqSeq, Settings& settings);
 
-            void getContact(char const*& _buffer, std::string& id);
+            void getContact(char const* _buffer, std::string& id);
 
-            void getBlockedContactIds(char const*& _buffer);
+            void getBlockedContactIds(char const* _buffer);
 
-            void loginWithVerifierForCertificate(char const*& _buffer, std::string& verifier);
+            void loginWithVerifierForCertificate(char const* _buffer, std::string& verifier);
 
-            void getProfile(char const*& _buffer);
+            void getProfile(char const* _buffer);
 
-            void findContactsByEmail(char const*& _buffer, std::set<std::string>& emails);
+            void findContactsByEmail(char const* _buffer, std::set<std::string>& emails);
 
-            void getSystemConfiguration(char const*& _buffer);
+            void getSystemConfiguration(char const* _buffer);
 
-            void getRecentMessages(char const*& _buffer, std::string& messageBoxId, uint32_t& messagesCount);
+            void getRecentMessages(char const* _buffer, std::string& messageBoxId, uint32_t& messagesCount);
 
-            void verifyPhone(char const*& _buffer, std::string& sessionId, std::string& pinCode, std::string& udidHash);
+            void verifyPhone(char const* _buffer, std::string& sessionId, std::string& pinCode, std::string& udidHash);
 
-            void createGroup(char const*& _buffer, uint32_t& seq, std::string& name, std::vector<std::string>& contactIds);
+            void createGroup(char const* _buffer, uint32_t& seq, std::string& name, std::vector<std::string>& contactIds);
 
-            void updateBuddySetting(char const*& _buffer, std::string& key, std::string& value);
+            void updateBuddySetting(char const* _buffer, std::string& key, std::string& value);
 
-            void updateRegion(char const*& _buffer, std::string& region);
+            void updateRegion(char const* _buffer, std::string& region);
 
-            void verifyIdentityCredential(char const*& _buffer, std::string& identifier, std::string& password, IdentityProvider& identityProvider);
+            void verifyIdentityCredential(char const* _buffer, std::string& identifier, std::string& password, IdentityProvider& identityProvider);
 
-            void sendChatRemoved(char const*& _buffer, uint32_t& seq, std::string& consumer, std::string& lastMessageId, uint32_t& sessionId);
+            void sendChatRemoved(char const* _buffer, uint32_t& seq, std::string& consumer, std::string& lastMessageId, uint32_t& sessionId);
 
-            void getGroupIdsJoined(char const*& _buffer);
+            void getGroupIdsJoined(char const* _buffer);
 
-            void findContactByUserid(char const*& _buffer, std::string& userid);
+            void findContactByUserid(char const* _buffer, std::string& userid);
 
-            void getE2EEPublicKeys(char const*& _buffer);
+            void getE2EEPublicKeys(char const* _buffer);
 
-            void getMessageBoxWrapUpList(char const*& _buffer, uint32_t& start, uint32_t& messageBoxCount);
+            void getMessageBoxWrapUpList(char const* _buffer, uint32_t& start, uint32_t& messageBoxCount);
 
-            void leaveRoom(char const*& _buffer, uint32_t& reqSeq, std::string& roomId);
+            void leaveRoom(char const* _buffer, uint32_t& reqSeq, std::string& roomId);
 
-            void unblockRecommendation(char const*& _buffer, uint32_t& reqSeq, std::string& id);
+            void unblockRecommendation(char const* _buffer, uint32_t& reqSeq, std::string& id);
 
-            void findAndAddContactsByPhone(char const*& _buffer, uint32_t& reqSeq, std::set<std::string>& phones);
+            void findAndAddContactsByPhone(char const* _buffer, uint32_t& reqSeq, std::set<std::string>& phones);
 
-            void getAuthQrcode(char const*& _buffer, bool& keepLoggedIn, std::string& systemName, bool& returnCallbackUrl);
+            void getAuthQrcode(char const* _buffer, bool& keepLoggedIn, std::string& systemName, bool& returnCallbackUrl);
 
-            void getE2EEGroupSharedKey(char const*& _buffer, uint32_t& version, std::string& chatMid, uint32_t& groupKeyId);
+            void getE2EEGroupSharedKey(char const* _buffer, uint32_t& version, std::string& chatMid, uint32_t& groupKeyId);
 
-            void getMessageBoxWrapUp(char const*& _buffer, std::string& mid);
+            void getMessageBoxWrapUp(char const* _buffer, std::string& mid);
 
-            void updateSettingsAttributes(char const*& _buffer, uint32_t& reqSeq, uint32_t& attrBitset, Settings& settings);
+            void updateSettingsAttributes(char const* _buffer, uint32_t& reqSeq, uint32_t& attrBitset, Settings& settings);
 
-            void startVerification(char const*& _buffer, std::string& region, CarrierCode& carrier, std::string& phone, std::string& udidHash, DeviceInfo& deviceInfo, std::string& networkCode, std::string& mid, std::string& locale, SIMInfo& simInfo, std::string& oldUdidHash);
+            void startVerification(char const* _buffer, std::string& region, CarrierCode& carrier, std::string& phone, std::string& udidHash, DeviceInfo& deviceInfo, std::string& networkCode, std::string& mid, std::string& locale, SIMInfo& simInfo, std::string& oldUdidHash);
 
-            void reportRooms(char const*& _buffer, uint64_t& syncOpRevision, std::vector<Room>& rooms);
+            void reportRooms(char const* _buffer, uint64_t& syncOpRevision, std::vector<Room>& rooms);
 
-            void updateGroupPreferenceAttribute(char const*& _buffer, uint32_t& reqSeq, std::string& groupMid, std::map<GroupPreferenceAttribute, std::string>& updatedAttrs);
+            void updateGroupPreferenceAttribute(char const* _buffer, uint32_t& reqSeq, std::string& groupMid, std::map<GroupPreferenceAttribute, std::string>& updatedAttrs);
 
-            void getMessageBoxWrapUpV2(char const*& _buffer, std::string& messageBoxId);
+            void getMessageBoxWrapUpV2(char const* _buffer, std::string& messageBoxId);
 
-            void getCompactRooms(char const*& _buffer, std::vector<std::string>& roomIds);
+            void getCompactRooms(char const* _buffer, std::vector<std::string>& roomIds);
 
-            void findAndAddContactByMetaTag(char const*& _buffer, uint32_t& reqSeq, std::string& userid, std::string& reference);
+            void findAndAddContactByMetaTag(char const* _buffer, uint32_t& reqSeq, std::string& userid, std::string& reference);
 
-            void storeUpdateProfileAttribute(char const*& _buffer, uint32_t& seq, ProfileAttribute& profileAttribute, std::string& value);
+            void storeUpdateProfileAttribute(char const* _buffer, uint32_t& seq, ProfileAttribute& profileAttribute, std::string& value);
 
-            void resendEmailConfirmation(char const*& _buffer, std::string& verifier);
+            void resendEmailConfirmation(char const* _buffer, std::string& verifier);
 
-            void confirmEmail(char const*& _buffer, std::string& verifier, std::string& pinCode);
+            void confirmEmail(char const* _buffer, std::string& verifier, std::string& pinCode);
 
-            void getExtendedProfile(char const*& _buffer);
+            void getExtendedProfile(char const* _buffer);
 
-            void isUseridAvailable(char const*& _buffer, std::string& userid);
+            void isUseridAvailable(char const* _buffer, std::string& userid);
 
-            void notifyRegistrationComplete(char const*& _buffer, std::string& udidHash, std::string& applicationTypeWithExtensions);
+            void notifyRegistrationComplete(char const* _buffer, std::string& udidHash, std::string& applicationTypeWithExtensions);
 
-            void updateDeviceInfo(char const*& _buffer, std::string& deviceUid, DeviceInfo& deviceInfo);
+            void updateDeviceInfo(char const* _buffer, std::string& deviceUid, DeviceInfo& deviceInfo);
 
-            void blockRecommendation(char const*& _buffer, uint32_t& reqSeq, std::string& id);
+            void blockRecommendation(char const* _buffer, uint32_t& reqSeq, std::string& id);
 
-            void rejectGroupInvitation(char const*& _buffer, uint32_t& reqSeq, std::string& groupId);
+            void rejectGroupInvitation(char const* _buffer, uint32_t& reqSeq, std::string& groupId);
 
-            void updateCustomModeSettings(char const*& _buffer, CustomMode& customMode, std::map<std::string, std::string>& paramMap);
+            void updateCustomModeSettings(char const* _buffer, CustomMode& customMode, std::map<std::string, std::string>& paramMap);
 
-            void createRoomV2(char const*& _buffer, uint32_t& reqSeq, std::vector<std::string>& contactIds);
+            void createRoomV2(char const* _buffer, uint32_t& reqSeq, std::vector<std::string>& contactIds);
 
-            void noop(char const*& _buffer);
+            void noop(char const* _buffer);
 
-            void acquireEncryptedAccessToken(char const*& _buffer, FeatureType& featureType);
+            void acquireEncryptedAccessToken(char const* _buffer, FeatureType& featureType);
 
-            void getE2EEPublicKeysEx(char const*& _buffer, bool& ignoreE2EEStatus);
+            void getE2EEPublicKeysEx(char const* _buffer, bool& ignoreE2EEStatus);
 
-            void syncContacts(char const*& _buffer, uint32_t& reqSeq, std::vector<ContactModification>& localContacts);
+            void syncContacts(char const* _buffer, uint32_t& reqSeq, std::vector<ContactModification>& localContacts);
 
-            void findAndAddContactsByMid(char const*& _buffer, uint32_t& reqSeq, std::set<std::string>& mids);
+            void findAndAddContactsByMid(char const* _buffer, uint32_t& reqSeq, std::set<std::string>& mids);
 
-            void findGroupByTicketV2(char const*& _buffer, std::string& ticketId);
+            void findGroupByTicketV2(char const* _buffer, std::string& ticketId);
 
-            void removeFriendRequest(char const*& _buffer, FriendRequestDirection& direction, std::string& midOrEMid);
+            void removeFriendRequest(char const* _buffer, FriendRequestDirection& direction, std::string& midOrEMid);
 
-            void verifyPhoneNumber(char const*& _buffer, std::string& sessionId, std::string& pinCode, std::string& udidHash, std::string& migrationPincodeSessionId, std::string& oldUdidHash);
+            void verifyPhoneNumber(char const* _buffer, std::string& sessionId, std::string& pinCode, std::string& udidHash, std::string& migrationPincodeSessionId, std::string& oldUdidHash);
 
-            void setNotificationsEnabled(char const*& _buffer, uint32_t& reqSeq, MIDType& type, std::string& target, bool& enablement);
+            void setNotificationsEnabled(char const* _buffer, uint32_t& reqSeq, MIDType& type, std::string& target, bool& enablement);
 
-            void getAllContactIds(char const*& _buffer);
+            void getAllContactIds(char const* _buffer);
 
-            void getIdentityIdentifier(char const*& _buffer);
+            void getIdentityIdentifier(char const* _buffer);
 
-            void sendDummyPush(char const*& _buffer);
+            void sendDummyPush(char const* _buffer);
 
-            void inviteFriendsBySms(char const*& _buffer, std::vector<std::string>& phoneNumberList);
+            void inviteFriendsBySms(char const* _buffer, std::vector<std::string>& phoneNumberList);
 
-            void getMessageBox(char const*& _buffer, std::string& channelId, std::string& messageBoxId, uint32_t& lastMessagesCount);
+            void getMessageBox(char const* _buffer, std::string& channelId, std::string& messageBoxId, uint32_t& lastMessagesCount);
 
-            void unsendMessage(char const*& _buffer, uint32_t& reqSeq, std::string& messageId);
+            void unsendMessage(char const* _buffer, uint32_t& reqSeq, std::string& messageId);
 
-            void createChatRoomAnnouncement(char const*& _buffer, uint32_t& reqSeq, std::string& chatRoomMid, uint32_t& type, ChatRoomAnnouncementContents& contents);
+            void createChatRoomAnnouncement(char const* _buffer, uint32_t& reqSeq, std::string& chatRoomMid, uint32_t& type, ChatRoomAnnouncementContents& contents);
 
-            void removeChatRoomAnnouncement(char const*& _buffer, uint32_t& reqSeq, std::string& chatRoomMid, uint64_t& announcementSeq);
+            void removeChatRoomAnnouncement(char const* _buffer, uint32_t& reqSeq, std::string& chatRoomMid, uint64_t& announcementSeq);
 
-            void getChatRoomAnnouncements(char const*& _buffer, std::string& chatRoomMid);
+            void getChatRoomAnnouncements(char const* _buffer, std::string& chatRoomMid);
 
-            void getChatRoomAnnouncementsBulk(char const*& _buffer, std::vector<std::string>& chatRoomMids);
+            void getChatRoomAnnouncementsBulk(char const* _buffer, std::vector<std::string>& chatRoomMids);
 
-            void unregisterBuddy(char const*& _buffer, std::string& requestId);
+            void unregisterBuddy(char const* _buffer, std::string& requestId);
 
-            void sendBuddyContentMessageToMidsAsync(char const*& _buffer, std::string& requestId, Message& msg, std::string& content, std::vector<std::string>& mids);
+            void sendBuddyContentMessageToMidsAsync(char const* _buffer, std::string& requestId, Message& msg, std::string& content, std::vector<std::string>& mids);
 
-            void getAllBuddyMembers(char const*& _buffer);
+            void getAllBuddyMembers(char const* _buffer);
 
-            void getActiveMemberMidsByBuddyMid(char const*& _buffer, std::string& buddyMid);
+            void getActiveMemberMidsByBuddyMid(char const* _buffer, std::string& buddyMid);
 
-            void updateBuddyProfileAttributes(char const*& _buffer, std::string& requestId, std::map<std::string, std::string>& attributes, QueueingPolicy& policy);
+            void updateBuddyProfileAttributes(char const* _buffer, std::string& requestId, std::map<std::string, std::string>& attributes, QueueingPolicy& policy);
 
-            void storePrivateMessages(char const*& _buffer, std::string& requestId, std::vector<PrivateBotMessage>& privateBotMessages, std::string& toMid);
+            void storePrivateMessages(char const* _buffer, std::string& requestId, std::vector<PrivateBotMessage>& privateBotMessages, std::string& toMid);
 
-            void updateBuddyProfileImageAsync(char const*& _buffer, std::string& requestId, std::string& image, QueueingPolicy& policy);
+            void updateBuddyProfileImageAsync(char const* _buffer, std::string& requestId, std::string& image, QueueingPolicy& policy);
 
-            void notifyBuddyBlocked(char const*& _buffer, std::string& buddyMid, std::string& blockerMid);
+            void notifyBuddyBlocked(char const* _buffer, std::string& buddyMid, std::string& blockerMid);
 
-            void getMemberCountByBuddyMid(char const*& _buffer, std::string& buddyMid);
+            void getMemberCountByBuddyMid(char const* _buffer, std::string& buddyMid);
 
-            void isBuddyOnAirByMid(char const*& _buffer, std::string& buddyMid);
+            void isBuddyOnAirByMid(char const* _buffer, std::string& buddyMid);
 
-            void commitPrivateMessages(char const*& _buffer, std::string& requestId, std::string& privateMessageStoreRequestId, QueueingPolicy& policy);
+            void commitPrivateMessages(char const* _buffer, std::string& requestId, std::string& privateMessageStoreRequestId, QueueingPolicy& policy);
 
-            void commitPublicMessagesToMids(char const*& _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, std::vector<std::string>& toMids, QueueingPolicy& policy);
+            void commitPublicMessagesToMids(char const* _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, std::vector<std::string>& toMids, QueueingPolicy& policy);
 
-            void addBuddyMember(char const*& _buffer, std::string& requestId, std::string& userMid);
+            void addBuddyMember(char const* _buffer, std::string& requestId, std::string& userMid);
 
-            void linkAndSendBuddyContentMessageToMids(char const*& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, std::vector<std::string>& mids, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToMids(char const* _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, std::vector<std::string>& mids, bool& usePermanent);
 
-            void storeMessages(char const*& _buffer, std::vector<std::string>& requestIds, std::vector<BuddyMessageRequest>& messageRequests);
+            void storeMessages(char const* _buffer, std::vector<std::string>& requestIds, std::vector<BuddyMessageRequest>& messageRequests);
 
-            void storeMessage(char const*& _buffer, std::string& requestId, BuddyMessageRequest& messageRequest);
+            void storeMessage(char const* _buffer, std::string& requestId, BuddyMessageRequest& messageRequest);
 
-            void registerBuddy(char const*& _buffer, std::string& buddyId, std::string& searchId, std::string& displayName, std::string& statusMeessage, std::string& picture, std::map<std::string, std::string>& settings);
+            void registerBuddy(char const* _buffer, std::string& buddyId, std::string& searchId, std::string& displayName, std::string& statusMeessage, std::string& picture, std::map<std::string, std::string>& settings);
 
-            void getUnregisterBuddyResult(char const*& _buffer, std::string& unregisterBuddyRequestId, std::string& buddyMid);
+            void getUnregisterBuddyResult(char const* _buffer, std::string& unregisterBuddyRequestId, std::string& buddyMid);
 
-            void updateBuddySearchId(char const*& _buffer, std::string& requestId, std::string& searchId);
+            void updateBuddySearchId(char const* _buffer, std::string& requestId, std::string& searchId);
 
-            void uploadBuddyContent(char const*& _buffer, ContentType& contentType, std::string& content);
+            void uploadBuddyContent(char const* _buffer, ContentType& contentType, std::string& content);
 
-            void updateBuddyProfileImage(char const*& _buffer, std::string& requestId, std::string& image, QueueingPolicy& policy);
+            void updateBuddyProfileImage(char const* _buffer, std::string& requestId, std::string& image, QueueingPolicy& policy);
 
-            void sendBuddyMessageToAll(char const*& _buffer, std::string& requestId, Message& msg);
+            void sendBuddyMessageToAll(char const* _buffer, std::string& requestId, Message& msg);
 
-            void commitSendMessagesToAll(char const*& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToAll(char const* _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, uint32_t& priority, QueueingPolicy& policy);
 
-            void downloadMessageContent(char const*& _buffer, std::string& requestId, std::string& messageId);
+            void downloadMessageContent(char const* _buffer, std::string& requestId, std::string& messageId);
 
-            void updateBuddyProfileRichMenu(char const*& _buffer, std::string& requestId, QueueingPolicy& policy);
+            void updateBuddyProfileRichMenu(char const* _buffer, std::string& requestId, QueueingPolicy& policy);
 
-            void setBuddyOnAir(char const*& _buffer, std::string& requestId, bool& onAir, BuddyOnAirLabel& label);
+            void setBuddyOnAir(char const* _buffer, std::string& requestId, bool& onAir, BuddyOnAirLabel& label);
 
-            void unblockBuddyMember(char const*& _buffer, std::string& requestId, std::string& mid);
+            void unblockBuddyMember(char const* _buffer, std::string& requestId, std::string& mid);
 
-            void linkAndSendBuddyContentMessageToAll(char const*& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToAll(char const* _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, bool& usePermanent);
 
-            void removeBuddyMember(char const*& _buffer, std::string& requestId, std::string& userMid);
+            void removeBuddyMember(char const* _buffer, std::string& requestId, std::string& userMid);
 
-            void commitSendMessagesToMidAsync(char const*& _buffer, std::string& requestId, std::vector<std::string>& storeMessagesRequestIds, QueueingPolicy& policy);
+            void commitSendMessagesToMidAsync(char const* _buffer, std::string& requestId, std::vector<std::string>& storeMessagesRequestIds, QueueingPolicy& policy);
 
-            void getUpdateBuddyProfileResult(char const*& _buffer, std::string& updateBuddyProfileRequestId);
+            void getUpdateBuddyProfileResult(char const* _buffer, std::string& updateBuddyProfileRequestId);
 
-            void notifyBuddyUnblocked(char const*& _buffer, std::string& buddyMid, std::string& blockerMid);
+            void notifyBuddyUnblocked(char const* _buffer, std::string& buddyMid, std::string& blockerMid);
 
-            void updateBuddyProfileRichMenuAsync(char const*& _buffer, std::string& requestId, QueueingPolicy& policy);
+            void updateBuddyProfileRichMenuAsync(char const* _buffer, std::string& requestId, QueueingPolicy& policy);
 
-            void getBuddyProfile(char const*& _buffer);
+            void getBuddyProfile(char const* _buffer);
 
-            void getBlockedBuddyMembers(char const*& _buffer);
+            void getBlockedBuddyMembers(char const* _buffer);
 
-            void commitPublicMessagesToAll(char const*& _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, QueueingPolicy& policy);
+            void commitPublicMessagesToAll(char const* _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, QueueingPolicy& policy);
 
-            void linkAndSendBuddyContentMessageToAllAsync(char const*& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToAllAsync(char const* _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, bool& usePermanent);
 
-            void sendBuddyContentMessageToAllAsync(char const*& _buffer, std::string& requestId, Message& msg, std::string& content);
+            void sendBuddyContentMessageToAllAsync(char const* _buffer, std::string& requestId, Message& msg, std::string& content);
 
-            void getSetBuddyOnAirResult(char const*& _buffer, std::string& setBuddyOnAirRequestId);
+            void getSetBuddyOnAirResult(char const* _buffer, std::string& setBuddyOnAirRequestId);
 
-            void commitSendMessagesToMidsAsync(char const*& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::vector<std::string>& mids, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToMidsAsync(char const* _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::vector<std::string>& mids, uint32_t& priority, QueueingPolicy& policy);
 
-            void commitSendMessagesToStoredMidsAsync(char const*& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::string& storedMidFilename, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToStoredMidsAsync(char const* _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::string& storedMidFilename, uint32_t& priority, QueueingPolicy& policy);
 
-            void updateBuddyAdminProfileAttribute(char const*& _buffer, std::string& requestId, std::map<std::string, std::string>& attributes);
+            void updateBuddyAdminProfileAttribute(char const* _buffer, std::string& requestId, std::map<std::string, std::string>& attributes);
 
-            void setBuddyOnAirAsync(char const*& _buffer, std::string& requestId, bool& onAir, BuddyOnAirLabel& label);
+            void setBuddyOnAirAsync(char const* _buffer, std::string& requestId, bool& onAir, BuddyOnAirLabel& label);
 
-            void commitSendMessagesToMids(char const*& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::vector<std::string>& mids, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToMids(char const* _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::vector<std::string>& mids, uint32_t& priority, QueueingPolicy& policy);
 
-            void sendBuddyContentMessageToAll(char const*& _buffer, std::string& requestId, Message& msg, std::string& content);
+            void sendBuddyContentMessageToAll(char const* _buffer, std::string& requestId, Message& msg, std::string& content);
 
-            void updateBuddySettings(char const*& _buffer, std::map<std::string, std::string>& settings);
+            void updateBuddySettings(char const* _buffer, std::map<std::string, std::string>& settings);
 
-            void notifyBuddySubscribed(char const*& _buffer, std::string& buddyMid, std::string& subscriberMid);
+            void notifyBuddySubscribed(char const* _buffer, std::string& buddyMid, std::string& subscriberMid);
 
-            void registerBuddyAdmin(char const*& _buffer, std::string& buddyId, std::string& searchId, std::string& displayName, std::string& statusMessage, std::string& picture);
+            void registerBuddyAdmin(char const* _buffer, std::string& buddyId, std::string& searchId, std::string& displayName, std::string& statusMessage, std::string& picture);
 
-            void getBlockerCountByBuddyMid(char const*& _buffer, std::string& buddyMid);
+            void getBlockerCountByBuddyMid(char const* _buffer, std::string& buddyMid);
 
-            void reissueContactTicket(char const*& _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
+            void reissueContactTicket(char const* _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
 
-            void validateContacts(char const*& _buffer, std::vector<std::string>& userMids);
+            void validateContacts(char const* _buffer, std::vector<std::string>& userMids);
 
-            void sendBuddyMessageToMidsAsync(char const*& _buffer, std::string& requestId, Message& msg, std::vector<std::string>& mids);
+            void sendBuddyMessageToMidsAsync(char const* _buffer, std::string& requestId, Message& msg, std::vector<std::string>& mids);
 
-            void unregisterBuddyAsync(char const*& _buffer, std::string& requestId);
+            void unregisterBuddyAsync(char const* _buffer, std::string& requestId);
 
-            void getProfileImageUrlHash(char const*& _buffer, std::string& requestId);
+            void getProfileImageUrlHash(char const* _buffer, std::string& requestId);
 
-            void blockBuddyMember(char const*& _buffer, std::string& requestId, std::string& mid);
+            void blockBuddyMember(char const* _buffer, std::string& requestId, std::string& mid);
 
-            void sendIndividualEventToAllAsync(char const*& _buffer, std::string& requestId, std::string& buddyMid, NotificationStatus& notificationStatus);
+            void sendIndividualEventToAllAsync(char const* _buffer, std::string& requestId, std::string& buddyMid, NotificationStatus& notificationStatus);
 
-            void deleteBotProfileImage(char const*& _buffer, std::string& requestId);
+            void deleteBotProfileImage(char const* _buffer, std::string& requestId);
 
-            void sendBuddyContentMessageToMids(char const*& _buffer, std::string& requestId, Message& msg, std::string& content, std::vector<std::string>& mids);
+            void sendBuddyContentMessageToMids(char const* _buffer, std::string& requestId, Message& msg, std::string& content, std::vector<std::string>& mids);
 
-            void unregisterBuddyAdmin(char const*& _buffer, std::string& requestId);
+            void unregisterBuddyAdmin(char const* _buffer, std::string& requestId);
 
-            void commitPublicMessagesToStoredMids(char const*& _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, std::string& storedMidFilename, QueueingPolicy& policy);
+            void commitPublicMessagesToStoredMids(char const* _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, std::string& storedMidFilename, QueueingPolicy& policy);
 
-            void removeBuddyMembers(char const*& _buffer, std::string& requestId, std::vector<std::string>& userMids);
+            void removeBuddyMembers(char const* _buffer, std::string& requestId, std::vector<std::string>& userMids);
 
-            void storePublicMessages(char const*& _buffer, std::string& requestId, std::vector<Message>& messages);
+            void storePublicMessages(char const* _buffer, std::string& requestId, std::vector<Message>& messages);
 
-            void addBuddyMembers(char const*& _buffer, std::string& requestId, std::vector<std::string>& userMids);
+            void addBuddyMembers(char const* _buffer, std::string& requestId, std::vector<std::string>& userMids);
 
-            void getMessageCommitResult(char const*& _buffer, std::string& messageCommitRequestId);
+            void getMessageCommitResult(char const* _buffer, std::string& messageCommitRequestId);
 
-            void getBuddyDetailByMid(char const*& _buffer, std::string& buddyMid);
+            void getBuddyDetailByMid(char const* _buffer, std::string& buddyMid);
 
-            void notifyBuddySubscriberUnregistered(char const*& _buffer, std::string& buddyMid, std::string& userMid);
+            void notifyBuddySubscriberUnregistered(char const* _buffer, std::string& buddyMid, std::string& userMid);
 
-            void sendBuddyMessageToAllAsync(char const*& _buffer, std::string& requestId, Message& msg);
+            void sendBuddyMessageToAllAsync(char const* _buffer, std::string& requestId, Message& msg);
 
-            void sendBuddyMessageToMids(char const*& _buffer, std::string& requestId, Message& msg, std::vector<std::string>& mids);
+            void sendBuddyMessageToMids(char const* _buffer, std::string& requestId, Message& msg, std::vector<std::string>& mids);
 
-            void commitSendMessagesToAllAsync(char const*& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToAllAsync(char const* _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, uint32_t& priority, QueueingPolicy& policy);
 
-            void notifyBuddySubscriberEmpty(char const*& _buffer, std::string& buddyMid, std::string& userMid);
+            void notifyBuddySubscriberEmpty(char const* _buffer, std::string& buddyMid, std::string& userMid);
 
-            void updateBuddyAdminProfileImage(char const*& _buffer, std::string& requestId, std::string& picture);
+            void updateBuddyAdminProfileImage(char const* _buffer, std::string& requestId, std::string& picture);
 
-            void updateBuddyProfileAttributesAsync(char const*& _buffer, std::string& requestId, std::map<std::string, std::string>& attributes, QueueingPolicy& policy);
+            void updateBuddyProfileAttributesAsync(char const* _buffer, std::string& requestId, std::map<std::string, std::string>& attributes, QueueingPolicy& policy);
 
-            void linkAndSendBuddyContentMessageToMidsAsync(char const*& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, std::vector<std::string>& mids, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToMidsAsync(char const* _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, std::vector<std::string>& mids, bool& usePermanent);
 
-            void downloadProfileImagePreview(char const*& _buffer, std::string& requestId);
+            void downloadProfileImagePreview(char const* _buffer, std::string& requestId);
 
-            void downloadProfileImage(char const*& _buffer, std::string& requestId);
+            void downloadProfileImage(char const* _buffer, std::string& requestId);
 
-            void getSendBuddyMessageResult(char const*& _buffer, std::string& sendBuddyMessageRequestId);
+            void getSendBuddyMessageResult(char const* _buffer, std::string& sendBuddyMessageRequestId);
 
-            void containsBuddyMember(char const*& _buffer, std::string& requestId, std::string& userMid);
+            void containsBuddyMember(char const* _buffer, std::string& requestId, std::string& userMid);
 
-            void getActiveMemberCountByBuddyMid(char const*& _buffer, std::string& buddyMid);
+            void getActiveMemberCountByBuddyMid(char const* _buffer, std::string& buddyMid);
 
-            void downloadMessageContentPreview(char const*& _buffer, std::string& requestId, std::string& messageId);
+            void downloadMessageContentPreview(char const* _buffer, std::string& requestId, std::string& messageId);
 
-            void notifyBuddyRegistered(char const*& _buffer, std::string& buddyId, std::string& buddyMid, std::string& searchId, std::string& displayName, std::string& statusMessage, std::map<std::string, std::string>& settings);
+            void notifyBuddyRegistered(char const* _buffer, std::string& buddyId, std::string& buddyMid, std::string& searchId, std::string& displayName, std::string& statusMessage, std::map<std::string, std::string>& settings);
 
-            void lookupByPhoneNumber(char const*& _buffer, std::string& countryAreaCode, std::string& phoneNumber);
+            void lookupByPhoneNumber(char const* _buffer, std::string& countryAreaCode, std::string& phoneNumber);
 
-            void lookupNearby(char const*& _buffer, Location& location, SpotCategory& category, std::string& query, std::string& countryAreaCode);
+            void lookupNearby(char const* _buffer, Location& location, SpotCategory& category, std::string& query, std::string& countryAreaCode);
 
-            void checkUserAge(char const*& _buffer, CarrierCode& carrier, std::string& sessionId, std::string& verifier, uint32_t& standardAge);
+            void checkUserAge(char const* _buffer, CarrierCode& carrier, std::string& sessionId, std::string& verifier, uint32_t& standardAge);
 
-            void checkUserAgeWithDocomo(char const*& _buffer, std::string& openIdRedirectUrl, uint32_t& standardAge, std::string& verifier);
+            void checkUserAgeWithDocomo(char const* _buffer, std::string& openIdRedirectUrl, uint32_t& standardAge, std::string& verifier);
 
-            void retrieveOpenIdAuthUrlWithDocomo(char const*& _buffer);
+            void retrieveOpenIdAuthUrlWithDocomo(char const* _buffer);
 
-            void retrieveRequestToken(char const*& _buffer, CarrierCode& carrier);
+            void retrieveRequestToken(char const* _buffer, CarrierCode& carrier);
 
-            void getBuddyStatusBar(char const*& _buffer, std::string& buddyMid, uint64_t& revision);
+            void getBuddyStatusBar(char const* _buffer, std::string& buddyMid, uint64_t& revision);
 
-            void getRichMenuContents(char const*& _buffer, std::string& buddyMid, uint64_t& revision);
+            void getRichMenuContents(char const* _buffer, std::string& buddyMid, uint64_t& revision);
 
-            void getBuddyProfilePopup(char const*& _buffer, std::string& buddyMid);
+            void getBuddyProfilePopup(char const* _buffer, std::string& buddyMid);
 
-            void getPopularBuddyBanner(char const*& _buffer, std::string& language, std::string& country, ApplicationType& applicationType, std::string& resourceSpecification);
+            void getPopularBuddyBanner(char const* _buffer, std::string& language, std::string& country, ApplicationType& applicationType, std::string& resourceSpecification);
 
-            void getPopularBuddyLists(char const*& _buffer, std::string& language, std::string& country);
+            void getPopularBuddyLists(char const* _buffer, std::string& language, std::string& country);
 
-            void findBuddyContactsByQuery(char const*& _buffer, std::string& language, std::string& country, std::string& query, uint32_t& fromIndex, uint32_t& count, BuddySearchRequestSource& requestSource);
+            void findBuddyContactsByQuery(char const* _buffer, std::string& language, std::string& country, std::string& query, uint32_t& fromIndex, uint32_t& count, BuddySearchRequestSource& requestSource);
 
-            void getBuddyNewsView(char const*& _buffer, std::string& language, std::string& country, uint64_t& offset, uint32_t& limit);
+            void getBuddyNewsView(char const* _buffer, std::string& language, std::string& country, uint64_t& offset, uint32_t& limit);
 
-            void getBuddyContacts(char const*& _buffer, std::string& language, std::string& country, std::string& classification, uint32_t& fromIndex, uint32_t& count);
+            void getBuddyContacts(char const* _buffer, std::string& language, std::string& country, std::string& classification, uint32_t& fromIndex, uint32_t& count);
 
-            void getBuddyCollectionEntries(char const*& _buffer, std::string& language, std::string& country, uint32_t& collection, uint32_t& offset, uint32_t& limit);
+            void getBuddyCollectionEntries(char const* _buffer, std::string& language, std::string& country, uint32_t& collection, uint32_t& offset, uint32_t& limit);
 
-            void getLatestBuddyNewsTimestamp(char const*& _buffer, std::string& country);
+            void getLatestBuddyNewsTimestamp(char const* _buffer, std::string& country);
 
-            void getBuddyChatBar(char const*& _buffer, std::string& buddyMid, uint64_t& revision);
+            void getBuddyChatBar(char const* _buffer, std::string& buddyMid, uint64_t& revision);
 
-            void getCountriesServingOfficialAccountPromotionV2(char const*& _buffer);
+            void getCountriesServingOfficialAccountPromotionV2(char const* _buffer);
 
-            void getBuddyDetail(char const*& _buffer, std::string& buddyMid);
+            void getBuddyDetail(char const* _buffer, std::string& buddyMid);
 
-            void getBuddyOnAir(char const*& _buffer, std::string& buddyMid);
+            void getBuddyOnAir(char const* _buffer, std::string& buddyMid);
 
-            void getNewlyReleasedBuddyIds(char const*& _buffer, std::string& country);
+            void getNewlyReleasedBuddyIds(char const* _buffer, std::string& country);
 
-            void getBuddyCategoryView(char const*& _buffer, std::string& language, std::string& country);
+            void getBuddyCategoryView(char const* _buffer, std::string& language, std::string& country);
 
-            void getCountriesHavingBuddy(char const*& _buffer);
+            void getCountriesHavingBuddy(char const* _buffer);
 
-            void getPromotedBuddyContacts(char const*& _buffer, std::string& language, std::string& country);
+            void getPromotedBuddyContacts(char const* _buffer, std::string& language, std::string& country);
 
-            void getBuddyTopView(char const*& _buffer, std::string& language, std::string& country);
+            void getBuddyTopView(char const* _buffer, std::string& language, std::string& country);
 
-            void notifyLeaveGroup(char const*& _buffer, std::string& groupMid);
+            void notifyLeaveGroup(char const* _buffer, std::string& groupMid);
 
-            void notifyLeaveRoom(char const*& _buffer, std::string& roomMid);
+            void notifyLeaveRoom(char const* _buffer, std::string& roomMid);
 
-            void getBotUseInfo(char const*& _buffer, std::string& botMid);
+            void getBotUseInfo(char const* _buffer, std::string& botMid);
 
-            void sendChatCheckedByWatermark(char const*& _buffer, uint32_t& seq, std::string& mid, uint64_t& watermark, uint32_t& sessionId);
+            void sendChatCheckedByWatermark(char const* _buffer, uint32_t& seq, std::string& mid, uint64_t& watermark, uint32_t& sessionId);
 
-            void normalizePhoneNumber(char const*& _buffer, std::string& countryCode, std::string& phoneNumber, std::string& countryCodeHint);
+            void normalizePhoneNumber(char const* _buffer, std::string& countryCode, std::string& phoneNumber, std::string& countryCodeHint);
 
-            void respondE2EELoginRequest(char const*& _buffer, std::string& verifier, E2EEPublicKey& publicKey, std::string& encryptedKeyChain, std::string& hashKeyChain, ErrorCode& errorCode);
+            void respondE2EELoginRequest(char const* _buffer, std::string& verifier, E2EEPublicKey& publicKey, std::string& encryptedKeyChain, std::string& hashKeyChain, ErrorCode& errorCode);
 
-            void confirmE2EELogin(char const*& _buffer, std::string& verifier, std::string& deviceSecret);
+            void confirmE2EELogin(char const* _buffer, std::string& verifier, std::string& deviceSecret);
 
-            void logoutZ(char const*& _buffer);
+            void logoutZ(char const* _buffer);
 
-            void loginZ(char const*& _buffer, LoginRequest& loginRequest);
+            void loginZ(char const* _buffer, LoginRequest& loginRequest);
 
-            void issueTokenForAccountMigrationSettings(char const*& _buffer, bool& enforce);
+            void issueTokenForAccountMigrationSettings(char const* _buffer, bool& enforce);
 
-            void issueTokenForAccountMigration(char const*& _buffer, std::string& migrationSessionId);
+            void issueTokenForAccountMigration(char const* _buffer, std::string& migrationSessionId);
 
-            void verifyQrcodeWithE2EE(char const*& _buffer, std::string& verifier, std::string& pinCode, ErrorCode& errorCode, E2EEPublicKey& publicKey, std::string& encryptedKeyChain, std::string& hashKeyChain);
+            void verifyQrcodeWithE2EE(char const* _buffer, std::string& verifier, std::string& pinCode, ErrorCode& errorCode, E2EEPublicKey& publicKey, std::string& encryptedKeyChain, std::string& hashKeyChain);
 
         } // closing request namespace
 
@@ -4108,1075 +4108,1075 @@ namespace protocol {
 
             void TalkExceptionFunction(char const*& _buffer, std::stack<uint16_t>& _lastField, std::optional<TalkException>& e);
 
-            void getMoretabRecommend(char const*& _buffer, MoretabRecommend& _result, std::optional<TalkException>& e);
+            void getMoretabRecommend(char const* _buffer, MoretabRecommend& _result, std::optional<TalkException>& e);
 
-            void requestBanPageForUser(char const*& _buffer, BanPage& _result, std::optional<TalkException>& e);
+            void requestBanPageForUser(char const* _buffer, BanPage& _result, std::optional<TalkException>& e);
 
-            void requestBanPage(char const*& _buffer, BanPage& _result, std::optional<TalkException>& e);
+            void requestBanPage(char const* _buffer, BanPage& _result, std::optional<TalkException>& e);
 
-            void reserveCoinPurchase(char const*& _buffer, PaymentReservationResult& _result, std::optional<TalkException>& e);
+            void reserveCoinPurchase(char const* _buffer, PaymentReservationResult& _result, std::optional<TalkException>& e);
 
-            void getProductCategories(char const*& _buffer, std::vector<ProductCategory>& _result, std::optional<TalkException>& e);
+            void getProductCategories(char const* _buffer, std::vector<ProductCategory>& _result, std::optional<TalkException>& e);
 
-            void getProductList(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getProductList(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getCoinPurchaseHistory(char const*& _buffer, CoinHistoryResult& _result, std::optional<TalkException>& e);
+            void getCoinPurchaseHistory(char const* _buffer, CoinHistoryResult& _result, std::optional<TalkException>& e);
 
-            void buyFreeProduct(char const*& _buffer, std::optional<TalkException>& e);
+            void buyFreeProduct(char const* _buffer, std::optional<TalkException>& e);
 
-            void getProductListWithCarrier(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getProductListWithCarrier(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getDefaultProducts(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getDefaultProducts(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getProductsForCategory(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getProductsForCategory(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void notifyDownloaded(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void notifyDownloaded(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void getFreePackagesWithoutEvent(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getFreePackagesWithoutEvent(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getProduct(char const*& _buffer, Product& _result, std::optional<TalkException>& e);
+            void getProduct(char const* _buffer, Product& _result, std::optional<TalkException>& e);
 
-            void getEventPackages(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getEventPackages(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getActivePurchaseVersions(char const*& _buffer, ProductSimpleList& _result, std::optional<TalkException>& e);
+            void getActivePurchaseVersions(char const* _buffer, ProductSimpleList& _result, std::optional<TalkException>& e);
 
-            void getCoinProductsByPgCode(char const*& _buffer, std::vector<CoinProductItem>& _result, std::optional<TalkException>& e);
+            void getCoinProductsByPgCode(char const* _buffer, std::vector<CoinProductItem>& _result, std::optional<TalkException>& e);
 
-            void getNewlyReleasedPackages(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getNewlyReleasedPackages(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getDownloads(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getDownloads(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getCoinProducts(char const*& _buffer, std::vector<CoinProductItem>& _result, std::optional<TalkException>& e);
+            void getCoinProducts(char const* _buffer, std::vector<CoinProductItem>& _result, std::optional<TalkException>& e);
 
-            void searchProducts(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void searchProducts(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void buyMustbuyProduct(char const*& _buffer, std::optional<TalkException>& e);
+            void buyMustbuyProduct(char const* _buffer, std::optional<TalkException>& e);
 
-            void getRecommendationsForProduct(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getRecommendationsForProduct(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getUpdates(char const*& _buffer, ShopUpdates& _result, std::optional<TalkException>& e);
+            void getUpdates(char const* _buffer, ShopUpdates& _result, std::optional<TalkException>& e);
 
-            void getActivePurchases(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getActivePurchases(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getProductWithCarrier(char const*& _buffer, Product& _result, std::optional<TalkException>& e);
+            void getProductWithCarrier(char const* _buffer, Product& _result, std::optional<TalkException>& e);
 
-            void buyCoinProduct(char const*& _buffer, std::optional<TalkException>& e);
+            void buyCoinProduct(char const* _buffer, std::optional<TalkException>& e);
 
-            void getPopularPackages(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getPopularPackages(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void reservePayment(char const*& _buffer, PaymentReservationResult& _result, std::optional<TalkException>& e);
+            void reservePayment(char const* _buffer, PaymentReservationResult& _result, std::optional<TalkException>& e);
 
-            void getPresentsSent(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getPresentsSent(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void checkCanReceivePresent(char const*& _buffer, std::optional<TalkException>& e);
+            void checkCanReceivePresent(char const* _buffer, std::optional<TalkException>& e);
 
-            void getFreePackages(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getFreePackages(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getPurchaseHistory(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getPurchaseHistory(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getTotalBalance(char const*& _buffer, Coin& _result, std::optional<TalkException>& e);
+            void getTotalBalance(char const* _buffer, Coin& _result, std::optional<TalkException>& e);
 
-            void getCoinUseAndRefundHistory(char const*& _buffer, CoinHistoryResult& _result, std::optional<TalkException>& e);
+            void getCoinUseAndRefundHistory(char const* _buffer, CoinHistoryResult& _result, std::optional<TalkException>& e);
 
-            void getPresentsReceived(char const*& _buffer, ProductList& _result, std::optional<TalkException>& e);
+            void getPresentsReceived(char const* _buffer, ProductList& _result, std::optional<TalkException>& e);
 
-            void getPlaceSearchInfo(char const*& _buffer, std::vector<PlaceSearchInfo>& _result, std::optional<TalkException>& e);
+            void getPlaceSearchInfo(char const* _buffer, std::vector<PlaceSearchInfo>& _result, std::optional<TalkException>& e);
 
-            void getUserStatus(char const*& _buffer, UserStatus& _result, std::optional<TalkException>& e);
+            void getUserStatus(char const* _buffer, UserStatus& _result, std::optional<TalkException>& e);
 
-            void updateProfileAttributeForChannel(char const*& _buffer, std::optional<TalkException>& e);
+            void updateProfileAttributeForChannel(char const* _buffer, std::optional<TalkException>& e);
 
-            void getAllSimpleChannelContacts(char const*& _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
+            void getAllSimpleChannelContacts(char const* _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
 
-            void getUserIdentities(char const*& _buffer, std::map<RegistrationType, std::string>& _result, std::optional<TalkException>& e);
+            void getUserIdentities(char const* _buffer, std::map<RegistrationType, std::string>& _result, std::optional<TalkException>& e);
 
-            void markPaidCallAd(char const*& _buffer, PaidCallDialing& _result, std::optional<TalkException>& e);
+            void markPaidCallAd(char const* _buffer, PaidCallDialing& _result, std::optional<TalkException>& e);
 
-            void isGroupMember(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void isGroupMember(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void getPhoneInfoFromPhoneNumber(char const*& _buffer, PhoneInfoForChannel& _result, std::optional<TalkException>& e);
+            void getPhoneInfoFromPhoneNumber(char const* _buffer, PhoneInfoForChannel& _result, std::optional<TalkException>& e);
 
-            void redeemPaidCallVoucher(char const*& _buffer, PaidCallRedeemResult& _result, std::optional<TalkException>& e);
+            void redeemPaidCallVoucher(char const* _buffer, PaidCallRedeemResult& _result, std::optional<TalkException>& e);
 
-            void getPreferredDisplayName(char const*& _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
+            void getPreferredDisplayName(char const* _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
 
-            void getContactsForChannel(char const*& _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
+            void getContactsForChannel(char const* _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
 
-            void getCallCreditProducts(char const*& _buffer, std::vector<CoinProductItem>& _result, std::optional<TalkException>& e);
+            void getCallCreditProducts(char const* _buffer, std::vector<CoinProductItem>& _result, std::optional<TalkException>& e);
 
-            void getCompactContacts(char const*& _buffer, std::vector<CompactContact>& _result, std::optional<TalkException>& e);
+            void getCompactContacts(char const* _buffer, std::vector<CompactContact>& _result, std::optional<TalkException>& e);
 
-            void notifyNotiCenterEvent(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyNotiCenterEvent(char const* _buffer, std::optional<TalkException>& e);
 
-            void isInContact(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void isInContact(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void lookupGroupMembers(char const*& _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
+            void lookupGroupMembers(char const* _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
 
-            void getRoomInformation(char const*& _buffer, Room& _result, std::optional<TalkException>& e);
+            void getRoomInformation(char const* _buffer, Room& _result, std::optional<TalkException>& e);
 
-            void getGroupCall(char const*& _buffer, GroupCall& _result, std::optional<TalkException>& e);
+            void getGroupCall(char const* _buffer, GroupCall& _result, std::optional<TalkException>& e);
 
-            void isAllowSecondaryDeviceLogin(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void isAllowSecondaryDeviceLogin(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void getPrimaryClientForChannel(char const*& _buffer, SimpleChannelClient& _result, std::optional<TalkException>& e);
+            void getPrimaryClientForChannel(char const* _buffer, SimpleChannelClient& _result, std::optional<TalkException>& e);
 
-            void createRoomWithBuddy(char const*& _buffer, Room& _result, std::optional<TalkException>& e);
+            void createRoomWithBuddy(char const* _buffer, Room& _result, std::optional<TalkException>& e);
 
-            void getDisplayName(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getDisplayName(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getPaidCallMetadata(char const*& _buffer, PaidCallMetadataResult& _result, std::optional<TalkException>& e);
+            void getPaidCallMetadata(char const* _buffer, PaidCallMetadataResult& _result, std::optional<TalkException>& e);
 
-            void getMid(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getMid(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getUserCountryForBilling(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getUserCountryForBilling(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getFavoriteGroupIdsForChannel(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getFavoriteGroupIdsForChannel(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getPaidCallHistory(char const*& _buffer, PaidCallHistoryResult& _result, std::optional<TalkException>& e);
+            void getPaidCallHistory(char const* _buffer, PaidCallHistoryResult& _result, std::optional<TalkException>& e);
 
-            void sendPinCodeOperation(char const*& _buffer, std::optional<TalkException>& e);
+            void sendPinCodeOperation(char const* _buffer, std::optional<TalkException>& e);
 
-            void inviteIntoGroupCall(char const*& _buffer, std::optional<TalkException>& e);
+            void inviteIntoGroupCall(char const* _buffer, std::optional<TalkException>& e);
 
-            void getFriendMids(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getFriendMids(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getMetaProfile(char const*& _buffer, MetaProfile& _result, std::optional<TalkException>& e);
+            void getMetaProfile(char const* _buffer, MetaProfile& _result, std::optional<TalkException>& e);
 
-            void sendMessageForChannel(char const*& _buffer, Message& _result, std::optional<TalkException>& e);
+            void sendMessageForChannel(char const* _buffer, Message& _result, std::optional<TalkException>& e);
 
-            void activeBuddySubscriberCount(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void activeBuddySubscriberCount(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void getCallCreditPurchaseHistory(char const*& _buffer, CoinHistoryResult& _result, std::optional<TalkException>& e);
+            void getCallCreditPurchaseHistory(char const* _buffer, CoinHistoryResult& _result, std::optional<TalkException>& e);
 
-            void isRoomMember(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void isRoomMember(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void sendSystemOAMessage(char const*& _buffer, Message& _result, std::optional<TalkException>& e);
+            void sendSystemOAMessage(char const* _buffer, Message& _result, std::optional<TalkException>& e);
 
-            void acquirePaidCallRoute(char const*& _buffer, PaidCallResponse& _result, std::optional<TalkException>& e);
+            void acquirePaidCallRoute(char const* _buffer, PaidCallResponse& _result, std::optional<TalkException>& e);
 
-            void getGroupsForChannel(char const*& _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
+            void getGroupsForChannel(char const* _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
 
-            void getUserCreateTime(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getUserCreateTime(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void registerChannelCP(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerChannelCP(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void reserveCallCreditPurchase(char const*& _buffer, PaymentReservationResult& _result, std::optional<TalkException>& e);
+            void reserveCallCreditPurchase(char const* _buffer, PaymentReservationResult& _result, std::optional<TalkException>& e);
 
-            void acquirePaidCallCurrencyExchangeRate(char const*& _buffer, std::vector<PaidCallCurrencyExchangeRate>& _result, std::optional<TalkException>& e);
+            void acquirePaidCallCurrencyExchangeRate(char const* _buffer, std::vector<PaidCallCurrencyExchangeRate>& _result, std::optional<TalkException>& e);
 
-            void getRoomMemberMidsForAppPlatform(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getRoomMemberMidsForAppPlatform(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getPaidCallBalanceList(char const*& _buffer, std::vector<PaidCallBalance>& _result, std::optional<TalkException>& e);
+            void getPaidCallBalanceList(char const* _buffer, std::vector<PaidCallBalance>& _result, std::optional<TalkException>& e);
 
-            void getPersonalInfos(char const*& _buffer, std::map<PersonalInfo, std::string>& _result, std::optional<TalkException>& e);
+            void getPersonalInfos(char const* _buffer, std::map<PersonalInfo, std::string>& _result, std::optional<TalkException>& e);
 
-            void getPrimaryClientsForChannel(char const*& _buffer, std::vector<SimpleChannelClient>& _result, std::optional<TalkException>& e);
+            void getPrimaryClientsForChannel(char const* _buffer, std::vector<SimpleChannelClient>& _result, std::optional<TalkException>& e);
 
-            void addBuddyToContact(char const*& _buffer, ContactTransition& _result, std::optional<TalkException>& e);
+            void addBuddyToContact(char const* _buffer, ContactTransition& _result, std::optional<TalkException>& e);
 
-            void getGroupMemberMidsForAppPlatform(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getGroupMemberMidsForAppPlatform(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getUserLanguage(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getUserLanguage(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void lookupPaidCall(char const*& _buffer, PaidCallResponse& _result, std::optional<TalkException>& e);
+            void lookupPaidCall(char const* _buffer, PaidCallResponse& _result, std::optional<TalkException>& e);
 
-            void getReverseCompactContacts(char const*& _buffer, std::map<std::string, CompactContact>& _result, std::optional<TalkException>& e);
+            void getReverseCompactContacts(char const* _buffer, std::map<std::string, CompactContact>& _result, std::optional<TalkException>& e);
 
-            void getPaidCallAdStatus(char const*& _buffer, PaidCallAdResult& _result, std::optional<TalkException>& e);
+            void getPaidCallAdStatus(char const* _buffer, PaidCallAdResult& _result, std::optional<TalkException>& e);
 
-            void findContactByUseridWithoutAbuseBlockForChannel(char const*& _buffer, Contact& _result, std::optional<TalkException>& e);
+            void findContactByUseridWithoutAbuseBlockForChannel(char const* _buffer, Contact& _result, std::optional<TalkException>& e);
 
-            void getGroupMemberMids(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getGroupMemberMids(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void sendMessageWithoutRelationship(char const*& _buffer, Message& _result, std::optional<TalkException>& e);
+            void sendMessageWithoutRelationship(char const* _buffer, Message& _result, std::optional<TalkException>& e);
 
-            void displayBuddySubscriberCountInBulk(char const*& _buffer, std::map<std::string, uint64_t>& _result, std::optional<TalkException>& e);
+            void displayBuddySubscriberCountInBulk(char const* _buffer, std::map<std::string, uint64_t>& _result, std::optional<TalkException>& e);
 
-            void lookupRoomMembers(char const*& _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
+            void lookupRoomMembers(char const* _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
 
-            void getFavoriteMidsForChannel(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getFavoriteMidsForChannel(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getAllContactIdsForChannel(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getAllContactIdsForChannel(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void displayBuddySubscriberCount(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void displayBuddySubscriberCount(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void getProfileForChannel(char const*& _buffer, Profile& _result, std::optional<TalkException>& e);
+            void getProfileForChannel(char const* _buffer, Profile& _result, std::optional<TalkException>& e);
 
-            void getUserTickets(char const*& _buffer, std::vector<UserTicketResponse>& _result, std::optional<TalkException>& e);
+            void getUserTickets(char const* _buffer, std::vector<UserTicketResponse>& _result, std::optional<TalkException>& e);
 
-            void getOAFriendMids(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getOAFriendMids(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void searchPaidCallUserRate(char const*& _buffer, std::vector<PaidCallUserRate>& _result, std::optional<TalkException>& e);
+            void searchPaidCallUserRate(char const* _buffer, std::vector<PaidCallUserRate>& _result, std::optional<TalkException>& e);
 
-            void getJoinedGroupIdsForChannel(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getJoinedGroupIdsForChannel(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void acquireGroupCallRoute(char const*& _buffer, GroupCallRoute& _result, std::optional<TalkException>& e);
+            void acquireGroupCallRoute(char const* _buffer, GroupCallRoute& _result, std::optional<TalkException>& e);
 
-            void getUserMidsWhoAddedMe(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getUserMidsWhoAddedMe(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getIdentityCredential(char const*& _buffer, IdentityCredential& _result, std::optional<TalkException>& e);
+            void getIdentityCredential(char const* _buffer, IdentityCredential& _result, std::optional<TalkException>& e);
 
-            void addOperationForChannel(char const*& _buffer, std::optional<TalkException>& e);
+            void addOperationForChannel(char const* _buffer, std::optional<TalkException>& e);
 
-            void getSimpleChannelContacts(char const*& _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
+            void getSimpleChannelContacts(char const* _buffer, std::vector<SimpleChannelContact>& _result, std::optional<TalkException>& e);
 
-            void getUserLastSentMessageTimeStamp(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getUserLastSentMessageTimeStamp(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void registerVirtualAccount(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerVirtualAccount(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void unregisterVirtualAccount(char const*& _buffer, std::optional<TalkException>& e);
+            void unregisterVirtualAccount(char const* _buffer, std::optional<TalkException>& e);
 
-            void requestVirtualAccountPasswordChange(char const*& _buffer, std::optional<TalkException>& e);
+            void requestVirtualAccountPasswordChange(char const* _buffer, std::optional<TalkException>& e);
 
-            void notifyEmailConfirmationResult(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyEmailConfirmationResult(char const* _buffer, std::optional<TalkException>& e);
 
-            void requestVirtualAccountPasswordSet(char const*& _buffer, std::optional<TalkException>& e);
+            void requestVirtualAccountPasswordSet(char const* _buffer, std::optional<TalkException>& e);
 
-            void getRSAKey(char const*& _buffer, RSAKey& _result, std::optional<TalkException>& e);
+            void getRSAKey(char const* _buffer, RSAKey& _result, std::optional<TalkException>& e);
 
-            void queryBeaconActions(char const*& _buffer, BeaconQueryResponse& _result, std::optional<TalkException>& e);
+            void queryBeaconActions(char const* _buffer, BeaconQueryResponse& _result, std::optional<TalkException>& e);
 
-            void notifyBeaconDetected(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyBeaconDetected(char const* _buffer, std::optional<TalkException>& e);
 
-            void getDomains(char const*& _buffer, ChannelDomains& _result, std::optional<ChannelException>& e);
+            void getDomains(char const* _buffer, ChannelDomains& _result, std::optional<ChannelException>& e);
 
-            void approveChannelAndIssueRequestToken(char const*& _buffer, std::string& _result, std::optional<ChannelException>& e);
+            void approveChannelAndIssueRequestToken(char const* _buffer, std::string& _result, std::optional<ChannelException>& e);
 
-            void issueOTP(char const*& _buffer, OTPResult& _result, std::optional<ChannelException>& e);
+            void issueOTP(char const* _buffer, OTPResult& _result, std::optional<ChannelException>& e);
 
-            void getChannelSettings(char const*& _buffer, ChannelSettings& _result, std::optional<ChannelException>& e);
+            void getChannelSettings(char const* _buffer, ChannelSettings& _result, std::optional<ChannelException>& e);
 
-            void getChannelNotificationSettings(char const*& _buffer, std::vector<ChannelNotificationSetting>& _result, std::optional<ChannelException>& e);
+            void getChannelNotificationSettings(char const* _buffer, std::vector<ChannelNotificationSetting>& _result, std::optional<ChannelException>& e);
 
-            void updateChannelNotificationSetting(char const*& _buffer, std::optional<ChannelException>& e);
+            void updateChannelNotificationSetting(char const* _buffer, std::optional<ChannelException>& e);
 
-            void updateChannelSettings(char const*& _buffer, bool& _result, std::optional<ChannelException>& e);
+            void updateChannelSettings(char const* _buffer, bool& _result, std::optional<ChannelException>& e);
 
-            void getCommonDomains(char const*& _buffer, ChannelDomains& _result, std::optional<ChannelException>& e);
+            void getCommonDomains(char const* _buffer, ChannelDomains& _result, std::optional<ChannelException>& e);
 
-            void issueRequestTokenWithAuthScheme(char const*& _buffer, RequestTokenResponse& _result, std::optional<ChannelException>& e);
+            void issueRequestTokenWithAuthScheme(char const* _buffer, RequestTokenResponse& _result, std::optional<ChannelException>& e);
 
-            void getChannelNotificationSetting(char const*& _buffer, ChannelNotificationSetting& _result, std::optional<ChannelException>& e);
+            void getChannelNotificationSetting(char const* _buffer, ChannelNotificationSetting& _result, std::optional<ChannelException>& e);
 
-            void issueChannelToken(char const*& _buffer, ChannelToken& _result, std::optional<ChannelException>& e);
+            void issueChannelToken(char const* _buffer, ChannelToken& _result, std::optional<ChannelException>& e);
 
-            void getChannels(char const*& _buffer, ChannelInfos& _result, std::optional<ChannelException>& e);
+            void getChannels(char const* _buffer, ChannelInfos& _result, std::optional<ChannelException>& e);
 
-            void fetchNotificationItems(char const*& _buffer, NotificationFetchResult& _result, std::optional<ChannelException>& e);
+            void fetchNotificationItems(char const* _buffer, NotificationFetchResult& _result, std::optional<ChannelException>& e);
 
-            void getChannelInfo(char const*& _buffer, ChannelInfo& _result, std::optional<ChannelException>& e);
+            void getChannelInfo(char const* _buffer, ChannelInfo& _result, std::optional<ChannelException>& e);
 
-            void getNotificationBadgeCount(char const*& _buffer, uint32_t& _result, std::optional<ChannelException>& e);
+            void getNotificationBadgeCount(char const* _buffer, uint32_t& _result, std::optional<ChannelException>& e);
 
-            void issueRequestToken(char const*& _buffer, std::string& _result, std::optional<ChannelException>& e);
+            void issueRequestToken(char const* _buffer, std::string& _result, std::optional<ChannelException>& e);
 
-            void revokeChannel(char const*& _buffer, std::optional<ChannelException>& e);
+            void revokeChannel(char const* _buffer, std::optional<ChannelException>& e);
 
-            void getApprovedChannels(char const*& _buffer, ApprovedChannelInfos& _result, std::optional<ChannelException>& e);
+            void getApprovedChannels(char const* _buffer, ApprovedChannelInfos& _result, std::optional<ChannelException>& e);
 
-            void getFriendChannelMatrices(char const*& _buffer, FriendChannelMatricesResponse& _result, std::optional<ChannelException>& e);
+            void getFriendChannelMatrices(char const* _buffer, FriendChannelMatricesResponse& _result, std::optional<ChannelException>& e);
 
-            void issueRequestTokenForAutoLogin(char const*& _buffer, std::string& _result, std::optional<ChannelException>& e);
+            void issueRequestTokenForAutoLogin(char const* _buffer, std::string& _result, std::optional<ChannelException>& e);
 
-            void getUpdatedChannelIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<ChannelException>& e);
+            void getUpdatedChannelIds(char const* _buffer, std::vector<std::string>& _result, std::optional<ChannelException>& e);
 
-            void reserveCoinUse(char const*& _buffer, std::string& _result, std::optional<ChannelException>& e);
+            void reserveCoinUse(char const* _buffer, std::string& _result, std::optional<ChannelException>& e);
 
-            void syncChannelData(char const*& _buffer, ChannelSyncDatas& _result, std::optional<ChannelException>& e);
+            void syncChannelData(char const* _buffer, ChannelSyncDatas& _result, std::optional<ChannelException>& e);
 
-            void approveChannelAndIssueChannelToken(char const*& _buffer, ChannelToken& _result, std::optional<ChannelException>& e);
+            void approveChannelAndIssueChannelToken(char const* _buffer, ChannelToken& _result, std::optional<ChannelException>& e);
 
-            void getSnsFriends(char const*& _buffer, SnsFriends& _result, std::optional<TalkException>& e);
+            void getSnsFriends(char const* _buffer, SnsFriends& _result, std::optional<TalkException>& e);
 
-            void getSnsMyProfile(char const*& _buffer, SnsProfile& _result, std::optional<TalkException>& e);
+            void getSnsMyProfile(char const* _buffer, SnsProfile& _result, std::optional<TalkException>& e);
 
-            void postSnsInvitationMessage(char const*& _buffer, std::optional<TalkException>& e);
+            void postSnsInvitationMessage(char const* _buffer, std::optional<TalkException>& e);
 
-            void reportDeviceState(char const*& _buffer, std::optional<TalkException>& e);
+            void reportDeviceState(char const* _buffer, std::optional<TalkException>& e);
 
-            void notifySleepV2(char const*& _buffer, std::optional<TalkException>& e);
+            void notifySleepV2(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateNotificationToken(char const*& _buffer, std::optional<TalkException>& e);
+            void updateNotificationToken(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateGroup(char const*& _buffer, std::optional<TalkException>& e);
+            void updateGroup(char const* _buffer, std::optional<TalkException>& e);
 
-            void verifyAccountMigrationPincode(char const*& _buffer, std::optional<TalkException>& e);
+            void verifyAccountMigrationPincode(char const* _buffer, std::optional<TalkException>& e);
 
-            void registerWithExistingSnsIdAndIdentityCredential(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerWithExistingSnsIdAndIdentityCredential(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void registerDeviceWithoutPhoneNumber(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerDeviceWithoutPhoneNumber(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void changeVerificationMethod(char const*& _buffer, VerificationSessionData& _result, std::optional<TalkException>& e);
+            void changeVerificationMethod(char const* _buffer, VerificationSessionData& _result, std::optional<TalkException>& e);
 
-            void setBuddyLocation(char const*& _buffer, std::optional<TalkException>& e);
+            void setBuddyLocation(char const* _buffer, std::optional<TalkException>& e);
 
-            void getFriendRequests(char const*& _buffer, std::vector<FriendRequest>& _result, std::optional<TalkException>& e);
+            void getFriendRequests(char const* _buffer, std::vector<FriendRequest>& _result, std::optional<TalkException>& e);
 
-            void kickoutFromGroup(char const*& _buffer, std::optional<TalkException>& e);
+            void kickoutFromGroup(char const* _buffer, std::optional<TalkException>& e);
 
-            void verifyIdentityCredentialWithResult(char const*& _buffer, UserAuthStatus& _result, std::optional<TalkException>& e);
+            void verifyIdentityCredentialWithResult(char const* _buffer, UserAuthStatus& _result, std::optional<TalkException>& e);
 
-            void sendEchoPush(char const*& _buffer, std::optional<TalkException>& e);
+            void sendEchoPush(char const* _buffer, std::optional<TalkException>& e);
 
-            void createSession(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void createSession(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void reissueDeviceCredential(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void reissueDeviceCredential(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getRecommendationIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getRecommendationIds(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void inviteViaEmail(char const*& _buffer, std::optional<TalkException>& e);
+            void inviteViaEmail(char const* _buffer, std::optional<TalkException>& e);
 
-            void getRoomsV2(char const*& _buffer, std::vector<Room>& _result, std::optional<TalkException>& e);
+            void getRoomsV2(char const* _buffer, std::vector<Room>& _result, std::optional<TalkException>& e);
 
-            void getReadMessageOps(char const*& _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
+            void getReadMessageOps(char const* _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
 
-            void getSettingsAttributes(char const*& _buffer, Settings& _result, std::optional<TalkException>& e);
+            void getSettingsAttributes(char const* _buffer, Settings& _result, std::optional<TalkException>& e);
 
-            void requestIdentityUnbind(char const*& _buffer, std::optional<TalkException>& e);
+            void requestIdentityUnbind(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMessagesBySequenceNumber(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getMessagesBySequenceNumber(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void inviteIntoRoom(char const*& _buffer, std::optional<TalkException>& e);
+            void inviteIntoRoom(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendChatChecked(char const*& _buffer, std::optional<TalkException>& e);
+            void sendChatChecked(char const* _buffer, std::optional<TalkException>& e);
 
-            void removeSnsId(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void removeSnsId(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void reportSpammer(char const*& _buffer, std::optional<TalkException>& e);
+            void reportSpammer(char const* _buffer, std::optional<TalkException>& e);
 
-            void findAndAddContactsByEmail(char const*& _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
+            void findAndAddContactsByEmail(char const* _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
 
-            void getCompactGroups(char const*& _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
+            void getCompactGroups(char const* _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
 
-            void sendMessage(char const*& _buffer, Message& _result, std::optional<TalkException>& e);
+            void sendMessage(char const* _buffer, Message& _result, std::optional<TalkException>& e);
 
-            void getRooms(char const*& _buffer, std::vector<Room>& _result, std::optional<TalkException>& e);
+            void getRooms(char const* _buffer, std::vector<Room>& _result, std::optional<TalkException>& e);
 
-            void updateC2DMRegistrationId(char const*& _buffer, std::optional<TalkException>& e);
+            void updateC2DMRegistrationId(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendPostback(char const*& _buffer, std::optional<TalkException>& e);
+            void sendPostback(char const* _buffer, std::optional<TalkException>& e);
 
-            void getReadMessageOpsInBulk(char const*& _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
+            void getReadMessageOpsInBulk(char const* _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
 
-            void sendMessageIgnored(char const*& _buffer, std::optional<TalkException>& e);
+            void sendMessageIgnored(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMessageBoxWrapUpListV2(char const*& _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
+            void getMessageBoxWrapUpListV2(char const* _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
 
-            void getOldReadMessageOpsWithRange(char const*& _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
+            void getOldReadMessageOpsWithRange(char const* _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
 
-            void getRSAKeyInfo(char const*& _buffer, RSAKey& _result, std::optional<TalkException>& e);
+            void getRSAKeyInfo(char const* _buffer, RSAKey& _result, std::optional<TalkException>& e);
 
-            void updateProfileAttribute(char const*& _buffer, std::optional<TalkException>& e);
+            void updateProfileAttribute(char const* _buffer, std::optional<TalkException>& e);
 
-            void createAccountMigrationPincodeSession(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void createAccountMigrationPincodeSession(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void notifiedRedirect(char const*& _buffer, std::optional<TalkException>& e);
+            void notifiedRedirect(char const* _buffer, std::optional<TalkException>& e);
 
-            void notifyIndividualEvent(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyIndividualEvent(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateApnsDeviceToken(char const*& _buffer, std::optional<TalkException>& e);
+            void updateApnsDeviceToken(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMessageBoxCompactWrapUpListV2(char const*& _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
+            void getMessageBoxCompactWrapUpListV2(char const* _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
 
-            void requestEmailConfirmation(char const*& _buffer, EmailConfirmationSession& _result, std::optional<TalkException>& e);
+            void requestEmailConfirmation(char const* _buffer, EmailConfirmationSession& _result, std::optional<TalkException>& e);
 
-            void registerWithSnsIdAndIdentityCredential(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerWithSnsIdAndIdentityCredential(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getMessageBoxCompactWrapUp(char const*& _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
+            void getMessageBoxCompactWrapUp(char const* _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
 
-            void findContactByUserTicket(char const*& _buffer, Contact& _result, std::optional<TalkException>& e);
+            void findContactByUserTicket(char const* _buffer, Contact& _result, std::optional<TalkException>& e);
 
-            void updateAccountMigrationPincode(char const*& _buffer, std::optional<TalkException>& e);
+            void updateAccountMigrationPincode(char const* _buffer, std::optional<TalkException>& e);
 
-            void registerBuddyUser(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerBuddyUser(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void updateSettingsV2(char const*& _buffer, uint32_t& _result, std::optional<TalkException>& e);
+            void updateSettingsV2(char const* _buffer, uint32_t& _result, std::optional<TalkException>& e);
 
-            void getUserTicket(char const*& _buffer, Ticket& _result, std::optional<TalkException>& e);
+            void getUserTicket(char const* _buffer, Ticket& _result, std::optional<TalkException>& e);
 
-            void fetchOps(char const*& _buffer, std::vector<Operation>& _result, std::optional<ShouldSyncException>& e);
+            void fetchOps(char const* _buffer, std::vector<Operation>& _result, std::optional<ShouldSyncException>& e);
 
-            void commitSendMessagesToMid(char const*& _buffer, CommitSendMessagesToMidResponse& _result, std::optional<TalkException>& e);
+            void commitSendMessagesToMid(char const* _buffer, CommitSendMessagesToMidResponse& _result, std::optional<TalkException>& e);
 
-            void getMessageBoxV2(char const*& _buffer, TMessageBox& _result, std::optional<TalkException>& e);
+            void getMessageBoxV2(char const* _buffer, TMessageBox& _result, std::optional<TalkException>& e);
 
-            void requestResendMessage(char const*& _buffer, std::optional<TalkException>& e);
+            void requestResendMessage(char const* _buffer, std::optional<TalkException>& e);
 
-            void getGroupWithoutMembers(char const*& _buffer, Group& _result, std::optional<TalkException>& e);
+            void getGroupWithoutMembers(char const* _buffer, Group& _result, std::optional<TalkException>& e);
 
-            void removeAllMessages(char const*& _buffer, std::optional<TalkException>& e);
+            void removeAllMessages(char const* _buffer, std::optional<TalkException>& e);
 
-            void verifyAccountMigration(char const*& _buffer, std::optional<TalkException>& e);
+            void verifyAccountMigration(char const* _buffer, std::optional<TalkException>& e);
 
-            void reissueGroupTicket(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void reissueGroupTicket(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void logoutSession(char const*& _buffer, std::optional<TalkException>& e);
+            void logoutSession(char const* _buffer, std::optional<TalkException>& e);
 
-            void getBuddyLocation(char const*& _buffer, Geolocation& _result, std::optional<TalkException>& e);
+            void getBuddyLocation(char const* _buffer, Geolocation& _result, std::optional<TalkException>& e);
 
-            void getWapInvitation(char const*& _buffer, WapInvitation& _result, std::optional<TalkException>& e);
+            void getWapInvitation(char const* _buffer, WapInvitation& _result, std::optional<TalkException>& e);
 
-            void registerDevice(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerDevice(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void clearMessageBox(char const*& _buffer, std::optional<TalkException>& e);
+            void clearMessageBox(char const* _buffer, std::optional<TalkException>& e);
 
-            void loginWithIdentityCredentialForCertificate(char const*& _buffer, LoginResult& _result, std::optional<TalkException>& e);
+            void loginWithIdentityCredentialForCertificate(char const* _buffer, LoginResult& _result, std::optional<TalkException>& e);
 
-            void getSuggestSettings(char const*& _buffer, SuggestDictionarySettings& _result, std::optional<TalkException>& e);
+            void getSuggestSettings(char const* _buffer, SuggestDictionarySettings& _result, std::optional<TalkException>& e);
 
-            void updateAndGetNearby(char const*& _buffer, std::vector<NearbyEntry>& _result, std::optional<TalkException>& e);
+            void updateAndGetNearby(char const* _buffer, std::vector<NearbyEntry>& _result, std::optional<TalkException>& e);
 
-            void syncContactBySnsIds(char const*& _buffer, std::vector<SnsFriendContactRegistration>& _result, std::optional<TalkException>& e);
+            void syncContactBySnsIds(char const* _buffer, std::vector<SnsFriendContactRegistration>& _result, std::optional<TalkException>& e);
 
-            void getContacts(char const*& _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
+            void getContacts(char const* _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
 
-            void getMessageBoxCompactWrapUpList(char const*& _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
+            void getMessageBoxCompactWrapUpList(char const* _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
 
-            void getProximityMatchCandidates(char const*& _buffer, std::set<Contact>& _result, std::optional<TalkException>& e);
+            void getProximityMatchCandidates(char const* _buffer, std::set<Contact>& _result, std::optional<TalkException>& e);
 
-            void updateExtendedProfileAttribute(char const*& _buffer, std::optional<TalkException>& e);
+            void updateExtendedProfileAttribute(char const* _buffer, std::optional<TalkException>& e);
 
-            void resendPinCode(char const*& _buffer, std::optional<TalkException>& e);
+            void resendPinCode(char const* _buffer, std::optional<TalkException>& e);
 
-            void reportSettings(char const*& _buffer, std::optional<TalkException>& e);
+            void reportSettings(char const* _buffer, std::optional<TalkException>& e);
 
-            void registerBuddyUserid(char const*& _buffer, std::optional<TalkException>& e);
+            void registerBuddyUserid(char const* _buffer, std::optional<TalkException>& e);
 
-            void findGroupByTicket(char const*& _buffer, Group& _result, std::optional<TalkException>& e);
+            void findGroupByTicket(char const* _buffer, Group& _result, std::optional<TalkException>& e);
 
-            void registerDeviceWithIdentityCredential(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerDeviceWithIdentityCredential(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void invalidateUserTicket(char const*& _buffer, std::optional<TalkException>& e);
+            void invalidateUserTicket(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendEvent(char const*& _buffer, Message& _result, std::optional<TalkException>& e);
+            void sendEvent(char const* _buffer, Message& _result, std::optional<TalkException>& e);
 
-            void sendMessageToMyHome(char const*& _buffer, Message& _result, std::optional<TalkException>& e);
+            void sendMessageToMyHome(char const* _buffer, Message& _result, std::optional<TalkException>& e);
 
-            void sendContentPreviewUpdated(char const*& _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
+            void sendContentPreviewUpdated(char const* _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
 
-            void loginWithVerifier(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void loginWithVerifier(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void removeBuddySubscriptionAndNotifyBuddyUnregistered(char const*& _buffer, std::optional<TalkException>& e);
+            void removeBuddySubscriptionAndNotifyBuddyUnregistered(char const* _buffer, std::optional<TalkException>& e);
 
-            void unblockContact(char const*& _buffer, std::optional<TalkException>& e);
+            void unblockContact(char const* _buffer, std::optional<TalkException>& e);
 
-            void removeBuddyLocation(char const*& _buffer, std::optional<TalkException>& e);
+            void removeBuddyLocation(char const* _buffer, std::optional<TalkException>& e);
 
-            void getRingbackTone(char const*& _buffer, RingbackTone& _result, std::optional<TalkException>& e);
+            void getRingbackTone(char const* _buffer, RingbackTone& _result, std::optional<TalkException>& e);
 
-            void getConfigurations(char const*& _buffer, Configurations& _result, std::optional<TalkException>& e);
+            void getConfigurations(char const* _buffer, Configurations& _result, std::optional<TalkException>& e);
 
-            void getProximityMatchCandidateList(char const*& _buffer, ProximityMatchCandidateResult& _result, std::optional<TalkException>& e);
+            void getProximityMatchCandidateList(char const* _buffer, ProximityMatchCandidateResult& _result, std::optional<TalkException>& e);
 
-            void requestAccountPasswordReset(char const*& _buffer, std::optional<TalkException>& e);
+            void requestAccountPasswordReset(char const* _buffer, std::optional<TalkException>& e);
 
-            void getNextMessages(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getNextMessages(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void reportProfile(char const*& _buffer, std::optional<TalkException>& e);
+            void reportProfile(char const* _buffer, std::optional<TalkException>& e);
 
-            void getCompactRoom(char const*& _buffer, Room& _result, std::optional<TalkException>& e);
+            void getCompactRoom(char const* _buffer, Room& _result, std::optional<TalkException>& e);
 
-            void getLastOpRevision(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getLastOpRevision(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void getPreviousMessagesV2(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getPreviousMessagesV2(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void fetchAnnouncements(char const*& _buffer, std::vector<Announcement>& _result, std::optional<TalkException>& e);
+            void fetchAnnouncements(char const* _buffer, std::vector<Announcement>& _result, std::optional<TalkException>& e);
 
-            void acquireCallRoute(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void acquireCallRoute(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void updateSettingsAttribute(char const*& _buffer, std::optional<TalkException>& e);
+            void updateSettingsAttribute(char const* _buffer, std::optional<TalkException>& e);
 
-            void createGroupV2(char const*& _buffer, Group& _result, std::optional<TalkException>& e);
+            void createGroupV2(char const* _buffer, Group& _result, std::optional<TalkException>& e);
 
-            void isIdentityIdentifierAvailable(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void isIdentityIdentifierAvailable(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void blockContact(char const*& _buffer, std::optional<TalkException>& e);
+            void blockContact(char const* _buffer, std::optional<TalkException>& e);
 
-            void commitUpdateProfile(char const*& _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
+            void commitUpdateProfile(char const* _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
 
-            void registerWithSnsId(char const*& _buffer, RegisterWithSnsIdResult& _result, std::optional<TalkException>& e);
+            void registerWithSnsId(char const* _buffer, RegisterWithSnsIdResult& _result, std::optional<TalkException>& e);
 
-            void updatePublicKeychain(char const*& _buffer, PublicKeychain& _result, std::optional<TalkException>& e);
+            void updatePublicKeychain(char const* _buffer, PublicKeychain& _result, std::optional<TalkException>& e);
 
-            void loginWithVerifierForCerificate(char const*& _buffer, LoginResult& _result, std::optional<TalkException>& e);
+            void loginWithVerifierForCerificate(char const* _buffer, LoginResult& _result, std::optional<TalkException>& e);
 
-            void tryFriendRequest(char const*& _buffer, std::optional<TalkException>& e);
+            void tryFriendRequest(char const* _buffer, std::optional<TalkException>& e);
 
-            void getBlockedRecommendationIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getBlockedRecommendationIds(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getGroupIdsInvited(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getGroupIdsInvited(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getSuggestIncrements(char const*& _buffer, SuggestDictionaryIncrements& _result, std::optional<TalkException>& e);
+            void getSuggestIncrements(char const* _buffer, SuggestDictionaryIncrements& _result, std::optional<TalkException>& e);
 
-            void resendPinCodeBySMS(char const*& _buffer, std::optional<TalkException>& e);
+            void resendPinCodeBySMS(char const* _buffer, std::optional<TalkException>& e);
 
-            void registerWithPhoneNumber(char const*& _buffer, RegisterWithPhoneNumberResult& _result, std::optional<TalkException>& e);
+            void registerWithPhoneNumber(char const* _buffer, RegisterWithPhoneNumberResult& _result, std::optional<TalkException>& e);
 
-            void getActiveBuddySubscriberIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getActiveBuddySubscriberIds(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void createRoom(char const*& _buffer, Room& _result, std::optional<TalkException>& e);
+            void createRoom(char const* _buffer, Room& _result, std::optional<TalkException>& e);
 
-            void verifyPhoneNumberForLogin(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void verifyPhoneNumberForLogin(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void addSnsId(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void addSnsId(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void finishUpdateVerification(char const*& _buffer, std::optional<TalkException>& e);
+            void finishUpdateVerification(char const* _buffer, std::optional<TalkException>& e);
 
-            void validateContactsOnBot(char const*& _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
+            void validateContactsOnBot(char const* _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
 
-            void getRoom(char const*& _buffer, Room& _result, std::optional<TalkException>& e);
+            void getRoom(char const* _buffer, Room& _result, std::optional<TalkException>& e);
 
-            void closeProximityMatch(char const*& _buffer, std::optional<TalkException>& e);
+            void closeProximityMatch(char const* _buffer, std::optional<TalkException>& e);
 
-            void getCompactGroup(char const*& _buffer, Group& _result, std::optional<TalkException>& e);
+            void getCompactGroup(char const* _buffer, Group& _result, std::optional<TalkException>& e);
 
-            void getBlockedContactIdsByRange(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getBlockedContactIdsByRange(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getRecentMessagesV2(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getRecentMessagesV2(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void reissueUserTicket(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void reissueUserTicket(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getMessageReadRange(char const*& _buffer, std::vector<TMessageReadRange>& _result, std::optional<TalkException>& e);
+            void getMessageReadRange(char const* _buffer, std::vector<TMessageReadRange>& _result, std::optional<TalkException>& e);
 
-            void clearRingbackTone(char const*& _buffer, std::optional<TalkException>& e);
+            void clearRingbackTone(char const* _buffer, std::optional<TalkException>& e);
 
-            void setIdentityCredential(char const*& _buffer, std::optional<TalkException>& e);
+            void setIdentityCredential(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMessageBoxCompactWrapUpV2(char const*& _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
+            void getMessageBoxCompactWrapUpV2(char const* _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
 
-            void getServerTime(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getServerTime(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void trySendMessage(char const*& _buffer, Message& _result, std::optional<TalkException>& e);
+            void trySendMessage(char const* _buffer, Message& _result, std::optional<TalkException>& e);
 
-            void getNextMessagesV2(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getNextMessagesV2(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void notifySleep(char const*& _buffer, std::optional<TalkException>& e);
+            void notifySleep(char const* _buffer, std::optional<TalkException>& e);
 
-            void getBuddyBlockerIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getBuddyBlockerIds(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void removeE2EEPublicKey(char const*& _buffer, std::optional<TalkException>& e);
+            void removeE2EEPublicKey(char const* _buffer, std::optional<TalkException>& e);
 
-            void reissueTrackingTicket(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void reissueTrackingTicket(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void cancelGroupInvitation(char const*& _buffer, std::optional<TalkException>& e);
+            void cancelGroupInvitation(char const* _buffer, std::optional<TalkException>& e);
 
-            void removeMessage(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void removeMessage(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void getAllReadMessageOps(char const*& _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
+            void getAllReadMessageOps(char const* _buffer, std::vector<Operation>& _result, std::optional<TalkException>& e);
 
-            void unregisterUserAndDevice(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void unregisterUserAndDevice(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void acceptGroupInvitation(char const*& _buffer, std::optional<TalkException>& e);
+            void acceptGroupInvitation(char const* _buffer, std::optional<TalkException>& e);
 
-            void getCompactContactsModifiedSince(char const*& _buffer, std::vector<CompactContact>& _result, std::optional<TalkException>& e);
+            void getCompactContactsModifiedSince(char const* _buffer, std::vector<CompactContact>& _result, std::optional<TalkException>& e);
 
-            void releaseSession(char const*& _buffer, std::optional<TalkException>& e);
+            void releaseSession(char const* _buffer, std::optional<TalkException>& e);
 
-            void findContactsByPhone(char const*& _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
+            void findContactsByPhone(char const* _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
 
-            void getHiddenContactMids(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getHiddenContactMids(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getEncryptedIdentity(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getEncryptedIdentity(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void updateProfile(char const*& _buffer, std::optional<TalkException>& e);
+            void updateProfile(char const* _buffer, std::optional<TalkException>& e);
 
-            void reportSpam(char const*& _buffer, std::optional<TalkException>& e);
+            void reportSpam(char const* _buffer, std::optional<TalkException>& e);
 
-            void getSuggestRevisions(char const*& _buffer, SuggestDictionaryRevisions& _result, std::optional<TalkException>& e);
+            void getSuggestRevisions(char const* _buffer, SuggestDictionaryRevisions& _result, std::optional<TalkException>& e);
 
-            void getPreviousMessagesV2WithReadCount(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getPreviousMessagesV2WithReadCount(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void fetchOperations(char const*& _buffer, std::vector<Operation>& _result, std::optional<ShouldSyncException>& e);
+            void fetchOperations(char const* _buffer, std::vector<Operation>& _result, std::optional<ShouldSyncException>& e);
 
-            void registerWapDevice(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerWapDevice(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getRecentFriendRequests(char const*& _buffer, FriendRequestsInfo& _result, std::optional<TalkException>& e);
+            void getRecentFriendRequests(char const* _buffer, FriendRequestsInfo& _result, std::optional<TalkException>& e);
 
-            void notifyBuddyOnAir(char const*& _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
+            void notifyBuddyOnAir(char const* _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
 
-            void getLastAnnouncementIndex(char const*& _buffer, uint32_t& _result, std::optional<TalkException>& e);
+            void getLastAnnouncementIndex(char const* _buffer, uint32_t& _result, std::optional<TalkException>& e);
 
-            void sendMessageAwaitCommit(char const*& _buffer, CommitMessageResult& _result, std::optional<TalkException>& e);
+            void sendMessageAwaitCommit(char const* _buffer, CommitMessageResult& _result, std::optional<TalkException>& e);
 
-            void negotiateE2EEPublicKey(char const*& _buffer, E2EENegotiationResult& _result, std::optional<TalkException>& e);
+            void negotiateE2EEPublicKey(char const* _buffer, E2EENegotiationResult& _result, std::optional<TalkException>& e);
 
-            void registerE2EEGroupKey(char const*& _buffer, E2EEGroupSharedKey& _result, std::optional<TalkException>& e);
+            void registerE2EEGroupKey(char const* _buffer, E2EEGroupSharedKey& _result, std::optional<TalkException>& e);
 
-            void findSnsIdUserStatus(char const*& _buffer, SnsIdUserStatus& _result, std::optional<TalkException>& e);
+            void findSnsIdUserStatus(char const* _buffer, SnsIdUserStatus& _result, std::optional<TalkException>& e);
 
-            void notifyUpdated(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyUpdated(char const* _buffer, std::optional<TalkException>& e);
 
-            void reportGroups(char const*& _buffer, std::optional<TalkException>& e);
+            void reportGroups(char const* _buffer, std::optional<TalkException>& e);
 
-            void getNotificationPolicy(char const*& _buffer, std::vector<NotificationType>& _result, std::optional<TalkException>& e);
+            void getNotificationPolicy(char const* _buffer, std::vector<NotificationType>& _result, std::optional<TalkException>& e);
 
-            void findAndAddContactsByUserid(char const*& _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
+            void findAndAddContactsByUserid(char const* _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
 
-            void getLastE2EEGroupSharedKey(char const*& _buffer, E2EEGroupSharedKey& _result, std::optional<TalkException>& e);
+            void getLastE2EEGroupSharedKey(char const* _buffer, E2EEGroupSharedKey& _result, std::optional<TalkException>& e);
 
-            void notifyUpdatePublicKeychain(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyUpdatePublicKeychain(char const* _buffer, std::optional<TalkException>& e);
 
-            void report(char const*& _buffer, std::optional<TalkException>& e);
+            void report(char const* _buffer, std::optional<TalkException>& e);
 
-            void acceptGroupInvitationByTicket(char const*& _buffer, std::optional<TalkException>& e);
+            void acceptGroupInvitationByTicket(char const* _buffer, std::optional<TalkException>& e);
 
-            void getContactRegistration(char const*& _buffer, ContactRegistration& _result, std::optional<TalkException>& e);
+            void getContactRegistration(char const* _buffer, ContactRegistration& _result, std::optional<TalkException>& e);
 
-            void updateContactSetting(char const*& _buffer, std::optional<TalkException>& e);
+            void updateContactSetting(char const* _buffer, std::optional<TalkException>& e);
 
-            void getContactWithFriendRequestStatus(char const*& _buffer, Contact& _result, std::optional<TalkException>& e);
+            void getContactWithFriendRequestStatus(char const* _buffer, Contact& _result, std::optional<TalkException>& e);
 
-            void getMessageBoxListByStatus(char const*& _buffer, std::vector<TMessageBox>& _result, std::optional<TalkException>& e);
+            void getMessageBoxListByStatus(char const* _buffer, std::vector<TMessageBox>& _result, std::optional<TalkException>& e);
 
-            void openProximityMatch(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void openProximityMatch(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void logout(char const*& _buffer, std::optional<TalkException>& e);
+            void logout(char const* _buffer, std::optional<TalkException>& e);
 
-            void getE2EEPublicKey(char const*& _buffer, E2EEPublicKey& _result, std::optional<TalkException>& e);
+            void getE2EEPublicKey(char const* _buffer, E2EEPublicKey& _result, std::optional<TalkException>& e);
 
-            void registerUserid(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void registerUserid(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void reportContacts(char const*& _buffer, std::vector<ContactReportResult>& _result, std::optional<TalkException>& e);
+            void reportContacts(char const* _buffer, std::vector<ContactReportResult>& _result, std::optional<TalkException>& e);
 
-            void getPublicKeychain(char const*& _buffer, PublicKeychain& _result, std::optional<TalkException>& e);
+            void getPublicKeychain(char const* _buffer, PublicKeychain& _result, std::optional<TalkException>& e);
 
-            void sendContentReceipt(char const*& _buffer, std::optional<TalkException>& e);
+            void sendContentReceipt(char const* _buffer, std::optional<TalkException>& e);
 
-            void respondResendMessage(char const*& _buffer, std::optional<TalkException>& e);
+            void respondResendMessage(char const* _buffer, std::optional<TalkException>& e);
 
-            void getAllRoomIds(char const*& _buffer, std::set<std::string>& _result, std::optional<TalkException>& e);
+            void getAllRoomIds(char const* _buffer, std::set<std::string>& _result, std::optional<TalkException>& e);
 
-            void requestE2EEKeyExchange(char const*& _buffer, std::optional<TalkException>& e);
+            void requestE2EEKeyExchange(char const* _buffer, std::optional<TalkException>& e);
 
-            void disableNearby(char const*& _buffer, std::optional<TalkException>& e);
+            void disableNearby(char const* _buffer, std::optional<TalkException>& e);
 
-            void createQrcodeBase64Image(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void createQrcodeBase64Image(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getMessageBoxList(char const*& _buffer, std::vector<TMessageBox>& _result, std::optional<TalkException>& e);
+            void getMessageBoxList(char const* _buffer, std::vector<TMessageBox>& _result, std::optional<TalkException>& e);
 
-            void respondE2EEKeyExchange(char const*& _buffer, std::optional<TalkException>& e);
+            void respondE2EEKeyExchange(char const* _buffer, std::optional<TalkException>& e);
 
-            void verifyQrcode(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void verifyQrcode(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void updateNotificationTokenWithBytes(char const*& _buffer, std::optional<TalkException>& e);
+            void updateNotificationTokenWithBytes(char const* _buffer, std::optional<TalkException>& e);
 
-            void getPreviousMessages(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getPreviousMessages(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void getSettings(char const*& _buffer, Settings& _result, std::optional<TalkException>& e);
+            void getSettings(char const* _buffer, Settings& _result, std::optional<TalkException>& e);
 
-            void getLastE2EEPublicKeys(char const*& _buffer, std::map<std::string, E2EEPublicKey>& _result, std::optional<TalkException>& e);
+            void getLastE2EEPublicKeys(char const* _buffer, std::map<std::string, E2EEPublicKey>& _result, std::optional<TalkException>& e);
 
-            void registerE2EEPublicKey(char const*& _buffer, E2EEPublicKey& _result, std::optional<TalkException>& e);
+            void registerE2EEPublicKey(char const* _buffer, E2EEPublicKey& _result, std::optional<TalkException>& e);
 
-            void acquireCallTicket(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void acquireCallTicket(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void inviteIntoGroup(char const*& _buffer, std::optional<TalkException>& e);
+            void inviteIntoGroup(char const* _buffer, std::optional<TalkException>& e);
 
-            void makeUserAddMyselfAsContact(char const*& _buffer, ContactTransition& _result, std::optional<TalkException>& e);
+            void makeUserAddMyselfAsContact(char const* _buffer, ContactTransition& _result, std::optional<TalkException>& e);
 
-            void removeMessageFromMyHome(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void removeMessageFromMyHome(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void commitSendMessages(char const*& _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
+            void commitSendMessages(char const* _buffer, std::map<std::string, std::string>& _result, std::optional<TalkException>& e);
 
-            void registerWithPhoneNumberAndPassword(char const*& _buffer, RegisterWithPhoneNumberResult& _result, std::optional<TalkException>& e);
+            void registerWithPhoneNumberAndPassword(char const* _buffer, RegisterWithPhoneNumberResult& _result, std::optional<TalkException>& e);
 
-            void leaveGroup(char const*& _buffer, std::optional<TalkException>& e);
+            void leaveGroup(char const* _buffer, std::optional<TalkException>& e);
 
-            void getAnalyticsInfo(char const*& _buffer, AnalyticsInfo& _result, std::optional<TalkException>& e);
+            void getAnalyticsInfo(char const* _buffer, AnalyticsInfo& _result, std::optional<TalkException>& e);
 
-            void reportClientStatistics(char const*& _buffer, std::optional<TalkException>& e);
+            void reportClientStatistics(char const* _buffer, std::optional<TalkException>& e);
 
-            void acceptProximityMatches(char const*& _buffer, std::optional<TalkException>& e);
+            void acceptProximityMatches(char const* _buffer, std::optional<TalkException>& e);
 
-            void getGroup(char const*& _buffer, Group& _result, std::optional<TalkException>& e);
+            void getGroup(char const* _buffer, Group& _result, std::optional<TalkException>& e);
 
-            void clearIdentityCredential(char const*& _buffer, std::optional<TalkException>& e);
+            void clearIdentityCredential(char const* _buffer, std::optional<TalkException>& e);
 
-            void getUpdatedMessageBoxIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getUpdatedMessageBoxIds(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getGroups(char const*& _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
+            void getGroups(char const* _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
 
-            void sendMessageReceipt(char const*& _buffer, std::optional<TalkException>& e);
+            void sendMessageReceipt(char const* _buffer, std::optional<TalkException>& e);
 
-            void findContactByMetaTag(char const*& _buffer, Contact& _result, std::optional<TalkException>& e);
+            void findContactByMetaTag(char const* _buffer, Contact& _result, std::optional<TalkException>& e);
 
-            void destroyMessage(char const*& _buffer, std::optional<TalkException>& e);
+            void destroyMessage(char const* _buffer, std::optional<TalkException>& e);
 
-            void generateUserTicket(char const*& _buffer, Ticket& _result, std::optional<TalkException>& e);
+            void generateUserTicket(char const* _buffer, Ticket& _result, std::optional<TalkException>& e);
 
-            void registerDeviceWithoutPhoneNumberWithIdentityCredential(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerDeviceWithoutPhoneNumberWithIdentityCredential(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getFavoriteMids(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getFavoriteMids(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getAcceptedProximityMatches(char const*& _buffer, std::set<std::string>& _result, std::optional<TalkException>& e);
+            void getAcceptedProximityMatches(char const* _buffer, std::set<std::string>& _result, std::optional<TalkException>& e);
 
-            void notifyInstalled(char const*& _buffer);
+            void notifyInstalled(char const* _buffer);
 
-            void getCountryWithRequestIp(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getCountryWithRequestIp(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getGroupsV2(char const*& _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
+            void getGroupsV2(char const* _buffer, std::vector<Group>& _result, std::optional<TalkException>& e);
 
-            void loginWithIdentityCredential(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void loginWithIdentityCredential(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void startUpdateVerification(char const*& _buffer, VerificationSessionData& _result, std::optional<TalkException>& e);
+            void startUpdateVerification(char const* _buffer, VerificationSessionData& _result, std::optional<TalkException>& e);
 
-            void getSessions(char const*& _buffer, std::vector<LoginSession>& _result, std::optional<TalkException>& e);
+            void getSessions(char const* _buffer, std::vector<LoginSession>& _result, std::optional<TalkException>& e);
 
-            void updateSettings(char const*& _buffer, std::optional<TalkException>& e);
+            void updateSettings(char const* _buffer, std::optional<TalkException>& e);
 
-            void getContact(char const*& _buffer, Contact& _result, std::optional<TalkException>& e);
+            void getContact(char const* _buffer, Contact& _result, std::optional<TalkException>& e);
 
-            void getBlockedContactIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getBlockedContactIds(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void loginWithVerifierForCertificate(char const*& _buffer, LoginResult& _result, std::optional<TalkException>& e);
+            void loginWithVerifierForCertificate(char const* _buffer, LoginResult& _result, std::optional<TalkException>& e);
 
-            void getProfile(char const*& _buffer, Profile& _result, std::optional<TalkException>& e);
+            void getProfile(char const* _buffer, Profile& _result, std::optional<TalkException>& e);
 
-            void findContactsByEmail(char const*& _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
+            void findContactsByEmail(char const* _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
 
-            void getSystemConfiguration(char const*& _buffer, SystemConfiguration& _result, std::optional<TalkException>& e);
+            void getSystemConfiguration(char const* _buffer, SystemConfiguration& _result, std::optional<TalkException>& e);
 
-            void getRecentMessages(char const*& _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
+            void getRecentMessages(char const* _buffer, std::vector<Message>& _result, std::optional<TalkException>& e);
 
-            void verifyPhone(char const*& _buffer, VerificationResult& _result, std::optional<TalkException>& e);
+            void verifyPhone(char const* _buffer, VerificationResult& _result, std::optional<TalkException>& e);
 
-            void createGroup(char const*& _buffer, Group& _result, std::optional<TalkException>& e);
+            void createGroup(char const* _buffer, Group& _result, std::optional<TalkException>& e);
 
-            void updateBuddySetting(char const*& _buffer, std::optional<TalkException>& e);
+            void updateBuddySetting(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateRegion(char const*& _buffer, std::optional<TalkException>& e);
+            void updateRegion(char const* _buffer, std::optional<TalkException>& e);
 
-            void verifyIdentityCredential(char const*& _buffer, std::optional<TalkException>& e);
+            void verifyIdentityCredential(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendChatRemoved(char const*& _buffer, std::optional<TalkException>& e);
+            void sendChatRemoved(char const* _buffer, std::optional<TalkException>& e);
 
-            void getGroupIdsJoined(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getGroupIdsJoined(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void findContactByUserid(char const*& _buffer, Contact& _result, std::optional<TalkException>& e);
+            void findContactByUserid(char const* _buffer, Contact& _result, std::optional<TalkException>& e);
 
-            void getE2EEPublicKeys(char const*& _buffer, std::vector<E2EEPublicKey>& _result, std::optional<TalkException>& e);
+            void getE2EEPublicKeys(char const* _buffer, std::vector<E2EEPublicKey>& _result, std::optional<TalkException>& e);
 
-            void getMessageBoxWrapUpList(char const*& _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
+            void getMessageBoxWrapUpList(char const* _buffer, TMessageBoxWrapUpResponse& _result, std::optional<TalkException>& e);
 
-            void leaveRoom(char const*& _buffer, std::optional<TalkException>& e);
+            void leaveRoom(char const* _buffer, std::optional<TalkException>& e);
 
-            void unblockRecommendation(char const*& _buffer, std::optional<TalkException>& e);
+            void unblockRecommendation(char const* _buffer, std::optional<TalkException>& e);
 
-            void findAndAddContactsByPhone(char const*& _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
+            void findAndAddContactsByPhone(char const* _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
 
-            void getAuthQrcode(char const*& _buffer, AuthQrcode& _result, std::optional<TalkException>& e);
+            void getAuthQrcode(char const* _buffer, AuthQrcode& _result, std::optional<TalkException>& e);
 
-            void getE2EEGroupSharedKey(char const*& _buffer, E2EEGroupSharedKey& _result, std::optional<TalkException>& e);
+            void getE2EEGroupSharedKey(char const* _buffer, E2EEGroupSharedKey& _result, std::optional<TalkException>& e);
 
-            void getMessageBoxWrapUp(char const*& _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
+            void getMessageBoxWrapUp(char const* _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
 
-            void updateSettingsAttributes(char const*& _buffer, uint32_t& _result, std::optional<TalkException>& e);
+            void updateSettingsAttributes(char const* _buffer, uint32_t& _result, std::optional<TalkException>& e);
 
-            void startVerification(char const*& _buffer, VerificationSessionData& _result, std::optional<TalkException>& e);
+            void startVerification(char const* _buffer, VerificationSessionData& _result, std::optional<TalkException>& e);
 
-            void reportRooms(char const*& _buffer, std::optional<TalkException>& e);
+            void reportRooms(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateGroupPreferenceAttribute(char const*& _buffer, std::optional<TalkException>& e);
+            void updateGroupPreferenceAttribute(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMessageBoxWrapUpV2(char const*& _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
+            void getMessageBoxWrapUpV2(char const* _buffer, TMessageBoxWrapUp& _result, std::optional<TalkException>& e);
 
-            void getCompactRooms(char const*& _buffer, std::vector<Room>& _result, std::optional<TalkException>& e);
+            void getCompactRooms(char const* _buffer, std::vector<Room>& _result, std::optional<TalkException>& e);
 
-            void findAndAddContactByMetaTag(char const*& _buffer, Contact& _result, std::optional<TalkException>& e);
+            void findAndAddContactByMetaTag(char const* _buffer, Contact& _result, std::optional<TalkException>& e);
 
-            void storeUpdateProfileAttribute(char const*& _buffer, std::optional<TalkException>& e);
+            void storeUpdateProfileAttribute(char const* _buffer, std::optional<TalkException>& e);
 
-            void resendEmailConfirmation(char const*& _buffer, EmailConfirmationSession& _result, std::optional<TalkException>& e);
+            void resendEmailConfirmation(char const* _buffer, EmailConfirmationSession& _result, std::optional<TalkException>& e);
 
-            void confirmEmail(char const*& _buffer, EmailConfirmationResult& _result, std::optional<TalkException>& e);
+            void confirmEmail(char const* _buffer, EmailConfirmationResult& _result, std::optional<TalkException>& e);
 
-            void getExtendedProfile(char const*& _buffer, ExtendedProfile& _result, std::optional<TalkException>& e);
+            void getExtendedProfile(char const* _buffer, ExtendedProfile& _result, std::optional<TalkException>& e);
 
-            void isUseridAvailable(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void isUseridAvailable(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void notifyRegistrationComplete(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyRegistrationComplete(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateDeviceInfo(char const*& _buffer, std::optional<TalkException>& e);
+            void updateDeviceInfo(char const* _buffer, std::optional<TalkException>& e);
 
-            void blockRecommendation(char const*& _buffer, std::optional<TalkException>& e);
+            void blockRecommendation(char const* _buffer, std::optional<TalkException>& e);
 
-            void rejectGroupInvitation(char const*& _buffer, std::optional<TalkException>& e);
+            void rejectGroupInvitation(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateCustomModeSettings(char const*& _buffer, std::optional<TalkException>& e);
+            void updateCustomModeSettings(char const* _buffer, std::optional<TalkException>& e);
 
-            void createRoomV2(char const*& _buffer, Room& _result, std::optional<TalkException>& e);
+            void createRoomV2(char const* _buffer, Room& _result, std::optional<TalkException>& e);
 
-            void noop(char const*& _buffer, std::optional<TalkException>& e);
+            void noop(char const* _buffer, std::optional<TalkException>& e);
 
-            void acquireEncryptedAccessToken(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void acquireEncryptedAccessToken(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getE2EEPublicKeysEx(char const*& _buffer, std::vector<E2EEPublicKey>& _result, std::optional<TalkException>& e);
+            void getE2EEPublicKeysEx(char const* _buffer, std::vector<E2EEPublicKey>& _result, std::optional<TalkException>& e);
 
-            void syncContacts(char const*& _buffer, std::map<std::string, ContactRegistration>& _result, std::optional<TalkException>& e);
+            void syncContacts(char const* _buffer, std::map<std::string, ContactRegistration>& _result, std::optional<TalkException>& e);
 
-            void findAndAddContactsByMid(char const*& _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
+            void findAndAddContactsByMid(char const* _buffer, std::map<std::string, Contact>& _result, std::optional<TalkException>& e);
 
-            void findGroupByTicketV2(char const*& _buffer, Group& _result, std::optional<TalkException>& e);
+            void findGroupByTicketV2(char const* _buffer, Group& _result, std::optional<TalkException>& e);
 
-            void removeFriendRequest(char const*& _buffer, std::optional<TalkException>& e);
+            void removeFriendRequest(char const* _buffer, std::optional<TalkException>& e);
 
-            void verifyPhoneNumber(char const*& _buffer, PhoneVerificationResult& _result, std::optional<TalkException>& e);
+            void verifyPhoneNumber(char const* _buffer, PhoneVerificationResult& _result, std::optional<TalkException>& e);
 
-            void setNotificationsEnabled(char const*& _buffer, std::optional<TalkException>& e);
+            void setNotificationsEnabled(char const* _buffer, std::optional<TalkException>& e);
 
-            void getAllContactIds(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getAllContactIds(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getIdentityIdentifier(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getIdentityIdentifier(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void sendDummyPush(char const*& _buffer, std::optional<TalkException>& e);
+            void sendDummyPush(char const* _buffer, std::optional<TalkException>& e);
 
-            void inviteFriendsBySms(char const*& _buffer, std::optional<TalkException>& e);
+            void inviteFriendsBySms(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMessageBox(char const*& _buffer, TMessageBox& _result, std::optional<TalkException>& e);
+            void getMessageBox(char const* _buffer, TMessageBox& _result, std::optional<TalkException>& e);
 
-            void unsendMessage(char const*& _buffer, std::optional<TalkException>& e);
+            void unsendMessage(char const* _buffer, std::optional<TalkException>& e);
 
-            void createChatRoomAnnouncement(char const*& _buffer, ChatRoomAnnouncement& _result, std::optional<TalkException>& e);
+            void createChatRoomAnnouncement(char const* _buffer, ChatRoomAnnouncement& _result, std::optional<TalkException>& e);
 
-            void removeChatRoomAnnouncement(char const*& _buffer, std::optional<TalkException>& e);
+            void removeChatRoomAnnouncement(char const* _buffer, std::optional<TalkException>& e);
 
-            void getChatRoomAnnouncements(char const*& _buffer, std::vector<ChatRoomAnnouncement>& _result, std::optional<TalkException>& e);
+            void getChatRoomAnnouncements(char const* _buffer, std::vector<ChatRoomAnnouncement>& _result, std::optional<TalkException>& e);
 
-            void getChatRoomAnnouncementsBulk(char const*& _buffer, std::vector<ChatRoomAnnouncement>& _result, std::optional<TalkException>& e);
+            void getChatRoomAnnouncementsBulk(char const* _buffer, std::vector<ChatRoomAnnouncement>& _result, std::optional<TalkException>& e);
 
-            void unregisterBuddy(char const*& _buffer, std::optional<TalkException>& e);
+            void unregisterBuddy(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendBuddyContentMessageToMidsAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void sendBuddyContentMessageToMidsAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getAllBuddyMembers(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getAllBuddyMembers(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getActiveMemberMidsByBuddyMid(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getActiveMemberMidsByBuddyMid(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void updateBuddyProfileAttributes(char const*& _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
+            void updateBuddyProfileAttributes(char const* _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
 
-            void storePrivateMessages(char const*& _buffer, MessageStoreResult& _result, std::optional<TalkException>& e);
+            void storePrivateMessages(char const* _buffer, MessageStoreResult& _result, std::optional<TalkException>& e);
 
-            void updateBuddyProfileImageAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void updateBuddyProfileImageAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void notifyBuddyBlocked(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyBuddyBlocked(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMemberCountByBuddyMid(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getMemberCountByBuddyMid(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void isBuddyOnAirByMid(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void isBuddyOnAirByMid(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void commitPrivateMessages(char const*& _buffer, std::optional<TalkException>& e);
+            void commitPrivateMessages(char const* _buffer, std::optional<TalkException>& e);
 
-            void commitPublicMessagesToMids(char const*& _buffer, std::optional<TalkException>& e);
+            void commitPublicMessagesToMids(char const* _buffer, std::optional<TalkException>& e);
 
-            void addBuddyMember(char const*& _buffer, std::optional<TalkException>& e);
+            void addBuddyMember(char const* _buffer, std::optional<TalkException>& e);
 
-            void linkAndSendBuddyContentMessageToMids(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void linkAndSendBuddyContentMessageToMids(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void storeMessages(char const*& _buffer, std::vector<SendBuddyMessageResult>& _result, std::optional<TalkException>& e);
+            void storeMessages(char const* _buffer, std::vector<SendBuddyMessageResult>& _result, std::optional<TalkException>& e);
 
-            void storeMessage(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void storeMessage(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void registerBuddy(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerBuddy(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getUnregisterBuddyResult(char const*& _buffer, UnregisterBuddyResult& _result, std::optional<TalkException>& e);
+            void getUnregisterBuddyResult(char const* _buffer, UnregisterBuddyResult& _result, std::optional<TalkException>& e);
 
-            void updateBuddySearchId(char const*& _buffer, std::optional<TalkException>& e);
+            void updateBuddySearchId(char const* _buffer, std::optional<TalkException>& e);
 
-            void uploadBuddyContent(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void uploadBuddyContent(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void updateBuddyProfileImage(char const*& _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
+            void updateBuddyProfileImage(char const* _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
 
-            void sendBuddyMessageToAll(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void sendBuddyMessageToAll(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void commitSendMessagesToAll(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void commitSendMessagesToAll(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void downloadMessageContent(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void downloadMessageContent(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void updateBuddyProfileRichMenu(char const*& _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
+            void updateBuddyProfileRichMenu(char const* _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
 
-            void setBuddyOnAir(char const*& _buffer, SetBuddyOnAirResult& _result, std::optional<TalkException>& e);
+            void setBuddyOnAir(char const* _buffer, SetBuddyOnAirResult& _result, std::optional<TalkException>& e);
 
-            void unblockBuddyMember(char const*& _buffer, std::optional<TalkException>& e);
+            void unblockBuddyMember(char const* _buffer, std::optional<TalkException>& e);
 
-            void linkAndSendBuddyContentMessageToAll(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void linkAndSendBuddyContentMessageToAll(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void removeBuddyMember(char const*& _buffer, std::optional<TalkException>& e);
+            void removeBuddyMember(char const* _buffer, std::optional<TalkException>& e);
 
-            void commitSendMessagesToMidAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void commitSendMessagesToMidAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getUpdateBuddyProfileResult(char const*& _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
+            void getUpdateBuddyProfileResult(char const* _buffer, UpdateBuddyProfileResult& _result, std::optional<TalkException>& e);
 
-            void notifyBuddyUnblocked(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyBuddyUnblocked(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateBuddyProfileRichMenuAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void updateBuddyProfileRichMenuAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getBuddyProfile(char const*& _buffer, BuddyProfile& _result, std::optional<TalkException>& e);
+            void getBuddyProfile(char const* _buffer, BuddyProfile& _result, std::optional<TalkException>& e);
 
-            void getBlockedBuddyMembers(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getBlockedBuddyMembers(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void commitPublicMessagesToAll(char const*& _buffer, std::optional<TalkException>& e);
+            void commitPublicMessagesToAll(char const* _buffer, std::optional<TalkException>& e);
 
-            void linkAndSendBuddyContentMessageToAllAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void linkAndSendBuddyContentMessageToAllAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void sendBuddyContentMessageToAllAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void sendBuddyContentMessageToAllAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getSetBuddyOnAirResult(char const*& _buffer, SetBuddyOnAirResult& _result, std::optional<TalkException>& e);
+            void getSetBuddyOnAirResult(char const* _buffer, SetBuddyOnAirResult& _result, std::optional<TalkException>& e);
 
-            void commitSendMessagesToMidsAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void commitSendMessagesToMidsAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void commitSendMessagesToStoredMidsAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void commitSendMessagesToStoredMidsAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void updateBuddyAdminProfileAttribute(char const*& _buffer, std::optional<TalkException>& e);
+            void updateBuddyAdminProfileAttribute(char const* _buffer, std::optional<TalkException>& e);
 
-            void setBuddyOnAirAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void setBuddyOnAirAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void commitSendMessagesToMids(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void commitSendMessagesToMids(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void sendBuddyContentMessageToAll(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void sendBuddyContentMessageToAll(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void updateBuddySettings(char const*& _buffer, std::optional<TalkException>& e);
+            void updateBuddySettings(char const* _buffer, std::optional<TalkException>& e);
 
-            void notifyBuddySubscribed(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyBuddySubscribed(char const* _buffer, std::optional<TalkException>& e);
 
-            void registerBuddyAdmin(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void registerBuddyAdmin(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getBlockerCountByBuddyMid(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getBlockerCountByBuddyMid(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void reissueContactTicket(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void reissueContactTicket(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void validateContacts(char const*& _buffer, ValidateContactsResult& _result, std::optional<TalkException>& e);
+            void validateContacts(char const* _buffer, ValidateContactsResult& _result, std::optional<TalkException>& e);
 
-            void sendBuddyMessageToMidsAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void sendBuddyMessageToMidsAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void unregisterBuddyAsync(char const*& _buffer, std::optional<TalkException>& e);
+            void unregisterBuddyAsync(char const* _buffer, std::optional<TalkException>& e);
 
-            void getProfileImageUrlHash(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void getProfileImageUrlHash(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void blockBuddyMember(char const*& _buffer, std::optional<TalkException>& e);
+            void blockBuddyMember(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendIndividualEventToAllAsync(char const*& _buffer, std::optional<TalkException>& e);
+            void sendIndividualEventToAllAsync(char const* _buffer, std::optional<TalkException>& e);
 
-            void deleteBotProfileImage(char const*& _buffer, std::optional<TalkException>& e);
+            void deleteBotProfileImage(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendBuddyContentMessageToMids(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void sendBuddyContentMessageToMids(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void unregisterBuddyAdmin(char const*& _buffer, std::optional<TalkException>& e);
+            void unregisterBuddyAdmin(char const* _buffer, std::optional<TalkException>& e);
 
-            void commitPublicMessagesToStoredMids(char const*& _buffer, std::optional<TalkException>& e);
+            void commitPublicMessagesToStoredMids(char const* _buffer, std::optional<TalkException>& e);
 
-            void removeBuddyMembers(char const*& _buffer, std::optional<TalkException>& e);
+            void removeBuddyMembers(char const* _buffer, std::optional<TalkException>& e);
 
-            void storePublicMessages(char const*& _buffer, MessageStoreResult& _result, std::optional<TalkException>& e);
+            void storePublicMessages(char const* _buffer, MessageStoreResult& _result, std::optional<TalkException>& e);
 
-            void addBuddyMembers(char const*& _buffer, std::optional<TalkException>& e);
+            void addBuddyMembers(char const* _buffer, std::optional<TalkException>& e);
 
-            void getMessageCommitResult(char const*& _buffer, MessageCommitResult& _result, std::optional<TalkException>& e);
+            void getMessageCommitResult(char const* _buffer, MessageCommitResult& _result, std::optional<TalkException>& e);
 
-            void getBuddyDetailByMid(char const*& _buffer, BuddyDetail& _result, std::optional<TalkException>& e);
+            void getBuddyDetailByMid(char const* _buffer, BuddyDetail& _result, std::optional<TalkException>& e);
 
-            void notifyBuddySubscriberUnregistered(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyBuddySubscriberUnregistered(char const* _buffer, std::optional<TalkException>& e);
 
-            void sendBuddyMessageToAllAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void sendBuddyMessageToAllAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void sendBuddyMessageToMids(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void sendBuddyMessageToMids(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void commitSendMessagesToAllAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void commitSendMessagesToAllAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void notifyBuddySubscriberEmpty(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyBuddySubscriberEmpty(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateBuddyAdminProfileImage(char const*& _buffer, std::optional<TalkException>& e);
+            void updateBuddyAdminProfileImage(char const* _buffer, std::optional<TalkException>& e);
 
-            void updateBuddyProfileAttributesAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void updateBuddyProfileAttributesAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void linkAndSendBuddyContentMessageToMidsAsync(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void linkAndSendBuddyContentMessageToMidsAsync(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void downloadProfileImagePreview(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void downloadProfileImagePreview(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void downloadProfileImage(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void downloadProfileImage(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void getSendBuddyMessageResult(char const*& _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
+            void getSendBuddyMessageResult(char const* _buffer, SendBuddyMessageResult& _result, std::optional<TalkException>& e);
 
-            void containsBuddyMember(char const*& _buffer, bool& _result, std::optional<TalkException>& e);
+            void containsBuddyMember(char const* _buffer, bool& _result, std::optional<TalkException>& e);
 
-            void getActiveMemberCountByBuddyMid(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getActiveMemberCountByBuddyMid(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void downloadMessageContentPreview(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void downloadMessageContentPreview(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void notifyBuddyRegistered(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyBuddyRegistered(char const* _buffer, std::optional<TalkException>& e);
 
-            void lookupByPhoneNumber(char const*& _buffer, SpotPhoneNumberResponse& _result, std::optional<TalkException>& e);
+            void lookupByPhoneNumber(char const* _buffer, SpotPhoneNumberResponse& _result, std::optional<TalkException>& e);
 
-            void lookupNearby(char const*& _buffer, SpotNearbyResponse& _result, std::optional<TalkException>& e);
+            void lookupNearby(char const* _buffer, SpotNearbyResponse& _result, std::optional<TalkException>& e);
 
-            void checkUserAge(char const*& _buffer, UserAgeType& _result, std::optional<TalkException>& e);
+            void checkUserAge(char const* _buffer, UserAgeType& _result, std::optional<TalkException>& e);
 
-            void checkUserAgeWithDocomo(char const*& _buffer, AgeCheckDocomoResult& _result, std::optional<TalkException>& e);
+            void checkUserAgeWithDocomo(char const* _buffer, AgeCheckDocomoResult& _result, std::optional<TalkException>& e);
 
-            void retrieveOpenIdAuthUrlWithDocomo(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void retrieveOpenIdAuthUrlWithDocomo(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void retrieveRequestToken(char const*& _buffer, AgeCheckRequestResult& _result, std::optional<TalkException>& e);
+            void retrieveRequestToken(char const* _buffer, AgeCheckRequestResult& _result, std::optional<TalkException>& e);
 
-            void getBuddyStatusBar(char const*& _buffer, BuddyStatusBar& _result, std::optional<TalkException>& e);
+            void getBuddyStatusBar(char const* _buffer, BuddyStatusBar& _result, std::optional<TalkException>& e);
 
-            void getRichMenuContents(char const*& _buffer, BuddyRichMenuContents& _result, std::optional<TalkException>& e);
+            void getRichMenuContents(char const* _buffer, BuddyRichMenuContents& _result, std::optional<TalkException>& e);
 
-            void getBuddyProfilePopup(char const*& _buffer, BuddyProfilePopup& _result, std::optional<TalkException>& e);
+            void getBuddyProfilePopup(char const* _buffer, BuddyProfilePopup& _result, std::optional<TalkException>& e);
 
-            void getPopularBuddyBanner(char const*& _buffer, BuddyBanner& _result, std::optional<TalkException>& e);
+            void getPopularBuddyBanner(char const* _buffer, BuddyBanner& _result, std::optional<TalkException>& e);
 
-            void getPopularBuddyLists(char const*& _buffer, std::vector<BuddyList>& _result, std::optional<TalkException>& e);
+            void getPopularBuddyLists(char const* _buffer, std::vector<BuddyList>& _result, std::optional<TalkException>& e);
 
-            void findBuddyContactsByQuery(char const*& _buffer, std::vector<BuddySearchResult>& _result, std::optional<TalkException>& e);
+            void findBuddyContactsByQuery(char const* _buffer, std::vector<BuddySearchResult>& _result, std::optional<TalkException>& e);
 
-            void getBuddyNewsView(char const*& _buffer, BuddyNewsView& _result, std::optional<TalkException>& e);
+            void getBuddyNewsView(char const* _buffer, BuddyNewsView& _result, std::optional<TalkException>& e);
 
-            void getBuddyContacts(char const*& _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
+            void getBuddyContacts(char const* _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
 
-            void getBuddyCollectionEntries(char const*& _buffer, std::vector<BuddyCollectionEntry>& _result, std::optional<TalkException>& e);
+            void getBuddyCollectionEntries(char const* _buffer, std::vector<BuddyCollectionEntry>& _result, std::optional<TalkException>& e);
 
-            void getLatestBuddyNewsTimestamp(char const*& _buffer, uint64_t& _result, std::optional<TalkException>& e);
+            void getLatestBuddyNewsTimestamp(char const* _buffer, uint64_t& _result, std::optional<TalkException>& e);
 
-            void getBuddyChatBar(char const*& _buffer, BuddyChatBar& _result, std::optional<TalkException>& e);
+            void getBuddyChatBar(char const* _buffer, BuddyChatBar& _result, std::optional<TalkException>& e);
 
-            void getCountriesServingOfficialAccountPromotionV2(char const*& _buffer, std::set<std::string>& _result, std::optional<TalkException>& e);
+            void getCountriesServingOfficialAccountPromotionV2(char const* _buffer, std::set<std::string>& _result, std::optional<TalkException>& e);
 
-            void getBuddyDetail(char const*& _buffer, BuddyDetail& _result, std::optional<TalkException>& e);
+            void getBuddyDetail(char const* _buffer, BuddyDetail& _result, std::optional<TalkException>& e);
 
-            void getBuddyOnAir(char const*& _buffer, BuddyOnAir& _result, std::optional<TalkException>& e);
+            void getBuddyOnAir(char const* _buffer, BuddyOnAir& _result, std::optional<TalkException>& e);
 
-            void getNewlyReleasedBuddyIds(char const*& _buffer, std::map<std::string, uint64_t>& _result, std::optional<TalkException>& e);
+            void getNewlyReleasedBuddyIds(char const* _buffer, std::map<std::string, uint64_t>& _result, std::optional<TalkException>& e);
 
-            void getBuddyCategoryView(char const*& _buffer, BuddyCategoryView& _result, std::optional<TalkException>& e);
+            void getBuddyCategoryView(char const* _buffer, BuddyCategoryView& _result, std::optional<TalkException>& e);
 
-            void getCountriesHavingBuddy(char const*& _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
+            void getCountriesHavingBuddy(char const* _buffer, std::vector<std::string>& _result, std::optional<TalkException>& e);
 
-            void getPromotedBuddyContacts(char const*& _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
+            void getPromotedBuddyContacts(char const* _buffer, std::vector<Contact>& _result, std::optional<TalkException>& e);
 
-            void getBuddyTopView(char const*& _buffer, BuddyTopView& _result, std::optional<TalkException>& e);
+            void getBuddyTopView(char const* _buffer, BuddyTopView& _result, std::optional<TalkException>& e);
 
-            void notifyLeaveGroup(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyLeaveGroup(char const* _buffer, std::optional<TalkException>& e);
 
-            void notifyLeaveRoom(char const*& _buffer, std::optional<TalkException>& e);
+            void notifyLeaveRoom(char const* _buffer, std::optional<TalkException>& e);
 
-            void getBotUseInfo(char const*& _buffer, BotUseInfo& _result, std::optional<TalkException>& e);
+            void getBotUseInfo(char const* _buffer, BotUseInfo& _result, std::optional<TalkException>& e);
 
-            void sendChatCheckedByWatermark(char const*& _buffer, std::optional<TalkException>& e);
+            void sendChatCheckedByWatermark(char const* _buffer, std::optional<TalkException>& e);
 
-            void normalizePhoneNumber(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void normalizePhoneNumber(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void respondE2EELoginRequest(char const*& _buffer, std::optional<TalkException>& e);
+            void respondE2EELoginRequest(char const* _buffer, std::optional<TalkException>& e);
 
-            void confirmE2EELogin(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void confirmE2EELogin(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
-            void logoutZ(char const*& _buffer, std::optional<TalkException>& e);
+            void logoutZ(char const* _buffer, std::optional<TalkException>& e);
 
-            void loginZ(char const*& _buffer, LoginResult& _result, std::optional<TalkException>& e);
+            void loginZ(char const* _buffer, LoginResult& _result, std::optional<TalkException>& e);
 
-            void issueTokenForAccountMigrationSettings(char const*& _buffer, SecurityCenterResult& _result, std::optional<TalkException>& e);
+            void issueTokenForAccountMigrationSettings(char const* _buffer, SecurityCenterResult& _result, std::optional<TalkException>& e);
 
-            void issueTokenForAccountMigration(char const*& _buffer, SecurityCenterResult& _result, std::optional<TalkException>& e);
+            void issueTokenForAccountMigration(char const* _buffer, SecurityCenterResult& _result, std::optional<TalkException>& e);
 
-            void verifyQrcodeWithE2EE(char const*& _buffer, std::string& _result, std::optional<TalkException>& e);
+            void verifyQrcodeWithE2EE(char const* _buffer, std::string& _result, std::optional<TalkException>& e);
 
         } // closing result namespace
 
@@ -5192,185 +5192,185 @@ namespace protocol {
 
             void requestBanPage(std::string& _buffer);
 
-            void reserveCoinPurchase(std::string& _buffer, CoinPurchaseReservation& request);
+            void reserveCoinPurchase(std::string& _buffer, const CoinPurchaseReservation& request);
 
-            void getProductCategories(std::string& _buffer, std::string& language, std::string& country);
+            void getProductCategories(std::string& _buffer, const std::string& language, const std::string& country);
 
-            void getProductList(std::string& _buffer, std::vector<std::string>& productIdList, std::string& language, std::string& country);
+            void getProductList(std::string& _buffer, const std::vector<std::string>& productIdList, const std::string& language, const std::string& country);
 
-            void getCoinPurchaseHistory(std::string& _buffer, CoinHistoryCondition& request);
+            void getCoinPurchaseHistory(std::string& _buffer, const CoinHistoryCondition& request);
 
-            void buyFreeProduct(std::string& _buffer, std::string& receiverMid, std::string& productId, uint32_t& messageTemplate, std::string& language, std::string& country, uint64_t& packageId);
+            void buyFreeProduct(std::string& _buffer, const std::string& receiverMid, const std::string& productId, const uint32_t messageTemplate, const std::string& language, const std::string& country, const uint64_t packageId);
 
-            void getProductListWithCarrier(std::string& _buffer, std::vector<std::string>& productIdList, std::string& language, std::string& country, std::string& carrierCode);
+            void getProductListWithCarrier(std::string& _buffer, const std::vector<std::string>& productIdList, const std::string& language, const std::string& country, const std::string& carrierCode);
 
-            void getDefaultProducts(std::string& _buffer, std::string& language, std::string& country, std::string& carrierCode);
+            void getDefaultProducts(std::string& _buffer, const std::string& language, const std::string& country, const std::string& carrierCode);
 
-            void getProductsForCategory(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country, uint64_t& category);
+            void getProductsForCategory(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country, const uint64_t category);
 
-            void notifyDownloaded(std::string& _buffer, uint64_t& packageId, std::string& language);
+            void notifyDownloaded(std::string& _buffer, const uint64_t packageId, const std::string& language);
 
-            void getFreePackagesWithoutEvent(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getFreePackagesWithoutEvent(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getProduct(std::string& _buffer, uint64_t& packageID, std::string& language, std::string& country);
+            void getProduct(std::string& _buffer, const uint64_t packageID, const std::string& language, const std::string& country);
 
-            void getEventPackages(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getEventPackages(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getActivePurchaseVersions(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getActivePurchaseVersions(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getCoinProductsByPgCode(std::string& _buffer, PaymentType& appStoreCode, PaymentPgType& pgCode, std::string& country, std::string& language);
+            void getCoinProductsByPgCode(std::string& _buffer, const PaymentType appStoreCode, const PaymentPgType pgCode, const std::string& country, const std::string& language);
 
-            void getNewlyReleasedPackages(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getNewlyReleasedPackages(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getDownloads(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getDownloads(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getCoinProducts(std::string& _buffer, PaymentType& appStoreCode, std::string& country, std::string& language);
+            void getCoinProducts(std::string& _buffer, const PaymentType appStoreCode, const std::string& country, const std::string& language);
 
-            void searchProducts(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country, std::string& query);
+            void searchProducts(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country, const std::string& query);
 
-            void buyMustbuyProduct(std::string& _buffer, std::string& receiverMid, std::string& productId, uint32_t& messageTemplate, std::string& language, std::string& country, uint64_t& packageId, std::string& serialNumber);
+            void buyMustbuyProduct(std::string& _buffer, const std::string& receiverMid, const std::string& productId, const uint32_t messageTemplate, const std::string& language, const std::string& country, const uint64_t packageId, const std::string& serialNumber);
 
-            void getRecommendationsForProduct(std::string& _buffer, uint64_t& packageID, uint32_t& offset, uint32_t& limit, std::string& language, std::string& country);
+            void getRecommendationsForProduct(std::string& _buffer, const uint64_t packageID, const uint32_t offset, const uint32_t limit, const std::string& language, const std::string& country);
 
-            void getUpdates(std::string& _buffer, std::string& language, std::string& country, uint64_t& localVersion);
+            void getUpdates(std::string& _buffer, const std::string& language, const std::string& country, const uint64_t localVersion);
 
-            void getActivePurchases(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getActivePurchases(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getProductWithCarrier(std::string& _buffer, uint64_t& packageID, std::string& language, std::string& country, std::string& carrierCode);
+            void getProductWithCarrier(std::string& _buffer, const uint64_t packageID, const std::string& language, const std::string& country, const std::string& carrierCode);
 
-            void buyCoinProduct(std::string& _buffer, PaymentReservation& paymentReservation);
+            void buyCoinProduct(std::string& _buffer, const PaymentReservation& paymentReservation);
 
-            void getPopularPackages(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPopularPackages(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void reservePayment(std::string& _buffer, PaymentReservation& paymentReservation);
+            void reservePayment(std::string& _buffer, const PaymentReservation& paymentReservation);
 
-            void getPresentsSent(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPresentsSent(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void checkCanReceivePresent(std::string& _buffer, std::string& recipientMid, uint64_t& packageId, std::string& language, std::string& country);
+            void checkCanReceivePresent(std::string& _buffer, const std::string& recipientMid, const uint64_t packageId, const std::string& language, const std::string& country);
 
-            void getFreePackages(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getFreePackages(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getPurchaseHistory(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPurchaseHistory(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getTotalBalance(std::string& _buffer, PaymentType& appStoreCode);
+            void getTotalBalance(std::string& _buffer, const PaymentType appStoreCode);
 
-            void getCoinUseAndRefundHistory(std::string& _buffer, CoinHistoryCondition& request);
+            void getCoinUseAndRefundHistory(std::string& _buffer, const CoinHistoryCondition& request);
 
-            void getPresentsReceived(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language, std::string& country);
+            void getPresentsReceived(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language, const std::string& country);
 
-            void getPlaceSearchInfo(std::string& _buffer, PlaceSearchProvider& provider, std::string& keyword, std::string& clientLocale, double& latitude, double& longitude, uint32_t& radius);
+            void getPlaceSearchInfo(std::string& _buffer, const PlaceSearchProvider provider, const std::string& keyword, const std::string& clientLocale, const double latitude, const double longitude, const uint32_t radius);
 
-            void getUserStatus(std::string& _buffer, std::string& mid);
+            void getUserStatus(std::string& _buffer, const std::string& mid);
 
-            void updateProfileAttributeForChannel(std::string& _buffer, ProfileAttribute& profileAttribute, std::string& value);
+            void updateProfileAttributeForChannel(std::string& _buffer, const ProfileAttribute profileAttribute, const std::string& value);
 
-            void getAllSimpleChannelContacts(std::string& _buffer, bool& statusSticonFallbackDisabled);
+            void getAllSimpleChannelContacts(std::string& _buffer, const bool statusSticonFallbackDisabled);
 
             void getUserIdentities(std::string& _buffer);
 
-            void markPaidCallAd(std::string& _buffer, std::string& dialedNumber, std::string& language, bool& disableCallerId);
+            void markPaidCallAd(std::string& _buffer, const std::string& dialedNumber, const std::string& language, const bool disableCallerId);
 
-            void isGroupMember(std::string& _buffer, std::string& groupId);
+            void isGroupMember(std::string& _buffer, const std::string& groupId);
 
-            void getPhoneInfoFromPhoneNumber(std::string& _buffer, std::string& region, std::string& phoneNumber);
+            void getPhoneInfoFromPhoneNumber(std::string& _buffer, const std::string& region, const std::string& phoneNumber);
 
-            void redeemPaidCallVoucher(std::string& _buffer, std::string& serial, std::string& language);
+            void redeemPaidCallVoucher(std::string& _buffer, const std::string& serial, const std::string& language);
 
-            void getPreferredDisplayName(std::string& _buffer, std::vector<std::string>& mids);
+            void getPreferredDisplayName(std::string& _buffer, const std::vector<std::string>& mids);
 
-            void getContactsForChannel(std::string& _buffer, std::vector<std::string>& ids);
+            void getContactsForChannel(std::string& _buffer, const std::vector<std::string>& ids);
 
-            void getCallCreditProducts(std::string& _buffer, PaymentType& appStoreCode, PaymentPgType& pgCode, std::string& country, std::string& language);
+            void getCallCreditProducts(std::string& _buffer, const PaymentType appStoreCode, const PaymentPgType pgCode, const std::string& country, const std::string& language);
 
-            void getCompactContacts(std::string& _buffer, uint64_t& lastModifiedTimestamp);
+            void getCompactContacts(std::string& _buffer, const uint64_t lastModifiedTimestamp);
 
-            void notifyNotiCenterEvent(std::string& _buffer, NotiCenterEventData& event);
+            void notifyNotiCenterEvent(std::string& _buffer, const NotiCenterEventData& event);
 
-            void isInContact(std::string& _buffer, std::string& mid);
+            void isInContact(std::string& _buffer, const std::string& mid);
 
-            void lookupGroupMembers(std::string& _buffer, std::string& groupId, std::vector<std::string>& mids);
+            void lookupGroupMembers(std::string& _buffer, const std::string& groupId, const std::vector<std::string>& mids);
 
-            void getRoomInformation(std::string& _buffer, std::string& roomMid);
+            void getRoomInformation(std::string& _buffer, const std::string& roomMid);
 
-            void getGroupCall(std::string& _buffer, std::string& chatMid);
+            void getGroupCall(std::string& _buffer, const std::string& chatMid);
 
             void isAllowSecondaryDeviceLogin(std::string& _buffer);
 
             void getPrimaryClientForChannel(std::string& _buffer);
 
-            void createRoomWithBuddy(std::string& _buffer, uint32_t& reqSeq, std::string& buddyMid, std::vector<std::string>& contactIds);
+            void createRoomWithBuddy(std::string& _buffer, const uint32_t reqSeq, const std::string& buddyMid, const std::vector<std::string>& contactIds);
 
-            void getDisplayName(std::string& _buffer, std::string& mid);
+            void getDisplayName(std::string& _buffer, const std::string& mid);
 
-            void getPaidCallMetadata(std::string& _buffer, std::string& language);
+            void getPaidCallMetadata(std::string& _buffer, const std::string& language);
 
             void getMid(std::string& _buffer);
 
-            void getUserCountryForBilling(std::string& _buffer, std::string& country, std::string& remoteIp);
+            void getUserCountryForBilling(std::string& _buffer, const std::string& country, const std::string& remoteIp);
 
             void getFavoriteGroupIdsForChannel(std::string& _buffer);
 
-            void getPaidCallHistory(std::string& _buffer, uint64_t& start, uint32_t& size, std::string& language);
+            void getPaidCallHistory(std::string& _buffer, const uint64_t start, const uint32_t size, const std::string& language);
 
-            void sendPinCodeOperation(std::string& _buffer, std::string& verifier);
+            void sendPinCodeOperation(std::string& _buffer, const std::string& verifier);
 
-            void inviteIntoGroupCall(std::string& _buffer, std::string& chatMid, std::vector<std::string>& memberMids, GroupCallMediaType& mediaType);
+            void inviteIntoGroupCall(std::string& _buffer, const std::string& chatMid, const std::vector<std::string>& memberMids, const GroupCallMediaType mediaType);
 
             void getFriendMids(std::string& _buffer);
 
             void getMetaProfile(std::string& _buffer);
 
-            void sendMessageForChannel(std::string& _buffer, Message& message);
+            void sendMessageForChannel(std::string& _buffer, const Message& message);
 
             void activeBuddySubscriberCount(std::string& _buffer);
 
-            void getCallCreditPurchaseHistory(std::string& _buffer, CoinHistoryCondition& request);
+            void getCallCreditPurchaseHistory(std::string& _buffer, const CoinHistoryCondition& request);
 
-            void isRoomMember(std::string& _buffer, std::string& roomId);
+            void isRoomMember(std::string& _buffer, const std::string& roomId);
 
-            void sendSystemOAMessage(std::string& _buffer, Message& message);
+            void sendSystemOAMessage(std::string& _buffer, const Message& message);
 
-            void acquirePaidCallRoute(std::string& _buffer, PaidCallType& paidCallType, std::string& dialedNumber, std::string& language, std::string& networkCode, bool& disableCallerId, std::string& referer, std::string& adSessionId);
+            void acquirePaidCallRoute(std::string& _buffer, const PaidCallType paidCallType, const std::string& dialedNumber, const std::string& language, const std::string& networkCode, const bool disableCallerId, const std::string& referer, const std::string& adSessionId);
 
-            void getGroupsForChannel(std::string& _buffer, std::vector<std::string>& groupIds);
+            void getGroupsForChannel(std::string& _buffer, const std::vector<std::string>& groupIds);
 
             void getUserCreateTime(std::string& _buffer);
 
-            void registerChannelCP(std::string& _buffer, std::string& cpId, std::string& registerPassword);
+            void registerChannelCP(std::string& _buffer, const std::string& cpId, const std::string& registerPassword);
 
-            void reserveCallCreditPurchase(std::string& _buffer, CoinPurchaseReservation& request);
+            void reserveCallCreditPurchase(std::string& _buffer, const CoinPurchaseReservation& request);
 
-            void acquirePaidCallCurrencyExchangeRate(std::string& _buffer, std::string& language);
+            void acquirePaidCallCurrencyExchangeRate(std::string& _buffer, const std::string& language);
 
-            void getRoomMemberMidsForAppPlatform(std::string& _buffer, std::string& roomId);
+            void getRoomMemberMidsForAppPlatform(std::string& _buffer, const std::string& roomId);
 
-            void getPaidCallBalanceList(std::string& _buffer, std::string& language);
+            void getPaidCallBalanceList(std::string& _buffer, const std::string& language);
 
-            void getPersonalInfos(std::string& _buffer, std::set<PersonalInfo>& requiredPersonalInfos);
+            void getPersonalInfos(std::string& _buffer, const std::set<PersonalInfo>& requiredPersonalInfos);
 
-            void getPrimaryClientsForChannel(std::string& _buffer, std::vector<std::string>& userMids);
+            void getPrimaryClientsForChannel(std::string& _buffer, const std::vector<std::string>& userMids);
 
-            void addBuddyToContact(std::string& _buffer, std::string& buddyMid);
+            void addBuddyToContact(std::string& _buffer, const std::string& buddyMid);
 
-            void getGroupMemberMidsForAppPlatform(std::string& _buffer, std::string& groupId);
+            void getGroupMemberMidsForAppPlatform(std::string& _buffer, const std::string& groupId);
 
             void getUserLanguage(std::string& _buffer);
 
-            void lookupPaidCall(std::string& _buffer, std::string& dialedNumber, std::string& language, std::string& referer);
+            void lookupPaidCall(std::string& _buffer, const std::string& dialedNumber, const std::string& language, const std::string& referer);
 
-            void getReverseCompactContacts(std::string& _buffer, std::vector<std::string>& ids);
+            void getReverseCompactContacts(std::string& _buffer, const std::vector<std::string>& ids);
 
             void getPaidCallAdStatus(std::string& _buffer);
 
-            void findContactByUseridWithoutAbuseBlockForChannel(std::string& _buffer, std::string& userid);
+            void findContactByUseridWithoutAbuseBlockForChannel(std::string& _buffer, const std::string& userid);
 
-            void getGroupMemberMids(std::string& _buffer, std::string& groupId);
+            void getGroupMemberMids(std::string& _buffer, const std::string& groupId);
 
-            void sendMessageWithoutRelationship(std::string& _buffer, Message& message);
+            void sendMessageWithoutRelationship(std::string& _buffer, const Message& message);
 
-            void displayBuddySubscriberCountInBulk(std::string& _buffer, std::vector<std::string>& mids);
+            void displayBuddySubscriberCountInBulk(std::string& _buffer, const std::vector<std::string>& mids);
 
-            void lookupRoomMembers(std::string& _buffer, std::string& roomId, std::vector<std::string>& mids);
+            void lookupRoomMembers(std::string& _buffer, const std::string& roomId, const std::vector<std::string>& mids);
 
             void getFavoriteMidsForChannel(std::string& _buffer);
 
@@ -5380,121 +5380,121 @@ namespace protocol {
 
             void getProfileForChannel(std::string& _buffer);
 
-            void getUserTickets(std::string& _buffer, std::vector<std::string>& userMids);
+            void getUserTickets(std::string& _buffer, const std::vector<std::string>& userMids);
 
             void getOAFriendMids(std::string& _buffer);
 
-            void searchPaidCallUserRate(std::string& _buffer, std::string& countryCode, std::string& language);
+            void searchPaidCallUserRate(std::string& _buffer, const std::string& countryCode, const std::string& language);
 
             void getJoinedGroupIdsForChannel(std::string& _buffer);
 
-            void acquireGroupCallRoute(std::string& _buffer, std::string& chatMid, GroupCallMediaType& mediaType);
+            void acquireGroupCallRoute(std::string& _buffer, const std::string& chatMid, const GroupCallMediaType mediaType);
 
             void getUserMidsWhoAddedMe(std::string& _buffer);
 
             void getIdentityCredential(std::string& _buffer);
 
-            void addOperationForChannel(std::string& _buffer, OpType& opType, std::string& param1, std::string& param2, std::string& param3);
+            void addOperationForChannel(std::string& _buffer, const OpType opType, const std::string& param1, const std::string& param2, const std::string& param3);
 
-            void getSimpleChannelContacts(std::string& _buffer, std::vector<std::string>& ids, bool& statusSticonFallbackDisabled);
+            void getSimpleChannelContacts(std::string& _buffer, const std::vector<std::string>& ids, const bool statusSticonFallbackDisabled);
 
-            void getUserLastSentMessageTimeStamp(std::string& _buffer, std::string& mid);
+            void getUserLastSentMessageTimeStamp(std::string& _buffer, const std::string& mid);
 
-            void registerVirtualAccount(std::string& _buffer, std::string& locale, std::string& encryptedVirtualUserId, std::string& encryptedPassword);
+            void registerVirtualAccount(std::string& _buffer, const std::string& locale, const std::string& encryptedVirtualUserId, const std::string& encryptedPassword);
 
-            void unregisterVirtualAccount(std::string& _buffer, std::string& virtualMid);
+            void unregisterVirtualAccount(std::string& _buffer, const std::string& virtualMid);
 
-            void requestVirtualAccountPasswordChange(std::string& _buffer, std::string& virtualMid, std::string& encryptedVirtualUserId, std::string& encryptedOldPassword, std::string& encryptedNewPassword);
+            void requestVirtualAccountPasswordChange(std::string& _buffer, const std::string& virtualMid, const std::string& encryptedVirtualUserId, const std::string& encryptedOldPassword, const std::string& encryptedNewPassword);
 
-            void notifyEmailConfirmationResult(std::string& _buffer, std::map<std::string, std::string>& parameterMap);
+            void notifyEmailConfirmationResult(std::string& _buffer, const std::map<std::string, std::string>& parameterMap);
 
-            void requestVirtualAccountPasswordSet(std::string& _buffer, std::string& virtualMid, std::string& encryptedVirtualUserId, std::string& encryptedNewPassword);
+            void requestVirtualAccountPasswordSet(std::string& _buffer, const std::string& virtualMid, const std::string& encryptedVirtualUserId, const std::string& encryptedNewPassword);
 
             void getRSAKey(std::string& _buffer);
 
-            void queryBeaconActions(std::string& _buffer, std::string& hwid, std::string& secureMessage, ApplicationType& applicationType, std::string& applicationVersion, std::string& lang);
+            void queryBeaconActions(std::string& _buffer, const std::string& hwid, const std::string& secureMessage, const ApplicationType applicationType, const std::string& applicationVersion, const std::string& lang);
 
-            void notifyBeaconDetected(std::string& _buffer, std::string& hwid, std::string& secureMessage, BeaconNotificationType& notificationType);
+            void notifyBeaconDetected(std::string& _buffer, const std::string& hwid, const std::string& secureMessage, const BeaconNotificationType notificationType);
 
-            void getDomains(std::string& _buffer, uint64_t& lastSynced);
+            void getDomains(std::string& _buffer, const uint64_t lastSynced);
 
-            void approveChannelAndIssueRequestToken(std::string& _buffer, std::string& channelId, std::string& otpId);
+            void approveChannelAndIssueRequestToken(std::string& _buffer, const std::string& channelId, const std::string& otpId);
 
-            void issueOTP(std::string& _buffer, std::string& channelId);
+            void issueOTP(std::string& _buffer, const std::string& channelId);
 
             void getChannelSettings(std::string& _buffer);
 
-            void getChannelNotificationSettings(std::string& _buffer, std::string& locale);
+            void getChannelNotificationSettings(std::string& _buffer, const std::string& locale);
 
-            void updateChannelNotificationSetting(std::string& _buffer, std::vector<ChannelNotificationSetting>& setting);
+            void updateChannelNotificationSetting(std::string& _buffer, const std::vector<ChannelNotificationSetting>& setting);
 
-            void updateChannelSettings(std::string& _buffer, ChannelSettings& channelSettings);
+            void updateChannelSettings(std::string& _buffer, const ChannelSettings& channelSettings);
 
-            void getCommonDomains(std::string& _buffer, uint64_t& lastSynced);
+            void getCommonDomains(std::string& _buffer, const uint64_t lastSynced);
 
-            void issueRequestTokenWithAuthScheme(std::string& _buffer, std::string& channelId, std::string& otpId, std::vector<std::string>& authScheme, std::string& returnUrl);
+            void issueRequestTokenWithAuthScheme(std::string& _buffer, const std::string& channelId, const std::string& otpId, const std::vector<std::string>& authScheme, const std::string& returnUrl);
 
-            void getChannelNotificationSetting(std::string& _buffer, std::string& channelId, std::string& locale);
+            void getChannelNotificationSetting(std::string& _buffer, const std::string& channelId, const std::string& locale);
 
-            void issueChannelToken(std::string& _buffer, std::string& channelId);
+            void issueChannelToken(std::string& _buffer, const std::string& channelId);
 
-            void getChannels(std::string& _buffer, uint64_t& lastSynced, std::string& locale);
+            void getChannels(std::string& _buffer, const uint64_t lastSynced, const std::string& locale);
 
-            void fetchNotificationItems(std::string& _buffer, uint64_t& localRev);
+            void fetchNotificationItems(std::string& _buffer, const uint64_t localRev);
 
-            void getChannelInfo(std::string& _buffer, std::string& channelId, std::string& locale);
+            void getChannelInfo(std::string& _buffer, const std::string& channelId, const std::string& locale);
 
-            void getNotificationBadgeCount(std::string& _buffer, uint64_t& localRev);
+            void getNotificationBadgeCount(std::string& _buffer, const uint64_t localRev);
 
-            void issueRequestToken(std::string& _buffer, std::string& channelId, std::string& otpId);
+            void issueRequestToken(std::string& _buffer, const std::string& channelId, const std::string& otpId);
 
-            void revokeChannel(std::string& _buffer, std::string& channelId);
+            void revokeChannel(std::string& _buffer, const std::string& channelId);
 
-            void getApprovedChannels(std::string& _buffer, uint64_t& lastSynced, std::string& locale);
+            void getApprovedChannels(std::string& _buffer, const uint64_t lastSynced, const std::string& locale);
 
-            void getFriendChannelMatrices(std::string& _buffer, std::vector<std::string>& channelIds);
+            void getFriendChannelMatrices(std::string& _buffer, const std::vector<std::string>& channelIds);
 
-            void issueRequestTokenForAutoLogin(std::string& _buffer, std::string& channelId, std::string& otpId, std::string& redirectUrl);
+            void issueRequestTokenForAutoLogin(std::string& _buffer, const std::string& channelId, const std::string& otpId, const std::string& redirectUrl);
 
-            void getUpdatedChannelIds(std::string& _buffer, std::vector<ChannelIdWithLastUpdated>& channelIds);
+            void getUpdatedChannelIds(std::string& _buffer, const std::vector<ChannelIdWithLastUpdated>& channelIds);
 
-            void reserveCoinUse(std::string& _buffer, CoinUseReservation& request, std::string& locale);
+            void reserveCoinUse(std::string& _buffer, const CoinUseReservation& request, const std::string& locale);
 
-            void syncChannelData(std::string& _buffer, uint64_t& lastSynced, std::string& locale);
+            void syncChannelData(std::string& _buffer, const uint64_t lastSynced, const std::string& locale);
 
-            void approveChannelAndIssueChannelToken(std::string& _buffer, std::string& channelId);
+            void approveChannelAndIssueChannelToken(std::string& _buffer, const std::string& channelId);
 
-            void getSnsFriends(std::string& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, uint32_t& startIdx, uint32_t& limit);
+            void getSnsFriends(std::string& _buffer, const SnsIdType snsIdType, const std::string& snsAccessToken, const uint32_t startIdx, const uint32_t limit);
 
-            void getSnsMyProfile(std::string& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken);
+            void getSnsMyProfile(std::string& _buffer, const SnsIdType snsIdType, const std::string& snsAccessToken);
 
-            void postSnsInvitationMessage(std::string& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& toSnsUserId);
+            void postSnsInvitationMessage(std::string& _buffer, const SnsIdType snsIdType, const std::string& snsAccessToken, const std::string& toSnsUserId);
 
-            void reportDeviceState(std::string& _buffer, std::map<DeviceBooleanStateKey, bool>& booleanState, std::map<DeviceStringStateKey, std::string>& stringState);
+            void reportDeviceState(std::string& _buffer, const std::map<DeviceBooleanStateKey, bool>& booleanState, const std::map<DeviceStringStateKey, std::string>& stringState);
 
-            void notifySleepV2(std::string& _buffer, std::map<ServiceCode, ClientLastStatus>& lastStatusMap);
+            void notifySleepV2(std::string& _buffer, const std::map<ServiceCode, ClientLastStatus>& lastStatusMap);
 
-            void updateNotificationToken(std::string& _buffer, std::string& token, NotificationType& type);
+            void updateNotificationToken(std::string& _buffer, const std::string& token, const NotificationType type);
 
-            void updateGroup(std::string& _buffer, uint32_t& reqSeq, Group& group);
+            void updateGroup(std::string& _buffer, const uint32_t reqSeq, const Group& group);
 
-            void verifyAccountMigrationPincode(std::string& _buffer, std::string& migrationPincodeSessionId, std::string& accountMigrationPincode);
+            void verifyAccountMigrationPincode(std::string& _buffer, const std::string& migrationPincodeSessionId, const std::string& accountMigrationPincode);
 
-            void registerWithExistingSnsIdAndIdentityCredential(std::string& _buffer, IdentityCredential& identityCredential, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& migrationPincodeSessionId);
+            void registerWithExistingSnsIdAndIdentityCredential(std::string& _buffer, const IdentityCredential& identityCredential, const std::string& region, const std::string& udidHash, const DeviceInfo& deviceInfo, const std::string& migrationPincodeSessionId);
 
-            void registerDeviceWithoutPhoneNumber(std::string& _buffer, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo);
+            void registerDeviceWithoutPhoneNumber(std::string& _buffer, const std::string& region, const std::string& udidHash, const DeviceInfo& deviceInfo);
 
-            void changeVerificationMethod(std::string& _buffer, std::string& sessionId, VerificationMethod& method);
+            void changeVerificationMethod(std::string& _buffer, const std::string& sessionId, const VerificationMethod method);
 
-            void setBuddyLocation(std::string& _buffer, std::string& mid, uint32_t& index, Geolocation& location);
+            void setBuddyLocation(std::string& _buffer, const std::string& mid, const uint32_t index, const Geolocation& location);
 
-            void getFriendRequests(std::string& _buffer, FriendRequestDirection& direction, uint64_t& lastSeenSeqId);
+            void getFriendRequests(std::string& _buffer, const FriendRequestDirection direction, const uint64_t lastSeenSeqId);
 
-            void kickoutFromGroup(std::string& _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
+            void kickoutFromGroup(std::string& _buffer, const uint32_t reqSeq, const std::string& groupId, const std::vector<std::string>& contactIds);
 
-            void verifyIdentityCredentialWithResult(std::string& _buffer, IdentityCredential& identityCredential, std::string& migrationPincodeSessionId);
+            void verifyIdentityCredentialWithResult(std::string& _buffer, const IdentityCredential& identityCredential, const std::string& migrationPincodeSessionId);
 
-            void sendEchoPush(std::string& _buffer, std::string& text);
+            void sendEchoPush(std::string& _buffer, const std::string& text);
 
             void createSession(std::string& _buffer);
 
@@ -5502,505 +5502,505 @@ namespace protocol {
 
             void getRecommendationIds(std::string& _buffer);
 
-            void inviteViaEmail(std::string& _buffer, uint32_t& reqSeq, std::string& email, std::string& name);
+            void inviteViaEmail(std::string& _buffer, const uint32_t reqSeq, const std::string& email, const std::string& name);
 
-            void getRoomsV2(std::string& _buffer, std::vector<std::string>& roomIds);
+            void getRoomsV2(std::string& _buffer, const std::vector<std::string>& roomIds);
 
-            void getReadMessageOps(std::string& _buffer, std::string& chatId);
+            void getReadMessageOps(std::string& _buffer, const std::string& chatId);
 
-            void getSettingsAttributes(std::string& _buffer, uint32_t& attrBitset);
+            void getSettingsAttributes(std::string& _buffer, const uint32_t attrBitset);
 
-            void requestIdentityUnbind(std::string& _buffer, std::string& identifier, IdentityProvider& provider);
+            void requestIdentityUnbind(std::string& _buffer, const std::string& identifier, const IdentityProvider provider);
 
-            void getMessagesBySequenceNumber(std::string& _buffer, std::string& channelId, std::string& messageBoxId, uint64_t& startSeq, uint64_t& endSeq);
+            void getMessagesBySequenceNumber(std::string& _buffer, const std::string& channelId, const std::string& messageBoxId, const uint64_t startSeq, const uint64_t endSeq);
 
-            void inviteIntoRoom(std::string& _buffer, uint32_t& reqSeq, std::string& roomId, std::vector<std::string>& contactIds);
+            void inviteIntoRoom(std::string& _buffer, const uint32_t reqSeq, const std::string& roomId, const std::vector<std::string>& contactIds);
 
-            void sendChatChecked(std::string& _buffer, uint32_t& seq, std::string& consumer, std::string& lastMessageId, uint32_t& sessionId);
+            void sendChatChecked(std::string& _buffer, const uint32_t seq, const std::string& consumer, const std::string& lastMessageId, const uint32_t sessionId);
 
-            void removeSnsId(std::string& _buffer, SnsIdType& snsIdType);
+            void removeSnsId(std::string& _buffer, const SnsIdType snsIdType);
 
-            void reportSpammer(std::string& _buffer, std::string& spammerMid, std::vector<SpammerReason>& spammerReasons, std::vector<std::string>& spamMessageIds, std::vector<std::string>& spamMessages);
+            void reportSpammer(std::string& _buffer, const std::string& spammerMid, const std::vector<SpammerReason>& spammerReasons, const std::vector<std::string>& spamMessageIds, const std::vector<std::string>& spamMessages);
 
-            void findAndAddContactsByEmail(std::string& _buffer, uint32_t& reqSeq, std::set<std::string>& emails);
+            void findAndAddContactsByEmail(std::string& _buffer, const uint32_t reqSeq, const std::set<std::string>& emails);
 
-            void getCompactGroups(std::string& _buffer, std::vector<std::string>& groupIds);
+            void getCompactGroups(std::string& _buffer, const std::vector<std::string>& groupIds);
 
-            void sendMessage(std::string& _buffer, uint32_t& seq, Message& message);
+            void sendMessage(std::string& _buffer, const uint32_t seq, const Message& message);
 
-            void getRooms(std::string& _buffer, std::vector<std::string>& roomIds);
+            void getRooms(std::string& _buffer, const std::vector<std::string>& roomIds);
 
-            void updateC2DMRegistrationId(std::string& _buffer, std::string& registrationId);
+            void updateC2DMRegistrationId(std::string& _buffer, const std::string& registrationId);
 
-            void sendPostback(std::string& _buffer, SendPostbackRequest& request);
+            void sendPostback(std::string& _buffer, const SendPostbackRequest& request);
 
-            void getReadMessageOpsInBulk(std::string& _buffer, std::vector<std::string>& chatIds);
+            void getReadMessageOpsInBulk(std::string& _buffer, const std::vector<std::string>& chatIds);
 
-            void sendMessageIgnored(std::string& _buffer, uint32_t& seq, std::string& consumer, std::vector<std::string>& messageIds);
+            void sendMessageIgnored(std::string& _buffer, const uint32_t seq, const std::string& consumer, const std::vector<std::string>& messageIds);
 
-            void getMessageBoxWrapUpListV2(std::string& _buffer, uint32_t& messageBoxOffset, uint32_t& messageBoxCount);
+            void getMessageBoxWrapUpListV2(std::string& _buffer, const uint32_t messageBoxOffset, const uint32_t messageBoxCount);
 
-            void getOldReadMessageOpsWithRange(std::string& _buffer, uint64_t& startRev, uint64_t& endRev);
+            void getOldReadMessageOpsWithRange(std::string& _buffer, const uint64_t startRev, const uint64_t endRev);
 
-            void getRSAKeyInfo(std::string& _buffer, IdentityProvider& provider);
+            void getRSAKeyInfo(std::string& _buffer, const IdentityProvider provider);
 
-            void updateProfileAttribute(std::string& _buffer, uint32_t& reqSeq, ProfileAttribute& attr, std::string& value);
+            void updateProfileAttribute(std::string& _buffer, const uint32_t reqSeq, const ProfileAttribute attr, const std::string& value);
 
             void createAccountMigrationPincodeSession(std::string& _buffer);
 
-            void notifiedRedirect(std::string& _buffer, std::map<std::string, std::string>& paramMap);
+            void notifiedRedirect(std::string& _buffer, const std::map<std::string, std::string>& paramMap);
 
-            void notifyIndividualEvent(std::string& _buffer, NotificationStatus& notificationStatus, std::vector<std::string>& receiverMids);
+            void notifyIndividualEvent(std::string& _buffer, const NotificationStatus notificationStatus, const std::vector<std::string>& receiverMids);
 
-            void updateApnsDeviceToken(std::string& _buffer, std::string& apnsDeviceToken);
+            void updateApnsDeviceToken(std::string& _buffer, const std::string& apnsDeviceToken);
 
-            void getMessageBoxCompactWrapUpListV2(std::string& _buffer, uint32_t& messageBoxOffset, uint32_t& messageBoxCount);
+            void getMessageBoxCompactWrapUpListV2(std::string& _buffer, const uint32_t messageBoxOffset, const uint32_t messageBoxCount);
 
-            void requestEmailConfirmation(std::string& _buffer, EmailConfirmation& emailConfirmation);
+            void requestEmailConfirmation(std::string& _buffer, const EmailConfirmation& emailConfirmation);
 
-            void registerWithSnsIdAndIdentityCredential(std::string& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, IdentityCredential& identityCredential, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& migrationPincodeSessionId);
+            void registerWithSnsIdAndIdentityCredential(std::string& _buffer, const SnsIdType snsIdType, const std::string& snsAccessToken, const IdentityCredential& identityCredential, const std::string& region, const std::string& udidHash, const DeviceInfo& deviceInfo, const std::string& migrationPincodeSessionId);
 
-            void getMessageBoxCompactWrapUp(std::string& _buffer, std::string& mid);
+            void getMessageBoxCompactWrapUp(std::string& _buffer, const std::string& mid);
 
-            void findContactByUserTicket(std::string& _buffer, std::string& ticketIdWithTag);
+            void findContactByUserTicket(std::string& _buffer, const std::string& ticketIdWithTag);
 
-            void updateAccountMigrationPincode(std::string& _buffer, std::string& accountMigrationPincode);
+            void updateAccountMigrationPincode(std::string& _buffer, const std::string& accountMigrationPincode);
 
-            void registerBuddyUser(std::string& _buffer, std::string& buddyId, std::string& registrarPassword);
+            void registerBuddyUser(std::string& _buffer, const std::string& buddyId, const std::string& registrarPassword);
 
-            void updateSettingsV2(std::string& _buffer, uint32_t& reqSeq, Settings& settings);
+            void updateSettingsV2(std::string& _buffer, const uint32_t reqSeq, const Settings& settings);
 
             void getUserTicket(std::string& _buffer);
 
-            void fetchOps(std::string& _buffer, uint64_t& localRev, uint32_t& count, uint64_t& globalRev, uint64_t& individualRev);
+            void fetchOps(std::string& _buffer, const uint64_t localRev, const uint32_t count, const uint64_t globalRev, const uint64_t individualRev);
 
-            void commitSendMessagesToMid(std::string& _buffer, CommitSendMessagesToMidRequest& request);
+            void commitSendMessagesToMid(std::string& _buffer, const CommitSendMessagesToMidRequest& request);
 
-            void getMessageBoxV2(std::string& _buffer, std::string& messageBoxId, uint32_t& lastMessagesCount);
+            void getMessageBoxV2(std::string& _buffer, const std::string& messageBoxId, const uint32_t lastMessagesCount);
 
-            void requestResendMessage(std::string& _buffer, uint32_t& reqSeq, std::string& senderMid, std::string& messageId);
+            void requestResendMessage(std::string& _buffer, const uint32_t reqSeq, const std::string& senderMid, const std::string& messageId);
 
-            void getGroupWithoutMembers(std::string& _buffer, std::string& groupId);
+            void getGroupWithoutMembers(std::string& _buffer, const std::string& groupId);
 
-            void removeAllMessages(std::string& _buffer, uint32_t& seq, std::string& lastMessageId);
+            void removeAllMessages(std::string& _buffer, const uint32_t seq, const std::string& lastMessageId);
 
-            void verifyAccountMigration(std::string& _buffer, std::string& migrationSessionId);
+            void verifyAccountMigration(std::string& _buffer, const std::string& migrationSessionId);
 
-            void reissueGroupTicket(std::string& _buffer, std::string& groupMid);
+            void reissueGroupTicket(std::string& _buffer, const std::string& groupMid);
 
-            void logoutSession(std::string& _buffer, std::string& tokenKey);
+            void logoutSession(std::string& _buffer, const std::string& tokenKey);
 
-            void getBuddyLocation(std::string& _buffer, std::string& mid, uint32_t& index);
+            void getBuddyLocation(std::string& _buffer, const std::string& mid, const uint32_t index);
 
-            void getWapInvitation(std::string& _buffer, std::string& invitationHash);
+            void getWapInvitation(std::string& _buffer, const std::string& invitationHash);
 
-            void registerDevice(std::string& _buffer, std::string& sessionId, std::string& migrationPincodeSessionId);
+            void registerDevice(std::string& _buffer, const std::string& sessionId, const std::string& migrationPincodeSessionId);
 
-            void clearMessageBox(std::string& _buffer, std::string& channelId, std::string& messageBoxId);
+            void clearMessageBox(std::string& _buffer, const std::string& channelId, const std::string& messageBoxId);
 
-            void loginWithIdentityCredentialForCertificate(std::string& _buffer, std::string& identifier, std::string& password, bool& keepLoggedIn, std::string& accessLocation, std::string& systemName, IdentityProvider& identityProvider, std::string& certificate);
+            void loginWithIdentityCredentialForCertificate(std::string& _buffer, const std::string& identifier, const std::string& password, const bool keepLoggedIn, const std::string& accessLocation, const std::string& systemName, const IdentityProvider identityProvider, const std::string& certificate);
 
-            void getSuggestSettings(std::string& _buffer, std::string& locale);
+            void getSuggestSettings(std::string& _buffer, const std::string& locale);
 
-            void updateAndGetNearby(std::string& _buffer, double& latitude, double& longitude);
+            void updateAndGetNearby(std::string& _buffer, const double latitude, const double longitude);
 
-            void syncContactBySnsIds(std::string& _buffer, uint32_t& reqSeq, std::vector<SnsFriendModification>& modifications);
+            void syncContactBySnsIds(std::string& _buffer, const uint32_t reqSeq, const std::vector<SnsFriendModification>& modifications);
 
-            void getContacts(std::string& _buffer, std::vector<std::string>& ids);
+            void getContacts(std::string& _buffer, const std::vector<std::string>& ids);
 
-            void getMessageBoxCompactWrapUpList(std::string& _buffer, uint32_t& start, uint32_t& messageBoxCount);
+            void getMessageBoxCompactWrapUpList(std::string& _buffer, const uint32_t start, const uint32_t messageBoxCount);
 
-            void getProximityMatchCandidates(std::string& _buffer, std::string& sessionId);
+            void getProximityMatchCandidates(std::string& _buffer, const std::string& sessionId);
 
-            void updateExtendedProfileAttribute(std::string& _buffer, uint32_t& reqSeq, ExtendedProfileAttribute& attr, ExtendedProfile& extendedProfile);
+            void updateExtendedProfileAttribute(std::string& _buffer, const uint32_t reqSeq, const ExtendedProfileAttribute attr, const ExtendedProfile& extendedProfile);
 
-            void resendPinCode(std::string& _buffer, std::string& sessionId);
+            void resendPinCode(std::string& _buffer, const std::string& sessionId);
 
-            void reportSettings(std::string& _buffer, uint64_t& syncOpRevision, Settings& settings);
+            void reportSettings(std::string& _buffer, const uint64_t syncOpRevision, const Settings& settings);
 
-            void registerBuddyUserid(std::string& _buffer, uint32_t& seq, std::string& userid);
+            void registerBuddyUserid(std::string& _buffer, const uint32_t seq, const std::string& userid);
 
-            void findGroupByTicket(std::string& _buffer, std::string& ticketId);
+            void findGroupByTicket(std::string& _buffer, const std::string& ticketId);
 
-            void registerDeviceWithIdentityCredential(std::string& _buffer, std::string& sessionId, std::string& identifier, std::string& verifier, IdentityProvider& provider, std::string& migrationPincodeSessionId);
+            void registerDeviceWithIdentityCredential(std::string& _buffer, const std::string& sessionId, const std::string& identifier, const std::string& verifier, const IdentityProvider provider, const std::string& migrationPincodeSessionId);
 
             void invalidateUserTicket(std::string& _buffer);
 
-            void sendEvent(std::string& _buffer, uint32_t& seq, Message& message);
+            void sendEvent(std::string& _buffer, const uint32_t seq, const Message& message);
 
-            void sendMessageToMyHome(std::string& _buffer, uint32_t& seq, Message& message);
+            void sendMessageToMyHome(std::string& _buffer, const uint32_t seq, const Message& message);
 
-            void sendContentPreviewUpdated(std::string& _buffer, uint32_t& esq, std::string& messageId, std::vector<std::string>& receiverMids);
+            void sendContentPreviewUpdated(std::string& _buffer, const uint32_t esq, const std::string& messageId, const std::vector<std::string>& receiverMids);
 
-            void loginWithVerifier(std::string& _buffer, std::string& verifier);
+            void loginWithVerifier(std::string& _buffer, const std::string& verifier);
 
-            void removeBuddySubscriptionAndNotifyBuddyUnregistered(std::string& _buffer, std::vector<std::string>& subscriberMids);
+            void removeBuddySubscriptionAndNotifyBuddyUnregistered(std::string& _buffer, const std::vector<std::string>& subscriberMids);
 
-            void unblockContact(std::string& _buffer, uint32_t& reqSeq, std::string& id, std::string& reference);
+            void unblockContact(std::string& _buffer, const uint32_t reqSeq, const std::string& id, const std::string& reference);
 
-            void removeBuddyLocation(std::string& _buffer, std::string& mid, uint32_t& index);
+            void removeBuddyLocation(std::string& _buffer, const std::string& mid, const uint32_t index);
 
             void getRingbackTone(std::string& _buffer);
 
-            void getConfigurations(std::string& _buffer, uint64_t& revision, std::string& regionOfUsim, std::string& regionOfTelephone, std::string& regionOfLocale, std::string& carrier);
+            void getConfigurations(std::string& _buffer, const uint64_t revision, const std::string& regionOfUsim, const std::string& regionOfTelephone, const std::string& regionOfLocale, const std::string& carrier);
 
-            void getProximityMatchCandidateList(std::string& _buffer, std::string& sessionId);
+            void getProximityMatchCandidateList(std::string& _buffer, const std::string& sessionId);
 
-            void requestAccountPasswordReset(std::string& _buffer, std::string& identifier, IdentityProvider& provider, std::string& locale);
+            void requestAccountPasswordReset(std::string& _buffer, const std::string& identifier, const IdentityProvider provider, const std::string& locale);
 
-            void getNextMessages(std::string& _buffer, std::string& messageBoxId, uint64_t& startSeq, uint32_t& messagesCount);
+            void getNextMessages(std::string& _buffer, const std::string& messageBoxId, const uint64_t startSeq, const uint32_t messagesCount);
 
-            void reportProfile(std::string& _buffer, uint64_t& syncOpRevision, Profile& profile);
+            void reportProfile(std::string& _buffer, const uint64_t syncOpRevision, const Profile& profile);
 
-            void getCompactRoom(std::string& _buffer, std::string& roomId);
+            void getCompactRoom(std::string& _buffer, const std::string& roomId);
 
             void getLastOpRevision(std::string& _buffer);
 
-            void getPreviousMessagesV2(std::string& _buffer, std::string& messageBoxId, MessageBoxV2MessageId& endMessageId, uint32_t& messagesCount);
+            void getPreviousMessagesV2(std::string& _buffer, const std::string& messageBoxId, const MessageBoxV2MessageId& endMessageId, const uint32_t messagesCount);
 
-            void fetchAnnouncements(std::string& _buffer, uint32_t& lastFetchedIndex);
+            void fetchAnnouncements(std::string& _buffer, const uint32_t lastFetchedIndex);
 
-            void acquireCallRoute(std::string& _buffer, std::string& to);
+            void acquireCallRoute(std::string& _buffer, const std::string& to);
 
-            void updateSettingsAttribute(std::string& _buffer, uint32_t& reqSeq, SettingsAttribute& attr, std::string& value);
+            void updateSettingsAttribute(std::string& _buffer, const uint32_t reqSeq, const SettingsAttribute attr, const std::string& value);
 
-            void createGroupV2(std::string& _buffer, uint32_t& seq, std::string& name, std::vector<std::string>& contactIds);
+            void createGroupV2(std::string& _buffer, const uint32_t seq, const std::string& name, const std::vector<std::string>& contactIds);
 
-            void isIdentityIdentifierAvailable(std::string& _buffer, std::string& identifier, IdentityProvider& provider);
+            void isIdentityIdentifierAvailable(std::string& _buffer, const std::string& identifier, const IdentityProvider provider);
 
-            void blockContact(std::string& _buffer, uint32_t& reqSeq, std::string& id);
+            void blockContact(std::string& _buffer, const uint32_t reqSeq, const std::string& id);
 
-            void commitUpdateProfile(std::string& _buffer, uint32_t& seq, std::vector<ProfileAttribute>& attrs, std::vector<std::string>& receiverMids);
+            void commitUpdateProfile(std::string& _buffer, const uint32_t seq, const std::vector<ProfileAttribute>& attrs, const std::vector<std::string>& receiverMids);
 
-            void registerWithSnsId(std::string& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, std::string& mid, std::string& migrationPincodeSessionId);
+            void registerWithSnsId(std::string& _buffer, const SnsIdType snsIdType, const std::string& snsAccessToken, const std::string& region, const std::string& udidHash, const DeviceInfo& deviceInfo, const std::string& mid, const std::string& migrationPincodeSessionId);
 
-            void updatePublicKeychain(std::string& _buffer, PublicKeychain& publicKeychain);
+            void updatePublicKeychain(std::string& _buffer, const PublicKeychain& publicKeychain);
 
-            void loginWithVerifierForCerificate(std::string& _buffer, std::string& verifier);
+            void loginWithVerifierForCerificate(std::string& _buffer, const std::string& verifier);
 
-            void tryFriendRequest(std::string& _buffer, std::string& midOrEMid, FriendRequestMethod& method, std::string& friendRequestParams);
+            void tryFriendRequest(std::string& _buffer, const std::string& midOrEMid, const FriendRequestMethod method, const std::string& friendRequestParams);
 
             void getBlockedRecommendationIds(std::string& _buffer);
 
             void getGroupIdsInvited(std::string& _buffer);
 
-            void getSuggestIncrements(std::string& _buffer, SuggestDictionaryRevisions& revisions);
+            void getSuggestIncrements(std::string& _buffer, const SuggestDictionaryRevisions& revisions);
 
-            void resendPinCodeBySMS(std::string& _buffer, std::string& sessionId);
+            void resendPinCodeBySMS(std::string& _buffer, const std::string& sessionId);
 
-            void registerWithPhoneNumber(std::string& _buffer, std::string& sessionId, std::string& migrationPincodeSessionId);
+            void registerWithPhoneNumber(std::string& _buffer, const std::string& sessionId, const std::string& migrationPincodeSessionId);
 
             void getActiveBuddySubscriberIds(std::string& _buffer);
 
-            void createRoom(std::string& _buffer, uint32_t& reqSeq, std::vector<std::string>& contactIds);
+            void createRoom(std::string& _buffer, const uint32_t reqSeq, const std::vector<std::string>& contactIds);
 
-            void verifyPhoneNumberForLogin(std::string& _buffer, std::string& verifierFromPhone, std::string& pinCodeForPhone, std::string& verifierFromLogin);
+            void verifyPhoneNumberForLogin(std::string& _buffer, const std::string& verifierFromPhone, const std::string& pinCodeForPhone, const std::string& verifierFromLogin);
 
-            void addSnsId(std::string& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken);
+            void addSnsId(std::string& _buffer, const SnsIdType snsIdType, const std::string& snsAccessToken);
 
-            void finishUpdateVerification(std::string& _buffer, std::string& sessionId);
+            void finishUpdateVerification(std::string& _buffer, const std::string& sessionId);
 
-            void validateContactsOnBot(std::string& _buffer, std::vector<std::string>& contacts);
+            void validateContactsOnBot(std::string& _buffer, const std::vector<std::string>& contacts);
 
-            void getRoom(std::string& _buffer, std::string& roomId);
+            void getRoom(std::string& _buffer, const std::string& roomId);
 
-            void closeProximityMatch(std::string& _buffer, std::string& sessionId);
+            void closeProximityMatch(std::string& _buffer, const std::string& sessionId);
 
-            void getCompactGroup(std::string& _buffer, std::string& groupId);
+            void getCompactGroup(std::string& _buffer, const std::string& groupId);
 
-            void getBlockedContactIdsByRange(std::string& _buffer, uint32_t& start, uint32_t& count);
+            void getBlockedContactIdsByRange(std::string& _buffer, const uint32_t start, const uint32_t count);
 
-            void getRecentMessagesV2(std::string& _buffer, std::string& messageBoxId, uint32_t& messagesCount);
+            void getRecentMessagesV2(std::string& _buffer, const std::string& messageBoxId, const uint32_t messagesCount);
 
-            void reissueUserTicket(std::string& _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
+            void reissueUserTicket(std::string& _buffer, const uint64_t expirationTime, const uint32_t maxUseCount);
 
-            void getMessageReadRange(std::string& _buffer, std::vector<std::string>& chatIds);
+            void getMessageReadRange(std::string& _buffer, const std::vector<std::string>& chatIds);
 
             void clearRingbackTone(std::string& _buffer);
 
-            void setIdentityCredential(std::string& _buffer, std::string& identifier, std::string& verifier, IdentityProvider& provider);
+            void setIdentityCredential(std::string& _buffer, const std::string& identifier, const std::string& verifier, const IdentityProvider provider);
 
-            void getMessageBoxCompactWrapUpV2(std::string& _buffer, std::string& messageBoxId);
+            void getMessageBoxCompactWrapUpV2(std::string& _buffer, const std::string& messageBoxId);
 
             void getServerTime(std::string& _buffer);
 
-            void trySendMessage(std::string& _buffer, uint32_t& seq, Message& message);
+            void trySendMessage(std::string& _buffer, const uint32_t seq, const Message& message);
 
-            void getNextMessagesV2(std::string& _buffer, std::string& messageBoxId, MessageBoxV2MessageId& startMessageId, uint32_t& messagesCount);
+            void getNextMessagesV2(std::string& _buffer, const std::string& messageBoxId, const MessageBoxV2MessageId& startMessageId, const uint32_t messagesCount);
 
-            void notifySleep(std::string& _buffer, uint64_t& lastRev, uint32_t& badge);
+            void notifySleep(std::string& _buffer, const uint64_t lastRev, const uint32_t badge);
 
             void getBuddyBlockerIds(std::string& _buffer);
 
-            void removeE2EEPublicKey(std::string& _buffer, E2EEPublicKey& publicKey);
+            void removeE2EEPublicKey(std::string& _buffer, const E2EEPublicKey& publicKey);
 
-            void reissueTrackingTicket(std::string& _buffer, TrackingType& type);
+            void reissueTrackingTicket(std::string& _buffer, const TrackingType type);
 
-            void cancelGroupInvitation(std::string& _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
+            void cancelGroupInvitation(std::string& _buffer, const uint32_t reqSeq, const std::string& groupId, const std::vector<std::string>& contactIds);
 
-            void removeMessage(std::string& _buffer, std::string& messageId);
+            void removeMessage(std::string& _buffer, const std::string& messageId);
 
             void getAllReadMessageOps(std::string& _buffer);
 
             void unregisterUserAndDevice(std::string& _buffer);
 
-            void acceptGroupInvitation(std::string& _buffer, uint32_t& reqSeq, std::string& groupId);
+            void acceptGroupInvitation(std::string& _buffer, const uint32_t reqSeq, const std::string& groupId);
 
-            void getCompactContactsModifiedSince(std::string& _buffer, uint64_t& timestamp);
+            void getCompactContactsModifiedSince(std::string& _buffer, const uint64_t timestamp);
 
             void releaseSession(std::string& _buffer);
 
-            void findContactsByPhone(std::string& _buffer, std::set<std::string>& phones);
+            void findContactsByPhone(std::string& _buffer, const std::set<std::string>& phones);
 
             void getHiddenContactMids(std::string& _buffer);
 
             void getEncryptedIdentity(std::string& _buffer);
 
-            void updateProfile(std::string& _buffer, uint32_t& reqSeq, Profile& profile);
+            void updateProfile(std::string& _buffer, const uint32_t reqSeq, const Profile& profile);
 
-            void reportSpam(std::string& _buffer, std::string& chatMid, std::vector<std::string>& memberMids, std::vector<SpammerReason>& spammerReasons, std::vector<std::string>& senderMids, std::vector<std::string>& spamMessageIds, std::vector<std::string>& spamMessages);
+            void reportSpam(std::string& _buffer, const std::string& chatMid, const std::vector<std::string>& memberMids, const std::vector<SpammerReason>& spammerReasons, const std::vector<std::string>& senderMids, const std::vector<std::string>& spamMessageIds, const std::vector<std::string>& spamMessages);
 
             void getSuggestRevisions(std::string& _buffer);
 
-            void getPreviousMessagesV2WithReadCount(std::string& _buffer, std::string& messageBoxId, MessageBoxV2MessageId& endMessageId, uint32_t& messagesCount);
+            void getPreviousMessagesV2WithReadCount(std::string& _buffer, const std::string& messageBoxId, const MessageBoxV2MessageId& endMessageId, const uint32_t messagesCount);
 
-            void fetchOperations(std::string& _buffer, uint64_t& localRev, uint32_t& count);
+            void fetchOperations(std::string& _buffer, const uint64_t localRev, const uint32_t count);
 
-            void registerWapDevice(std::string& _buffer, std::string& invitationHash, std::string& guidHash, std::string& email, DeviceInfo& deviceInfo);
+            void registerWapDevice(std::string& _buffer, const std::string& invitationHash, const std::string& guidHash, const std::string& email, const DeviceInfo& deviceInfo);
 
             void getRecentFriendRequests(std::string& _buffer);
 
-            void notifyBuddyOnAir(std::string& _buffer, uint32_t& seq, std::vector<std::string>& receiverMids);
+            void notifyBuddyOnAir(std::string& _buffer, const uint32_t seq, const std::vector<std::string>& receiverMids);
 
             void getLastAnnouncementIndex(std::string& _buffer);
 
-            void sendMessageAwaitCommit(std::string& _buffer, uint32_t& seq, Message& message);
+            void sendMessageAwaitCommit(std::string& _buffer, const uint32_t seq, const Message& message);
 
-            void negotiateE2EEPublicKey(std::string& _buffer, std::string& mid);
+            void negotiateE2EEPublicKey(std::string& _buffer, const std::string& mid);
 
-            void registerE2EEGroupKey(std::string& _buffer, uint32_t& version, std::string& chatMid, std::vector<std::string>& members, std::vector<uint32_t>& keyIds, std::vector<std::string>& encryptedSharedKeys);
+            void registerE2EEGroupKey(std::string& _buffer, const uint32_t version, const std::string& chatMid, const std::vector<std::string>& members, const std::vector<uint32_t>& keyIds, const std::vector<std::string>& encryptedSharedKeys);
 
-            void findSnsIdUserStatus(std::string& _buffer, SnsIdType& snsIdType, std::string& snsAccessToken, std::string& udidHash, std::string& migrationPincodeSessionId, std::string& oldUdidHash);
+            void findSnsIdUserStatus(std::string& _buffer, const SnsIdType snsIdType, const std::string& snsAccessToken, const std::string& udidHash, const std::string& migrationPincodeSessionId, const std::string& oldUdidHash);
 
-            void notifyUpdated(std::string& _buffer, uint64_t& lastRev, DeviceInfo& deviceInfo, std::string& udidHash, std::string& oldUdidHash);
+            void notifyUpdated(std::string& _buffer, const uint64_t lastRev, const DeviceInfo& deviceInfo, const std::string& udidHash, const std::string& oldUdidHash);
 
-            void reportGroups(std::string& _buffer, uint64_t& syncOpRevision, std::vector<Group>& groups);
+            void reportGroups(std::string& _buffer, const uint64_t syncOpRevision, const std::vector<Group>& groups);
 
-            void getNotificationPolicy(std::string& _buffer, CarrierCode& carrier);
+            void getNotificationPolicy(std::string& _buffer, const CarrierCode carrier);
 
-            void findAndAddContactsByUserid(std::string& _buffer, uint32_t& reqSeq, std::set<std::string>& userids);
+            void findAndAddContactsByUserid(std::string& _buffer, const uint32_t reqSeq, const std::set<std::string>& userids);
 
-            void getLastE2EEGroupSharedKey(std::string& _buffer, uint32_t& version, std::string& chatMid);
+            void getLastE2EEGroupSharedKey(std::string& _buffer, const uint32_t version, const std::string& chatMid);
 
-            void notifyUpdatePublicKeychain(std::string& _buffer, std::string& mid);
+            void notifyUpdatePublicKeychain(std::string& _buffer, const std::string& mid);
 
-            void report(std::string& _buffer, uint64_t& syncOpRevision, SyncCategory& category, std::string& report);
+            void report(std::string& _buffer, const uint64_t syncOpRevision, const SyncCategory category, const std::string& report);
 
-            void acceptGroupInvitationByTicket(std::string& _buffer, uint32_t& reqSeq, std::string& groupMid, std::string& ticketId);
+            void acceptGroupInvitationByTicket(std::string& _buffer, const uint32_t reqSeq, const std::string& groupMid, const std::string& ticketId);
 
-            void getContactRegistration(std::string& _buffer, std::string& id, ContactType& type);
+            void getContactRegistration(std::string& _buffer, const std::string& id, const ContactType type);
 
-            void updateContactSetting(std::string& _buffer, uint32_t& reqSeq, std::string& mid, ContactSetting& flag, std::string& value);
+            void updateContactSetting(std::string& _buffer, const uint32_t reqSeq, const std::string& mid, const ContactSetting flag, const std::string& value);
 
-            void getContactWithFriendRequestStatus(std::string& _buffer, std::string& id);
+            void getContactWithFriendRequestStatus(std::string& _buffer, const std::string& id);
 
-            void getMessageBoxListByStatus(std::string& _buffer, std::string& channelId, uint32_t& lastMessagesCount, uint32_t& status);
+            void getMessageBoxListByStatus(std::string& _buffer, const std::string& channelId, const uint32_t lastMessagesCount, const uint32_t status);
 
-            void openProximityMatch(std::string& _buffer, Location& location);
+            void openProximityMatch(std::string& _buffer, const Location& location);
 
             void logout(std::string& _buffer);
 
-            void getE2EEPublicKey(std::string& _buffer, std::string& mid, uint32_t& version, uint32_t& keyId);
+            void getE2EEPublicKey(std::string& _buffer, const std::string& mid, const uint32_t version, const uint32_t keyId);
 
-            void registerUserid(std::string& _buffer, uint32_t& reqSeq, std::string& userid);
+            void registerUserid(std::string& _buffer, const uint32_t reqSeq, const std::string& userid);
 
-            void reportContacts(std::string& _buffer, uint64_t& syncOpRevision, SyncCategory& category, std::vector<ContactReport>& contactReports, SyncActionType& actionType);
+            void reportContacts(std::string& _buffer, const uint64_t syncOpRevision, const SyncCategory category, const std::vector<ContactReport>& contactReports, const SyncActionType actionType);
 
-            void getPublicKeychain(std::string& _buffer, std::string& mid);
+            void getPublicKeychain(std::string& _buffer, const std::string& mid);
 
-            void sendContentReceipt(std::string& _buffer, uint32_t& seq, std::string& consumer, std::string& messageId);
+            void sendContentReceipt(std::string& _buffer, const uint32_t seq, const std::string& consumer, const std::string& messageId);
 
-            void respondResendMessage(std::string& _buffer, uint32_t& reqSeq, std::string& receiverMid, std::string& originalMessageId, Message& resendMessage, ErrorCode& errorCode);
+            void respondResendMessage(std::string& _buffer, const uint32_t reqSeq, const std::string& receiverMid, const std::string& originalMessageId, const Message& resendMessage, const ErrorCode errorCode);
 
             void getAllRoomIds(std::string& _buffer);
 
-            void requestE2EEKeyExchange(std::string& _buffer, uint32_t& reqSeq, std::string& temporalPublicKey, E2EEPublicKey& publicKey, std::string& verifier);
+            void requestE2EEKeyExchange(std::string& _buffer, const uint32_t reqSeq, const std::string& temporalPublicKey, const E2EEPublicKey& publicKey, const std::string& verifier);
 
             void disableNearby(std::string& _buffer);
 
-            void createQrcodeBase64Image(std::string& _buffer, std::string& url, std::string& characterSet, uint32_t& imageSize, uint32_t& x, uint32_t& y, uint32_t& width, uint32_t& height);
+            void createQrcodeBase64Image(std::string& _buffer, const std::string& url, const std::string& characterSet, const uint32_t imageSize, const uint32_t x, const uint32_t y, const uint32_t width, const uint32_t height);
 
-            void getMessageBoxList(std::string& _buffer, std::string& channelId, uint32_t& lastMessagesCount);
+            void getMessageBoxList(std::string& _buffer, const std::string& channelId, const uint32_t lastMessagesCount);
 
-            void respondE2EEKeyExchange(std::string& _buffer, uint32_t& reqSeq, std::string& encryptedKeyChain, std::string& hashKeyChain);
+            void respondE2EEKeyExchange(std::string& _buffer, const uint32_t reqSeq, const std::string& encryptedKeyChain, const std::string& hashKeyChain);
 
-            void verifyQrcode(std::string& _buffer, std::string& verifier, std::string& pinCode);
+            void verifyQrcode(std::string& _buffer, const std::string& verifier, const std::string& pinCode);
 
-            void updateNotificationTokenWithBytes(std::string& _buffer, std::string& token, NotificationType& type);
+            void updateNotificationTokenWithBytes(std::string& _buffer, const std::string& token, const NotificationType type);
 
-            void getPreviousMessages(std::string& _buffer, std::string& messageBoxId, uint64_t& endSeq, uint32_t& messagesCount);
+            void getPreviousMessages(std::string& _buffer, const std::string& messageBoxId, const uint64_t endSeq, const uint32_t messagesCount);
 
             void getSettings(std::string& _buffer);
 
-            void getLastE2EEPublicKeys(std::string& _buffer, std::string& chatMid);
+            void getLastE2EEPublicKeys(std::string& _buffer, const std::string& chatMid);
 
-            void registerE2EEPublicKey(std::string& _buffer, uint32_t& reqSeq, E2EEPublicKey& publicKey);
+            void registerE2EEPublicKey(std::string& _buffer, const uint32_t reqSeq, const E2EEPublicKey& publicKey);
 
-            void acquireCallTicket(std::string& _buffer, std::string& to);
+            void acquireCallTicket(std::string& _buffer, const std::string& to);
 
-            void inviteIntoGroup(std::string& _buffer, uint32_t& reqSeq, std::string& groupId, std::vector<std::string>& contactIds);
+            void inviteIntoGroup(std::string& _buffer, const uint32_t reqSeq, const std::string& groupId, const std::vector<std::string>& contactIds);
 
-            void makeUserAddMyselfAsContact(std::string& _buffer, std::string& contactOwnerMid);
+            void makeUserAddMyselfAsContact(std::string& _buffer, const std::string& contactOwnerMid);
 
-            void removeMessageFromMyHome(std::string& _buffer, std::string& messageId);
+            void removeMessageFromMyHome(std::string& _buffer, const std::string& messageId);
 
-            void commitSendMessages(std::string& _buffer, uint32_t& seq, std::vector<std::string>& messageIds, std::vector<std::string>& receiverMids, bool& onlyToFollowers);
+            void commitSendMessages(std::string& _buffer, const uint32_t seq, const std::vector<std::string>& messageIds, const std::vector<std::string>& receiverMids, const bool onlyToFollowers);
 
-            void registerWithPhoneNumberAndPassword(std::string& _buffer, std::string& sessionId, std::string& keynm, std::string& encrypted);
+            void registerWithPhoneNumberAndPassword(std::string& _buffer, const std::string& sessionId, const std::string& keynm, const std::string& encrypted);
 
-            void leaveGroup(std::string& _buffer, uint32_t& reqSeq, std::string& groupId);
+            void leaveGroup(std::string& _buffer, const uint32_t reqSeq, const std::string& groupId);
 
             void getAnalyticsInfo(std::string& _buffer);
 
-            void reportClientStatistics(std::string& _buffer, uint32_t& reqSeq, ReportCategory& category, uint32_t& count);
+            void reportClientStatistics(std::string& _buffer, const uint32_t reqSeq, const ReportCategory category, const uint32_t count);
 
-            void acceptProximityMatches(std::string& _buffer, std::string& sessionId, std::set<std::string>& ids);
+            void acceptProximityMatches(std::string& _buffer, const std::string& sessionId, const std::set<std::string>& ids);
 
-            void getGroup(std::string& _buffer, std::string& groupId);
+            void getGroup(std::string& _buffer, const std::string& groupId);
 
             void clearIdentityCredential(std::string& _buffer);
 
-            void getUpdatedMessageBoxIds(std::string& _buffer, MessageBoxV2MessageId& startMessageId, std::string& startMessageBoxId, uint32_t& messageBoxCount);
+            void getUpdatedMessageBoxIds(std::string& _buffer, const MessageBoxV2MessageId& startMessageId, const std::string& startMessageBoxId, const uint32_t messageBoxCount);
 
-            void getGroups(std::string& _buffer, std::vector<std::string>& groupIds);
+            void getGroups(std::string& _buffer, const std::vector<std::string>& groupIds);
 
-            void sendMessageReceipt(std::string& _buffer, uint32_t& seq, std::string& consumer, std::vector<std::string>& messageIds);
+            void sendMessageReceipt(std::string& _buffer, const uint32_t seq, const std::string& consumer, const std::vector<std::string>& messageIds);
 
-            void findContactByMetaTag(std::string& _buffer, std::string& userid, std::string& reference);
+            void findContactByMetaTag(std::string& _buffer, const std::string& userid, const std::string& reference);
 
-            void destroyMessage(std::string& _buffer, uint32_t& seq, std::string& chatId, std::string& messageId, uint32_t& sessionId);
+            void destroyMessage(std::string& _buffer, const uint32_t seq, const std::string& chatId, const std::string& messageId, const uint32_t sessionId);
 
-            void generateUserTicket(std::string& _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
+            void generateUserTicket(std::string& _buffer, const uint64_t expirationTime, const uint32_t maxUseCount);
 
-            void registerDeviceWithoutPhoneNumberWithIdentityCredential(std::string& _buffer, std::string& region, std::string& udidHash, DeviceInfo& deviceInfo, IdentityProvider& provider, std::string& identifier, std::string& verifier, std::string& mid, std::string& migrationPincodeSessionId);
+            void registerDeviceWithoutPhoneNumberWithIdentityCredential(std::string& _buffer, const std::string& region, const std::string& udidHash, const DeviceInfo& deviceInfo, const IdentityProvider provider, const std::string& identifier, const std::string& verifier, const std::string& mid, const std::string& migrationPincodeSessionId);
 
             void getFavoriteMids(std::string& _buffer);
 
-            void getAcceptedProximityMatches(std::string& _buffer, std::string& sessionId);
+            void getAcceptedProximityMatches(std::string& _buffer, const std::string& sessionId);
 
-            void notifyInstalled(std::string& _buffer, std::string& udidHash, std::string& applicationTypeWithExtensions);
+            void notifyInstalled(std::string& _buffer, const std::string& udidHash, const std::string& applicationTypeWithExtensions);
 
             void getCountryWithRequestIp(std::string& _buffer);
 
-            void getGroupsV2(std::string& _buffer, std::vector<std::string>& groupIds);
+            void getGroupsV2(std::string& _buffer, const std::vector<std::string>& groupIds);
 
-            void loginWithIdentityCredential(std::string& _buffer, std::string& identifier, std::string& password, bool& keepLoggedIn, std::string& accessLocation, std::string& systemName, IdentityProvider& identityProvider, std::string& certificate);
+            void loginWithIdentityCredential(std::string& _buffer, const std::string& identifier, const std::string& password, const bool keepLoggedIn, const std::string& accessLocation, const std::string& systemName, const IdentityProvider identityProvider, const std::string& certificate);
 
-            void startUpdateVerification(std::string& _buffer, std::string& region, CarrierCode& carrier, std::string& phone, std::string& udidHash, DeviceInfo& deviceInfo, std::string& networkCode, std::string& locale, SIMInfo& simInfo);
+            void startUpdateVerification(std::string& _buffer, const std::string& region, const CarrierCode carrier, const std::string& phone, const std::string& udidHash, const DeviceInfo& deviceInfo, const std::string& networkCode, const std::string& locale, const SIMInfo& simInfo);
 
             void getSessions(std::string& _buffer);
 
-            void updateSettings(std::string& _buffer, uint32_t& reqSeq, Settings& settings);
+            void updateSettings(std::string& _buffer, const uint32_t reqSeq, const Settings& settings);
 
-            void getContact(std::string& _buffer, std::string& id);
+            void getContact(std::string& _buffer, const std::string& id);
 
             void getBlockedContactIds(std::string& _buffer);
 
-            void loginWithVerifierForCertificate(std::string& _buffer, std::string& verifier);
+            void loginWithVerifierForCertificate(std::string& _buffer, const std::string& verifier);
 
             void getProfile(std::string& _buffer);
 
-            void findContactsByEmail(std::string& _buffer, std::set<std::string>& emails);
+            void findContactsByEmail(std::string& _buffer, const std::set<std::string>& emails);
 
             void getSystemConfiguration(std::string& _buffer);
 
-            void getRecentMessages(std::string& _buffer, std::string& messageBoxId, uint32_t& messagesCount);
+            void getRecentMessages(std::string& _buffer, const std::string& messageBoxId, const uint32_t messagesCount);
 
-            void verifyPhone(std::string& _buffer, std::string& sessionId, std::string& pinCode, std::string& udidHash);
+            void verifyPhone(std::string& _buffer, const std::string& sessionId, const std::string& pinCode, const std::string& udidHash);
 
-            void createGroup(std::string& _buffer, uint32_t& seq, std::string& name, std::vector<std::string>& contactIds);
+            void createGroup(std::string& _buffer, const uint32_t seq, const std::string& name, const std::vector<std::string>& contactIds);
 
-            void updateBuddySetting(std::string& _buffer, std::string& key, std::string& value);
+            void updateBuddySetting(std::string& _buffer, const std::string& key, const std::string& value);
 
-            void updateRegion(std::string& _buffer, std::string& region);
+            void updateRegion(std::string& _buffer, const std::string& region);
 
-            void verifyIdentityCredential(std::string& _buffer, std::string& identifier, std::string& password, IdentityProvider& identityProvider);
+            void verifyIdentityCredential(std::string& _buffer, const std::string& identifier, const std::string& password, const IdentityProvider identityProvider);
 
-            void sendChatRemoved(std::string& _buffer, uint32_t& seq, std::string& consumer, std::string& lastMessageId, uint32_t& sessionId);
+            void sendChatRemoved(std::string& _buffer, const uint32_t seq, const std::string& consumer, const std::string& lastMessageId, const uint32_t sessionId);
 
             void getGroupIdsJoined(std::string& _buffer);
 
-            void findContactByUserid(std::string& _buffer, std::string& userid);
+            void findContactByUserid(std::string& _buffer, const std::string& userid);
 
             void getE2EEPublicKeys(std::string& _buffer);
 
-            void getMessageBoxWrapUpList(std::string& _buffer, uint32_t& start, uint32_t& messageBoxCount);
+            void getMessageBoxWrapUpList(std::string& _buffer, const uint32_t start, const uint32_t messageBoxCount);
 
-            void leaveRoom(std::string& _buffer, uint32_t& reqSeq, std::string& roomId);
+            void leaveRoom(std::string& _buffer, const uint32_t reqSeq, const std::string& roomId);
 
-            void unblockRecommendation(std::string& _buffer, uint32_t& reqSeq, std::string& id);
+            void unblockRecommendation(std::string& _buffer, const uint32_t reqSeq, const std::string& id);
 
-            void findAndAddContactsByPhone(std::string& _buffer, uint32_t& reqSeq, std::set<std::string>& phones);
+            void findAndAddContactsByPhone(std::string& _buffer, const uint32_t reqSeq, const std::set<std::string>& phones);
 
-            void getAuthQrcode(std::string& _buffer, bool& keepLoggedIn, std::string& systemName, bool& returnCallbackUrl);
+            void getAuthQrcode(std::string& _buffer, const bool keepLoggedIn, const std::string& systemName, const bool returnCallbackUrl);
 
-            void getE2EEGroupSharedKey(std::string& _buffer, uint32_t& version, std::string& chatMid, uint32_t& groupKeyId);
+            void getE2EEGroupSharedKey(std::string& _buffer, const uint32_t version, const std::string& chatMid, const uint32_t groupKeyId);
 
-            void getMessageBoxWrapUp(std::string& _buffer, std::string& mid);
+            void getMessageBoxWrapUp(std::string& _buffer, const std::string& mid);
 
-            void updateSettingsAttributes(std::string& _buffer, uint32_t& reqSeq, uint32_t& attrBitset, Settings& settings);
+            void updateSettingsAttributes(std::string& _buffer, const uint32_t reqSeq, const uint32_t attrBitset, const Settings& settings);
 
-            void startVerification(std::string& _buffer, std::string& region, CarrierCode& carrier, std::string& phone, std::string& udidHash, DeviceInfo& deviceInfo, std::string& networkCode, std::string& mid, std::string& locale, SIMInfo& simInfo, std::string& oldUdidHash);
+            void startVerification(std::string& _buffer, const std::string& region, const CarrierCode carrier, const std::string& phone, const std::string& udidHash, const DeviceInfo& deviceInfo, const std::string& networkCode, const std::string& mid, const std::string& locale, const SIMInfo& simInfo, const std::string& oldUdidHash);
 
-            void reportRooms(std::string& _buffer, uint64_t& syncOpRevision, std::vector<Room>& rooms);
+            void reportRooms(std::string& _buffer, const uint64_t syncOpRevision, const std::vector<Room>& rooms);
 
-            void updateGroupPreferenceAttribute(std::string& _buffer, uint32_t& reqSeq, std::string& groupMid, std::map<GroupPreferenceAttribute, std::string>& updatedAttrs);
+            void updateGroupPreferenceAttribute(std::string& _buffer, const uint32_t reqSeq, const std::string& groupMid, const std::map<GroupPreferenceAttribute, std::string>& updatedAttrs);
 
-            void getMessageBoxWrapUpV2(std::string& _buffer, std::string& messageBoxId);
+            void getMessageBoxWrapUpV2(std::string& _buffer, const std::string& messageBoxId);
 
-            void getCompactRooms(std::string& _buffer, std::vector<std::string>& roomIds);
+            void getCompactRooms(std::string& _buffer, const std::vector<std::string>& roomIds);
 
-            void findAndAddContactByMetaTag(std::string& _buffer, uint32_t& reqSeq, std::string& userid, std::string& reference);
+            void findAndAddContactByMetaTag(std::string& _buffer, const uint32_t reqSeq, const std::string& userid, const std::string& reference);
 
-            void storeUpdateProfileAttribute(std::string& _buffer, uint32_t& seq, ProfileAttribute& profileAttribute, std::string& value);
+            void storeUpdateProfileAttribute(std::string& _buffer, const uint32_t seq, const ProfileAttribute profileAttribute, const std::string& value);
 
-            void resendEmailConfirmation(std::string& _buffer, std::string& verifier);
+            void resendEmailConfirmation(std::string& _buffer, const std::string& verifier);
 
-            void confirmEmail(std::string& _buffer, std::string& verifier, std::string& pinCode);
+            void confirmEmail(std::string& _buffer, const std::string& verifier, const std::string& pinCode);
 
             void getExtendedProfile(std::string& _buffer);
 
-            void isUseridAvailable(std::string& _buffer, std::string& userid);
+            void isUseridAvailable(std::string& _buffer, const std::string& userid);
 
-            void notifyRegistrationComplete(std::string& _buffer, std::string& udidHash, std::string& applicationTypeWithExtensions);
+            void notifyRegistrationComplete(std::string& _buffer, const std::string& udidHash, const std::string& applicationTypeWithExtensions);
 
-            void updateDeviceInfo(std::string& _buffer, std::string& deviceUid, DeviceInfo& deviceInfo);
+            void updateDeviceInfo(std::string& _buffer, const std::string& deviceUid, const DeviceInfo& deviceInfo);
 
-            void blockRecommendation(std::string& _buffer, uint32_t& reqSeq, std::string& id);
+            void blockRecommendation(std::string& _buffer, const uint32_t reqSeq, const std::string& id);
 
-            void rejectGroupInvitation(std::string& _buffer, uint32_t& reqSeq, std::string& groupId);
+            void rejectGroupInvitation(std::string& _buffer, const uint32_t reqSeq, const std::string& groupId);
 
-            void updateCustomModeSettings(std::string& _buffer, CustomMode& customMode, std::map<std::string, std::string>& paramMap);
+            void updateCustomModeSettings(std::string& _buffer, const CustomMode customMode, const std::map<std::string, std::string>& paramMap);
 
-            void createRoomV2(std::string& _buffer, uint32_t& reqSeq, std::vector<std::string>& contactIds);
+            void createRoomV2(std::string& _buffer, const uint32_t reqSeq, const std::vector<std::string>& contactIds);
 
             void noop(std::string& _buffer);
 
-            void acquireEncryptedAccessToken(std::string& _buffer, FeatureType& featureType);
+            void acquireEncryptedAccessToken(std::string& _buffer, const FeatureType featureType);
 
-            void getE2EEPublicKeysEx(std::string& _buffer, bool& ignoreE2EEStatus);
+            void getE2EEPublicKeysEx(std::string& _buffer, const bool ignoreE2EEStatus);
 
-            void syncContacts(std::string& _buffer, uint32_t& reqSeq, std::vector<ContactModification>& localContacts);
+            void syncContacts(std::string& _buffer, const uint32_t reqSeq, const std::vector<ContactModification>& localContacts);
 
-            void findAndAddContactsByMid(std::string& _buffer, uint32_t& reqSeq, std::set<std::string>& mids);
+            void findAndAddContactsByMid(std::string& _buffer, const uint32_t reqSeq, const std::set<std::string>& mids);
 
-            void findGroupByTicketV2(std::string& _buffer, std::string& ticketId);
+            void findGroupByTicketV2(std::string& _buffer, const std::string& ticketId);
 
-            void removeFriendRequest(std::string& _buffer, FriendRequestDirection& direction, std::string& midOrEMid);
+            void removeFriendRequest(std::string& _buffer, const FriendRequestDirection direction, const std::string& midOrEMid);
 
-            void verifyPhoneNumber(std::string& _buffer, std::string& sessionId, std::string& pinCode, std::string& udidHash, std::string& migrationPincodeSessionId, std::string& oldUdidHash);
+            void verifyPhoneNumber(std::string& _buffer, const std::string& sessionId, const std::string& pinCode, const std::string& udidHash, const std::string& migrationPincodeSessionId, const std::string& oldUdidHash);
 
-            void setNotificationsEnabled(std::string& _buffer, uint32_t& reqSeq, MIDType& type, std::string& target, bool& enablement);
+            void setNotificationsEnabled(std::string& _buffer, const uint32_t reqSeq, const MIDType type, const std::string& target, const bool enablement);
 
             void getAllContactIds(std::string& _buffer);
 
@@ -6008,253 +6008,253 @@ namespace protocol {
 
             void sendDummyPush(std::string& _buffer);
 
-            void inviteFriendsBySms(std::string& _buffer, std::vector<std::string>& phoneNumberList);
+            void inviteFriendsBySms(std::string& _buffer, const std::vector<std::string>& phoneNumberList);
 
-            void getMessageBox(std::string& _buffer, std::string& channelId, std::string& messageBoxId, uint32_t& lastMessagesCount);
+            void getMessageBox(std::string& _buffer, const std::string& channelId, const std::string& messageBoxId, const uint32_t lastMessagesCount);
 
-            void unsendMessage(std::string& _buffer, uint32_t& reqSeq, std::string& messageId);
+            void unsendMessage(std::string& _buffer, const uint32_t reqSeq, const std::string& messageId);
 
-            void createChatRoomAnnouncement(std::string& _buffer, uint32_t& reqSeq, std::string& chatRoomMid, uint32_t& type, ChatRoomAnnouncementContents& contents);
+            void createChatRoomAnnouncement(std::string& _buffer, const uint32_t reqSeq, const std::string& chatRoomMid, const uint32_t type, const ChatRoomAnnouncementContents& contents);
 
-            void removeChatRoomAnnouncement(std::string& _buffer, uint32_t& reqSeq, std::string& chatRoomMid, uint64_t& announcementSeq);
+            void removeChatRoomAnnouncement(std::string& _buffer, const uint32_t reqSeq, const std::string& chatRoomMid, const uint64_t announcementSeq);
 
-            void getChatRoomAnnouncements(std::string& _buffer, std::string& chatRoomMid);
+            void getChatRoomAnnouncements(std::string& _buffer, const std::string& chatRoomMid);
 
-            void getChatRoomAnnouncementsBulk(std::string& _buffer, std::vector<std::string>& chatRoomMids);
+            void getChatRoomAnnouncementsBulk(std::string& _buffer, const std::vector<std::string>& chatRoomMids);
 
-            void unregisterBuddy(std::string& _buffer, std::string& requestId);
+            void unregisterBuddy(std::string& _buffer, const std::string& requestId);
 
-            void sendBuddyContentMessageToMidsAsync(std::string& _buffer, std::string& requestId, Message& msg, std::string& content, std::vector<std::string>& mids);
+            void sendBuddyContentMessageToMidsAsync(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& content, const std::vector<std::string>& mids);
 
             void getAllBuddyMembers(std::string& _buffer);
 
-            void getActiveMemberMidsByBuddyMid(std::string& _buffer, std::string& buddyMid);
+            void getActiveMemberMidsByBuddyMid(std::string& _buffer, const std::string& buddyMid);
 
-            void updateBuddyProfileAttributes(std::string& _buffer, std::string& requestId, std::map<std::string, std::string>& attributes, QueueingPolicy& policy);
+            void updateBuddyProfileAttributes(std::string& _buffer, const std::string& requestId, const std::map<std::string, std::string>& attributes, const QueueingPolicy& policy);
 
-            void storePrivateMessages(std::string& _buffer, std::string& requestId, std::vector<PrivateBotMessage>& privateBotMessages, std::string& toMid);
+            void storePrivateMessages(std::string& _buffer, const std::string& requestId, const std::vector<PrivateBotMessage>& privateBotMessages, const std::string& toMid);
 
-            void updateBuddyProfileImageAsync(std::string& _buffer, std::string& requestId, std::string& image, QueueingPolicy& policy);
+            void updateBuddyProfileImageAsync(std::string& _buffer, const std::string& requestId, const std::string& image, const QueueingPolicy& policy);
 
-            void notifyBuddyBlocked(std::string& _buffer, std::string& buddyMid, std::string& blockerMid);
+            void notifyBuddyBlocked(std::string& _buffer, const std::string& buddyMid, const std::string& blockerMid);
 
-            void getMemberCountByBuddyMid(std::string& _buffer, std::string& buddyMid);
+            void getMemberCountByBuddyMid(std::string& _buffer, const std::string& buddyMid);
 
-            void isBuddyOnAirByMid(std::string& _buffer, std::string& buddyMid);
+            void isBuddyOnAirByMid(std::string& _buffer, const std::string& buddyMid);
 
-            void commitPrivateMessages(std::string& _buffer, std::string& requestId, std::string& privateMessageStoreRequestId, QueueingPolicy& policy);
+            void commitPrivateMessages(std::string& _buffer, const std::string& requestId, const std::string& privateMessageStoreRequestId, const QueueingPolicy& policy);
 
-            void commitPublicMessagesToMids(std::string& _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, std::vector<std::string>& toMids, QueueingPolicy& policy);
+            void commitPublicMessagesToMids(std::string& _buffer, const std::string& requestId, const std::string& publicMessageStoreRequestId, const std::vector<std::string>& toMids, const QueueingPolicy& policy);
 
-            void addBuddyMember(std::string& _buffer, std::string& requestId, std::string& userMid);
+            void addBuddyMember(std::string& _buffer, const std::string& requestId, const std::string& userMid);
 
-            void linkAndSendBuddyContentMessageToMids(std::string& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, std::vector<std::string>& mids, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToMids(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& sourceContentId, const std::vector<std::string>& mids, const bool usePermanent);
 
-            void storeMessages(std::string& _buffer, std::vector<std::string>& requestIds, std::vector<BuddyMessageRequest>& messageRequests);
+            void storeMessages(std::string& _buffer, const std::vector<std::string>& requestIds, const std::vector<BuddyMessageRequest>& messageRequests);
 
-            void storeMessage(std::string& _buffer, std::string& requestId, BuddyMessageRequest& messageRequest);
+            void storeMessage(std::string& _buffer, const std::string& requestId, const BuddyMessageRequest& messageRequest);
 
-            void registerBuddy(std::string& _buffer, std::string& buddyId, std::string& searchId, std::string& displayName, std::string& statusMeessage, std::string& picture, std::map<std::string, std::string>& settings);
+            void registerBuddy(std::string& _buffer, const std::string& buddyId, const std::string& searchId, const std::string& displayName, const std::string& statusMeessage, const std::string& picture, const std::map<std::string, std::string>& settings);
 
-            void getUnregisterBuddyResult(std::string& _buffer, std::string& unregisterBuddyRequestId, std::string& buddyMid);
+            void getUnregisterBuddyResult(std::string& _buffer, const std::string& unregisterBuddyRequestId, const std::string& buddyMid);
 
-            void updateBuddySearchId(std::string& _buffer, std::string& requestId, std::string& searchId);
+            void updateBuddySearchId(std::string& _buffer, const std::string& requestId, const std::string& searchId);
 
-            void uploadBuddyContent(std::string& _buffer, ContentType& contentType, std::string& content);
+            void uploadBuddyContent(std::string& _buffer, const ContentType contentType, const std::string& content);
 
-            void updateBuddyProfileImage(std::string& _buffer, std::string& requestId, std::string& image, QueueingPolicy& policy);
+            void updateBuddyProfileImage(std::string& _buffer, const std::string& requestId, const std::string& image, const QueueingPolicy& policy);
 
-            void sendBuddyMessageToAll(std::string& _buffer, std::string& requestId, Message& msg);
+            void sendBuddyMessageToAll(std::string& _buffer, const std::string& requestId, const Message& msg);
 
-            void commitSendMessagesToAll(std::string& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToAll(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& commitRequestIdList, const uint32_t priority, const QueueingPolicy& policy);
 
-            void downloadMessageContent(std::string& _buffer, std::string& requestId, std::string& messageId);
+            void downloadMessageContent(std::string& _buffer, const std::string& requestId, const std::string& messageId);
 
-            void updateBuddyProfileRichMenu(std::string& _buffer, std::string& requestId, QueueingPolicy& policy);
+            void updateBuddyProfileRichMenu(std::string& _buffer, const std::string& requestId, const QueueingPolicy& policy);
 
-            void setBuddyOnAir(std::string& _buffer, std::string& requestId, bool& onAir, BuddyOnAirLabel& label);
+            void setBuddyOnAir(std::string& _buffer, const std::string& requestId, const bool onAir, const BuddyOnAirLabel label);
 
-            void unblockBuddyMember(std::string& _buffer, std::string& requestId, std::string& mid);
+            void unblockBuddyMember(std::string& _buffer, const std::string& requestId, const std::string& mid);
 
-            void linkAndSendBuddyContentMessageToAll(std::string& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToAll(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& sourceContentId, const bool usePermanent);
 
-            void removeBuddyMember(std::string& _buffer, std::string& requestId, std::string& userMid);
+            void removeBuddyMember(std::string& _buffer, const std::string& requestId, const std::string& userMid);
 
-            void commitSendMessagesToMidAsync(std::string& _buffer, std::string& requestId, std::vector<std::string>& storeMessagesRequestIds, QueueingPolicy& policy);
+            void commitSendMessagesToMidAsync(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& storeMessagesRequestIds, const QueueingPolicy& policy);
 
-            void getUpdateBuddyProfileResult(std::string& _buffer, std::string& updateBuddyProfileRequestId);
+            void getUpdateBuddyProfileResult(std::string& _buffer, const std::string& updateBuddyProfileRequestId);
 
-            void notifyBuddyUnblocked(std::string& _buffer, std::string& buddyMid, std::string& blockerMid);
+            void notifyBuddyUnblocked(std::string& _buffer, const std::string& buddyMid, const std::string& blockerMid);
 
-            void updateBuddyProfileRichMenuAsync(std::string& _buffer, std::string& requestId, QueueingPolicy& policy);
+            void updateBuddyProfileRichMenuAsync(std::string& _buffer, const std::string& requestId, const QueueingPolicy& policy);
 
             void getBuddyProfile(std::string& _buffer);
 
             void getBlockedBuddyMembers(std::string& _buffer);
 
-            void commitPublicMessagesToAll(std::string& _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, QueueingPolicy& policy);
+            void commitPublicMessagesToAll(std::string& _buffer, const std::string& requestId, const std::string& publicMessageStoreRequestId, const QueueingPolicy& policy);
 
-            void linkAndSendBuddyContentMessageToAllAsync(std::string& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToAllAsync(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& sourceContentId, const bool usePermanent);
 
-            void sendBuddyContentMessageToAllAsync(std::string& _buffer, std::string& requestId, Message& msg, std::string& content);
+            void sendBuddyContentMessageToAllAsync(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& content);
 
-            void getSetBuddyOnAirResult(std::string& _buffer, std::string& setBuddyOnAirRequestId);
+            void getSetBuddyOnAirResult(std::string& _buffer, const std::string& setBuddyOnAirRequestId);
 
-            void commitSendMessagesToMidsAsync(std::string& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::vector<std::string>& mids, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToMidsAsync(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& commitRequestIdList, const std::vector<std::string>& mids, const uint32_t priority, const QueueingPolicy& policy);
 
-            void commitSendMessagesToStoredMidsAsync(std::string& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::string& storedMidFilename, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToStoredMidsAsync(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& commitRequestIdList, const std::string& storedMidFilename, const uint32_t priority, const QueueingPolicy& policy);
 
-            void updateBuddyAdminProfileAttribute(std::string& _buffer, std::string& requestId, std::map<std::string, std::string>& attributes);
+            void updateBuddyAdminProfileAttribute(std::string& _buffer, const std::string& requestId, const std::map<std::string, std::string>& attributes);
 
-            void setBuddyOnAirAsync(std::string& _buffer, std::string& requestId, bool& onAir, BuddyOnAirLabel& label);
+            void setBuddyOnAirAsync(std::string& _buffer, const std::string& requestId, const bool onAir, const BuddyOnAirLabel label);
 
-            void commitSendMessagesToMids(std::string& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, std::vector<std::string>& mids, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToMids(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& commitRequestIdList, const std::vector<std::string>& mids, const uint32_t priority, const QueueingPolicy& policy);
 
-            void sendBuddyContentMessageToAll(std::string& _buffer, std::string& requestId, Message& msg, std::string& content);
+            void sendBuddyContentMessageToAll(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& content);
 
-            void updateBuddySettings(std::string& _buffer, std::map<std::string, std::string>& settings);
+            void updateBuddySettings(std::string& _buffer, const std::map<std::string, std::string>& settings);
 
-            void notifyBuddySubscribed(std::string& _buffer, std::string& buddyMid, std::string& subscriberMid);
+            void notifyBuddySubscribed(std::string& _buffer, const std::string& buddyMid, const std::string& subscriberMid);
 
-            void registerBuddyAdmin(std::string& _buffer, std::string& buddyId, std::string& searchId, std::string& displayName, std::string& statusMessage, std::string& picture);
+            void registerBuddyAdmin(std::string& _buffer, const std::string& buddyId, const std::string& searchId, const std::string& displayName, const std::string& statusMessage, const std::string& picture);
 
-            void getBlockerCountByBuddyMid(std::string& _buffer, std::string& buddyMid);
+            void getBlockerCountByBuddyMid(std::string& _buffer, const std::string& buddyMid);
 
-            void reissueContactTicket(std::string& _buffer, uint64_t& expirationTime, uint32_t& maxUseCount);
+            void reissueContactTicket(std::string& _buffer, const uint64_t expirationTime, const uint32_t maxUseCount);
 
-            void validateContacts(std::string& _buffer, std::vector<std::string>& userMids);
+            void validateContacts(std::string& _buffer, const std::vector<std::string>& userMids);
 
-            void sendBuddyMessageToMidsAsync(std::string& _buffer, std::string& requestId, Message& msg, std::vector<std::string>& mids);
+            void sendBuddyMessageToMidsAsync(std::string& _buffer, const std::string& requestId, const Message& msg, const std::vector<std::string>& mids);
 
-            void unregisterBuddyAsync(std::string& _buffer, std::string& requestId);
+            void unregisterBuddyAsync(std::string& _buffer, const std::string& requestId);
 
-            void getProfileImageUrlHash(std::string& _buffer, std::string& requestId);
+            void getProfileImageUrlHash(std::string& _buffer, const std::string& requestId);
 
-            void blockBuddyMember(std::string& _buffer, std::string& requestId, std::string& mid);
+            void blockBuddyMember(std::string& _buffer, const std::string& requestId, const std::string& mid);
 
-            void sendIndividualEventToAllAsync(std::string& _buffer, std::string& requestId, std::string& buddyMid, NotificationStatus& notificationStatus);
+            void sendIndividualEventToAllAsync(std::string& _buffer, const std::string& requestId, const std::string& buddyMid, const NotificationStatus notificationStatus);
 
-            void deleteBotProfileImage(std::string& _buffer, std::string& requestId);
+            void deleteBotProfileImage(std::string& _buffer, const std::string& requestId);
 
-            void sendBuddyContentMessageToMids(std::string& _buffer, std::string& requestId, Message& msg, std::string& content, std::vector<std::string>& mids);
+            void sendBuddyContentMessageToMids(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& content, const std::vector<std::string>& mids);
 
-            void unregisterBuddyAdmin(std::string& _buffer, std::string& requestId);
+            void unregisterBuddyAdmin(std::string& _buffer, const std::string& requestId);
 
-            void commitPublicMessagesToStoredMids(std::string& _buffer, std::string& requestId, std::string& publicMessageStoreRequestId, std::string& storedMidFilename, QueueingPolicy& policy);
+            void commitPublicMessagesToStoredMids(std::string& _buffer, const std::string& requestId, const std::string& publicMessageStoreRequestId, const std::string& storedMidFilename, const QueueingPolicy& policy);
 
-            void removeBuddyMembers(std::string& _buffer, std::string& requestId, std::vector<std::string>& userMids);
+            void removeBuddyMembers(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& userMids);
 
-            void storePublicMessages(std::string& _buffer, std::string& requestId, std::vector<Message>& messages);
+            void storePublicMessages(std::string& _buffer, const std::string& requestId, const std::vector<Message>& messages);
 
-            void addBuddyMembers(std::string& _buffer, std::string& requestId, std::vector<std::string>& userMids);
+            void addBuddyMembers(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& userMids);
 
-            void getMessageCommitResult(std::string& _buffer, std::string& messageCommitRequestId);
+            void getMessageCommitResult(std::string& _buffer, const std::string& messageCommitRequestId);
 
-            void getBuddyDetailByMid(std::string& _buffer, std::string& buddyMid);
+            void getBuddyDetailByMid(std::string& _buffer, const std::string& buddyMid);
 
-            void notifyBuddySubscriberUnregistered(std::string& _buffer, std::string& buddyMid, std::string& userMid);
+            void notifyBuddySubscriberUnregistered(std::string& _buffer, const std::string& buddyMid, const std::string& userMid);
 
-            void sendBuddyMessageToAllAsync(std::string& _buffer, std::string& requestId, Message& msg);
+            void sendBuddyMessageToAllAsync(std::string& _buffer, const std::string& requestId, const Message& msg);
 
-            void sendBuddyMessageToMids(std::string& _buffer, std::string& requestId, Message& msg, std::vector<std::string>& mids);
+            void sendBuddyMessageToMids(std::string& _buffer, const std::string& requestId, const Message& msg, const std::vector<std::string>& mids);
 
-            void commitSendMessagesToAllAsync(std::string& _buffer, std::string& requestId, std::vector<std::string>& commitRequestIdList, uint32_t& priority, QueueingPolicy& policy);
+            void commitSendMessagesToAllAsync(std::string& _buffer, const std::string& requestId, const std::vector<std::string>& commitRequestIdList, const uint32_t priority, const QueueingPolicy& policy);
 
-            void notifyBuddySubscriberEmpty(std::string& _buffer, std::string& buddyMid, std::string& userMid);
+            void notifyBuddySubscriberEmpty(std::string& _buffer, const std::string& buddyMid, const std::string& userMid);
 
-            void updateBuddyAdminProfileImage(std::string& _buffer, std::string& requestId, std::string& picture);
+            void updateBuddyAdminProfileImage(std::string& _buffer, const std::string& requestId, const std::string& picture);
 
-            void updateBuddyProfileAttributesAsync(std::string& _buffer, std::string& requestId, std::map<std::string, std::string>& attributes, QueueingPolicy& policy);
+            void updateBuddyProfileAttributesAsync(std::string& _buffer, const std::string& requestId, const std::map<std::string, std::string>& attributes, const QueueingPolicy& policy);
 
-            void linkAndSendBuddyContentMessageToMidsAsync(std::string& _buffer, std::string& requestId, Message& msg, std::string& sourceContentId, std::vector<std::string>& mids, bool& usePermanent);
+            void linkAndSendBuddyContentMessageToMidsAsync(std::string& _buffer, const std::string& requestId, const Message& msg, const std::string& sourceContentId, const std::vector<std::string>& mids, const bool usePermanent);
 
-            void downloadProfileImagePreview(std::string& _buffer, std::string& requestId);
+            void downloadProfileImagePreview(std::string& _buffer, const std::string& requestId);
 
-            void downloadProfileImage(std::string& _buffer, std::string& requestId);
+            void downloadProfileImage(std::string& _buffer, const std::string& requestId);
 
-            void getSendBuddyMessageResult(std::string& _buffer, std::string& sendBuddyMessageRequestId);
+            void getSendBuddyMessageResult(std::string& _buffer, const std::string& sendBuddyMessageRequestId);
 
-            void containsBuddyMember(std::string& _buffer, std::string& requestId, std::string& userMid);
+            void containsBuddyMember(std::string& _buffer, const std::string& requestId, const std::string& userMid);
 
-            void getActiveMemberCountByBuddyMid(std::string& _buffer, std::string& buddyMid);
+            void getActiveMemberCountByBuddyMid(std::string& _buffer, const std::string& buddyMid);
 
-            void downloadMessageContentPreview(std::string& _buffer, std::string& requestId, std::string& messageId);
+            void downloadMessageContentPreview(std::string& _buffer, const std::string& requestId, const std::string& messageId);
 
-            void notifyBuddyRegistered(std::string& _buffer, std::string& buddyId, std::string& buddyMid, std::string& searchId, std::string& displayName, std::string& statusMessage, std::map<std::string, std::string>& settings);
+            void notifyBuddyRegistered(std::string& _buffer, const std::string& buddyId, const std::string& buddyMid, const std::string& searchId, const std::string& displayName, const std::string& statusMessage, const std::map<std::string, std::string>& settings);
 
-            void lookupByPhoneNumber(std::string& _buffer, std::string& countryAreaCode, std::string& phoneNumber);
+            void lookupByPhoneNumber(std::string& _buffer, const std::string& countryAreaCode, const std::string& phoneNumber);
 
-            void lookupNearby(std::string& _buffer, Location& location, SpotCategory& category, std::string& query, std::string& countryAreaCode);
+            void lookupNearby(std::string& _buffer, const Location& location, const SpotCategory category, const std::string& query, const std::string& countryAreaCode);
 
-            void checkUserAge(std::string& _buffer, CarrierCode& carrier, std::string& sessionId, std::string& verifier, uint32_t& standardAge);
+            void checkUserAge(std::string& _buffer, const CarrierCode carrier, const std::string& sessionId, const std::string& verifier, const uint32_t standardAge);
 
-            void checkUserAgeWithDocomo(std::string& _buffer, std::string& openIdRedirectUrl, uint32_t& standardAge, std::string& verifier);
+            void checkUserAgeWithDocomo(std::string& _buffer, const std::string& openIdRedirectUrl, const uint32_t standardAge, const std::string& verifier);
 
             void retrieveOpenIdAuthUrlWithDocomo(std::string& _buffer);
 
-            void retrieveRequestToken(std::string& _buffer, CarrierCode& carrier);
+            void retrieveRequestToken(std::string& _buffer, const CarrierCode carrier);
 
-            void getBuddyStatusBar(std::string& _buffer, std::string& buddyMid, uint64_t& revision);
+            void getBuddyStatusBar(std::string& _buffer, const std::string& buddyMid, const uint64_t revision);
 
-            void getRichMenuContents(std::string& _buffer, std::string& buddyMid, uint64_t& revision);
+            void getRichMenuContents(std::string& _buffer, const std::string& buddyMid, const uint64_t revision);
 
-            void getBuddyProfilePopup(std::string& _buffer, std::string& buddyMid);
+            void getBuddyProfilePopup(std::string& _buffer, const std::string& buddyMid);
 
-            void getPopularBuddyBanner(std::string& _buffer, std::string& language, std::string& country, ApplicationType& applicationType, std::string& resourceSpecification);
+            void getPopularBuddyBanner(std::string& _buffer, const std::string& language, const std::string& country, const ApplicationType applicationType, const std::string& resourceSpecification);
 
-            void getPopularBuddyLists(std::string& _buffer, std::string& language, std::string& country);
+            void getPopularBuddyLists(std::string& _buffer, const std::string& language, const std::string& country);
 
-            void findBuddyContactsByQuery(std::string& _buffer, std::string& language, std::string& country, std::string& query, uint32_t& fromIndex, uint32_t& count, BuddySearchRequestSource& requestSource);
+            void findBuddyContactsByQuery(std::string& _buffer, const std::string& language, const std::string& country, const std::string& query, const uint32_t fromIndex, const uint32_t count, const BuddySearchRequestSource requestSource);
 
-            void getBuddyNewsView(std::string& _buffer, std::string& language, std::string& country, uint64_t& offset, uint32_t& limit);
+            void getBuddyNewsView(std::string& _buffer, const std::string& language, const std::string& country, const uint64_t offset, const uint32_t limit);
 
-            void getBuddyContacts(std::string& _buffer, std::string& language, std::string& country, std::string& classification, uint32_t& fromIndex, uint32_t& count);
+            void getBuddyContacts(std::string& _buffer, const std::string& language, const std::string& country, const std::string& classification, const uint32_t fromIndex, const uint32_t count);
 
-            void getBuddyCollectionEntries(std::string& _buffer, std::string& language, std::string& country, uint32_t& collection, uint32_t& offset, uint32_t& limit);
+            void getBuddyCollectionEntries(std::string& _buffer, const std::string& language, const std::string& country, const uint32_t collection, const uint32_t offset, const uint32_t limit);
 
-            void getLatestBuddyNewsTimestamp(std::string& _buffer, std::string& country);
+            void getLatestBuddyNewsTimestamp(std::string& _buffer, const std::string& country);
 
-            void getBuddyChatBar(std::string& _buffer, std::string& buddyMid, uint64_t& revision);
+            void getBuddyChatBar(std::string& _buffer, const std::string& buddyMid, const uint64_t revision);
 
             void getCountriesServingOfficialAccountPromotionV2(std::string& _buffer);
 
-            void getBuddyDetail(std::string& _buffer, std::string& buddyMid);
+            void getBuddyDetail(std::string& _buffer, const std::string& buddyMid);
 
-            void getBuddyOnAir(std::string& _buffer, std::string& buddyMid);
+            void getBuddyOnAir(std::string& _buffer, const std::string& buddyMid);
 
-            void getNewlyReleasedBuddyIds(std::string& _buffer, std::string& country);
+            void getNewlyReleasedBuddyIds(std::string& _buffer, const std::string& country);
 
-            void getBuddyCategoryView(std::string& _buffer, std::string& language, std::string& country);
+            void getBuddyCategoryView(std::string& _buffer, const std::string& language, const std::string& country);
 
             void getCountriesHavingBuddy(std::string& _buffer);
 
-            void getPromotedBuddyContacts(std::string& _buffer, std::string& language, std::string& country);
+            void getPromotedBuddyContacts(std::string& _buffer, const std::string& language, const std::string& country);
 
-            void getBuddyTopView(std::string& _buffer, std::string& language, std::string& country);
+            void getBuddyTopView(std::string& _buffer, const std::string& language, const std::string& country);
 
-            void notifyLeaveGroup(std::string& _buffer, std::string& groupMid);
+            void notifyLeaveGroup(std::string& _buffer, const std::string& groupMid);
 
-            void notifyLeaveRoom(std::string& _buffer, std::string& roomMid);
+            void notifyLeaveRoom(std::string& _buffer, const std::string& roomMid);
 
-            void getBotUseInfo(std::string& _buffer, std::string& botMid);
+            void getBotUseInfo(std::string& _buffer, const std::string& botMid);
 
-            void sendChatCheckedByWatermark(std::string& _buffer, uint32_t& seq, std::string& mid, uint64_t& watermark, uint32_t& sessionId);
+            void sendChatCheckedByWatermark(std::string& _buffer, const uint32_t seq, const std::string& mid, const uint64_t watermark, const uint32_t sessionId);
 
-            void normalizePhoneNumber(std::string& _buffer, std::string& countryCode, std::string& phoneNumber, std::string& countryCodeHint);
+            void normalizePhoneNumber(std::string& _buffer, const std::string& countryCode, const std::string& phoneNumber, const std::string& countryCodeHint);
 
-            void respondE2EELoginRequest(std::string& _buffer, std::string& verifier, E2EEPublicKey& publicKey, std::string& encryptedKeyChain, std::string& hashKeyChain, ErrorCode& errorCode);
+            void respondE2EELoginRequest(std::string& _buffer, const std::string& verifier, const E2EEPublicKey& publicKey, const std::string& encryptedKeyChain, const std::string& hashKeyChain, const ErrorCode errorCode);
 
-            void confirmE2EELogin(std::string& _buffer, std::string& verifier, std::string& deviceSecret);
+            void confirmE2EELogin(std::string& _buffer, const std::string& verifier, const std::string& deviceSecret);
 
             void logoutZ(std::string& _buffer);
 
-            void loginZ(std::string& _buffer, LoginRequest& loginRequest);
+            void loginZ(std::string& _buffer, const LoginRequest& loginRequest);
 
-            void issueTokenForAccountMigrationSettings(std::string& _buffer, bool& enforce);
+            void issueTokenForAccountMigrationSettings(std::string& _buffer, const bool enforce);
 
-            void issueTokenForAccountMigration(std::string& _buffer, std::string& migrationSessionId);
+            void issueTokenForAccountMigration(std::string& _buffer, const std::string& migrationSessionId);
 
-            void verifyQrcodeWithE2EE(std::string& _buffer, std::string& verifier, std::string& pinCode, ErrorCode& errorCode, E2EEPublicKey& publicKey, std::string& encryptedKeyChain, std::string& hashKeyChain);
+            void verifyQrcodeWithE2EE(std::string& _buffer, const std::string& verifier, const std::string& pinCode, const ErrorCode errorCode, const E2EEPublicKey& publicKey, const std::string& encryptedKeyChain, const std::string& hashKeyChain);
 
         } // closing request namespace
 
@@ -6268,221 +6268,221 @@ namespace protocol {
 
             void TalkExceptionFunction(std::string& _buffer, TalkException& _result, const char* _function_name);
 
-            void getMoretabRecommend(std::string& _buffer, MoretabRecommend& _result);
+            void getMoretabRecommend(std::string& _buffer, const MoretabRecommend& _result);
 
-            void requestBanPageForUser(std::string& _buffer, BanPage& _result);
+            void requestBanPageForUser(std::string& _buffer, const BanPage& _result);
 
-            void requestBanPage(std::string& _buffer, BanPage& _result);
+            void requestBanPage(std::string& _buffer, const BanPage& _result);
 
-            void reserveCoinPurchase(std::string& _buffer, PaymentReservationResult& _result);
+            void reserveCoinPurchase(std::string& _buffer, const PaymentReservationResult& _result);
 
-            void getProductCategories(std::string& _buffer, std::vector<ProductCategory>& _result);
+            void getProductCategories(std::string& _buffer, const std::vector<ProductCategory>& _result);
 
-            void getProductList(std::string& _buffer, ProductList& _result);
+            void getProductList(std::string& _buffer, const ProductList& _result);
 
-            void getCoinPurchaseHistory(std::string& _buffer, CoinHistoryResult& _result);
+            void getCoinPurchaseHistory(std::string& _buffer, const CoinHistoryResult& _result);
 
             void buyFreeProduct(std::string& _buffer);
 
-            void getProductListWithCarrier(std::string& _buffer, ProductList& _result);
+            void getProductListWithCarrier(std::string& _buffer, const ProductList& _result);
 
-            void getDefaultProducts(std::string& _buffer, ProductList& _result);
+            void getDefaultProducts(std::string& _buffer, const ProductList& _result);
 
-            void getProductsForCategory(std::string& _buffer, ProductList& _result);
+            void getProductsForCategory(std::string& _buffer, const ProductList& _result);
 
-            void notifyDownloaded(std::string& _buffer, uint64_t& _result);
+            void notifyDownloaded(std::string& _buffer, const uint64_t _result);
 
-            void getFreePackagesWithoutEvent(std::string& _buffer, ProductList& _result);
+            void getFreePackagesWithoutEvent(std::string& _buffer, const ProductList& _result);
 
-            void getProduct(std::string& _buffer, Product& _result);
+            void getProduct(std::string& _buffer, const Product& _result);
 
-            void getEventPackages(std::string& _buffer, ProductList& _result);
+            void getEventPackages(std::string& _buffer, const ProductList& _result);
 
-            void getActivePurchaseVersions(std::string& _buffer, ProductSimpleList& _result);
+            void getActivePurchaseVersions(std::string& _buffer, const ProductSimpleList& _result);
 
-            void getCoinProductsByPgCode(std::string& _buffer, std::vector<CoinProductItem>& _result);
+            void getCoinProductsByPgCode(std::string& _buffer, const std::vector<CoinProductItem>& _result);
 
-            void getNewlyReleasedPackages(std::string& _buffer, ProductList& _result);
+            void getNewlyReleasedPackages(std::string& _buffer, const ProductList& _result);
 
-            void getDownloads(std::string& _buffer, ProductList& _result);
+            void getDownloads(std::string& _buffer, const ProductList& _result);
 
-            void getCoinProducts(std::string& _buffer, std::vector<CoinProductItem>& _result);
+            void getCoinProducts(std::string& _buffer, const std::vector<CoinProductItem>& _result);
 
-            void searchProducts(std::string& _buffer, ProductList& _result);
+            void searchProducts(std::string& _buffer, const ProductList& _result);
 
             void buyMustbuyProduct(std::string& _buffer);
 
-            void getRecommendationsForProduct(std::string& _buffer, ProductList& _result);
+            void getRecommendationsForProduct(std::string& _buffer, const ProductList& _result);
 
-            void getUpdates(std::string& _buffer, ShopUpdates& _result);
+            void getUpdates(std::string& _buffer, const ShopUpdates& _result);
 
-            void getActivePurchases(std::string& _buffer, ProductList& _result);
+            void getActivePurchases(std::string& _buffer, const ProductList& _result);
 
-            void getProductWithCarrier(std::string& _buffer, Product& _result);
+            void getProductWithCarrier(std::string& _buffer, const Product& _result);
 
             void buyCoinProduct(std::string& _buffer);
 
-            void getPopularPackages(std::string& _buffer, ProductList& _result);
+            void getPopularPackages(std::string& _buffer, const ProductList& _result);
 
-            void reservePayment(std::string& _buffer, PaymentReservationResult& _result);
+            void reservePayment(std::string& _buffer, const PaymentReservationResult& _result);
 
-            void getPresentsSent(std::string& _buffer, ProductList& _result);
+            void getPresentsSent(std::string& _buffer, const ProductList& _result);
 
             void checkCanReceivePresent(std::string& _buffer);
 
-            void getFreePackages(std::string& _buffer, ProductList& _result);
+            void getFreePackages(std::string& _buffer, const ProductList& _result);
 
-            void getPurchaseHistory(std::string& _buffer, ProductList& _result);
+            void getPurchaseHistory(std::string& _buffer, const ProductList& _result);
 
-            void getTotalBalance(std::string& _buffer, Coin& _result);
+            void getTotalBalance(std::string& _buffer, const Coin& _result);
 
-            void getCoinUseAndRefundHistory(std::string& _buffer, CoinHistoryResult& _result);
+            void getCoinUseAndRefundHistory(std::string& _buffer, const CoinHistoryResult& _result);
 
-            void getPresentsReceived(std::string& _buffer, ProductList& _result);
+            void getPresentsReceived(std::string& _buffer, const ProductList& _result);
 
-            void getPlaceSearchInfo(std::string& _buffer, std::vector<PlaceSearchInfo>& _result);
+            void getPlaceSearchInfo(std::string& _buffer, const std::vector<PlaceSearchInfo>& _result);
 
-            void getUserStatus(std::string& _buffer, UserStatus& _result);
+            void getUserStatus(std::string& _buffer, const UserStatus _result);
 
             void updateProfileAttributeForChannel(std::string& _buffer);
 
-            void getAllSimpleChannelContacts(std::string& _buffer, std::vector<SimpleChannelContact>& _result);
+            void getAllSimpleChannelContacts(std::string& _buffer, const std::vector<SimpleChannelContact>& _result);
 
-            void getUserIdentities(std::string& _buffer, std::map<RegistrationType, std::string>& _result);
+            void getUserIdentities(std::string& _buffer, const std::map<RegistrationType, std::string>& _result);
 
-            void markPaidCallAd(std::string& _buffer, PaidCallDialing& _result);
+            void markPaidCallAd(std::string& _buffer, const PaidCallDialing& _result);
 
-            void isGroupMember(std::string& _buffer, bool& _result);
+            void isGroupMember(std::string& _buffer, const bool _result);
 
-            void getPhoneInfoFromPhoneNumber(std::string& _buffer, PhoneInfoForChannel& _result);
+            void getPhoneInfoFromPhoneNumber(std::string& _buffer, const PhoneInfoForChannel& _result);
 
-            void redeemPaidCallVoucher(std::string& _buffer, PaidCallRedeemResult& _result);
+            void redeemPaidCallVoucher(std::string& _buffer, const PaidCallRedeemResult& _result);
 
-            void getPreferredDisplayName(std::string& _buffer, std::map<std::string, std::string>& _result);
+            void getPreferredDisplayName(std::string& _buffer, const std::map<std::string, std::string>& _result);
 
-            void getContactsForChannel(std::string& _buffer, std::vector<Contact>& _result);
+            void getContactsForChannel(std::string& _buffer, const std::vector<Contact>& _result);
 
-            void getCallCreditProducts(std::string& _buffer, std::vector<CoinProductItem>& _result);
+            void getCallCreditProducts(std::string& _buffer, const std::vector<CoinProductItem>& _result);
 
-            void getCompactContacts(std::string& _buffer, std::vector<CompactContact>& _result);
+            void getCompactContacts(std::string& _buffer, const std::vector<CompactContact>& _result);
 
             void notifyNotiCenterEvent(std::string& _buffer);
 
-            void isInContact(std::string& _buffer, bool& _result);
+            void isInContact(std::string& _buffer, const bool _result);
 
-            void lookupGroupMembers(std::string& _buffer, std::vector<SimpleChannelContact>& _result);
+            void lookupGroupMembers(std::string& _buffer, const std::vector<SimpleChannelContact>& _result);
 
-            void getRoomInformation(std::string& _buffer, Room& _result);
+            void getRoomInformation(std::string& _buffer, const Room& _result);
 
-            void getGroupCall(std::string& _buffer, GroupCall& _result);
+            void getGroupCall(std::string& _buffer, const GroupCall& _result);
 
-            void isAllowSecondaryDeviceLogin(std::string& _buffer, bool& _result);
+            void isAllowSecondaryDeviceLogin(std::string& _buffer, const bool _result);
 
-            void getPrimaryClientForChannel(std::string& _buffer, SimpleChannelClient& _result);
+            void getPrimaryClientForChannel(std::string& _buffer, const SimpleChannelClient& _result);
 
-            void createRoomWithBuddy(std::string& _buffer, Room& _result);
+            void createRoomWithBuddy(std::string& _buffer, const Room& _result);
 
-            void getDisplayName(std::string& _buffer, std::string& _result);
+            void getDisplayName(std::string& _buffer, const std::string& _result);
 
-            void getPaidCallMetadata(std::string& _buffer, PaidCallMetadataResult& _result);
+            void getPaidCallMetadata(std::string& _buffer, const PaidCallMetadataResult& _result);
 
-            void getMid(std::string& _buffer, std::string& _result);
+            void getMid(std::string& _buffer, const std::string& _result);
 
-            void getUserCountryForBilling(std::string& _buffer, std::string& _result);
+            void getUserCountryForBilling(std::string& _buffer, const std::string& _result);
 
-            void getFavoriteGroupIdsForChannel(std::string& _buffer, std::vector<std::string>& _result);
+            void getFavoriteGroupIdsForChannel(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getPaidCallHistory(std::string& _buffer, PaidCallHistoryResult& _result);
+            void getPaidCallHistory(std::string& _buffer, const PaidCallHistoryResult& _result);
 
             void sendPinCodeOperation(std::string& _buffer);
 
             void inviteIntoGroupCall(std::string& _buffer);
 
-            void getFriendMids(std::string& _buffer, std::vector<std::string>& _result);
+            void getFriendMids(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getMetaProfile(std::string& _buffer, MetaProfile& _result);
+            void getMetaProfile(std::string& _buffer, const MetaProfile& _result);
 
-            void sendMessageForChannel(std::string& _buffer, Message& _result);
+            void sendMessageForChannel(std::string& _buffer, const Message& _result);
 
-            void activeBuddySubscriberCount(std::string& _buffer, uint64_t& _result);
+            void activeBuddySubscriberCount(std::string& _buffer, const uint64_t _result);
 
-            void getCallCreditPurchaseHistory(std::string& _buffer, CoinHistoryResult& _result);
+            void getCallCreditPurchaseHistory(std::string& _buffer, const CoinHistoryResult& _result);
 
-            void isRoomMember(std::string& _buffer, bool& _result);
+            void isRoomMember(std::string& _buffer, const bool _result);
 
-            void sendSystemOAMessage(std::string& _buffer, Message& _result);
+            void sendSystemOAMessage(std::string& _buffer, const Message& _result);
 
-            void acquirePaidCallRoute(std::string& _buffer, PaidCallResponse& _result);
+            void acquirePaidCallRoute(std::string& _buffer, const PaidCallResponse& _result);
 
-            void getGroupsForChannel(std::string& _buffer, std::vector<Group>& _result);
+            void getGroupsForChannel(std::string& _buffer, const std::vector<Group>& _result);
 
-            void getUserCreateTime(std::string& _buffer, uint64_t& _result);
+            void getUserCreateTime(std::string& _buffer, const uint64_t _result);
 
-            void registerChannelCP(std::string& _buffer, std::string& _result);
+            void registerChannelCP(std::string& _buffer, const std::string& _result);
 
-            void reserveCallCreditPurchase(std::string& _buffer, PaymentReservationResult& _result);
+            void reserveCallCreditPurchase(std::string& _buffer, const PaymentReservationResult& _result);
 
-            void acquirePaidCallCurrencyExchangeRate(std::string& _buffer, std::vector<PaidCallCurrencyExchangeRate>& _result);
+            void acquirePaidCallCurrencyExchangeRate(std::string& _buffer, const std::vector<PaidCallCurrencyExchangeRate>& _result);
 
-            void getRoomMemberMidsForAppPlatform(std::string& _buffer, std::vector<std::string>& _result);
+            void getRoomMemberMidsForAppPlatform(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getPaidCallBalanceList(std::string& _buffer, std::vector<PaidCallBalance>& _result);
+            void getPaidCallBalanceList(std::string& _buffer, const std::vector<PaidCallBalance>& _result);
 
-            void getPersonalInfos(std::string& _buffer, std::map<PersonalInfo, std::string>& _result);
+            void getPersonalInfos(std::string& _buffer, const std::map<PersonalInfo, std::string>& _result);
 
-            void getPrimaryClientsForChannel(std::string& _buffer, std::vector<SimpleChannelClient>& _result);
+            void getPrimaryClientsForChannel(std::string& _buffer, const std::vector<SimpleChannelClient>& _result);
 
-            void addBuddyToContact(std::string& _buffer, ContactTransition& _result);
+            void addBuddyToContact(std::string& _buffer, const ContactTransition& _result);
 
-            void getGroupMemberMidsForAppPlatform(std::string& _buffer, std::vector<std::string>& _result);
+            void getGroupMemberMidsForAppPlatform(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getUserLanguage(std::string& _buffer, std::string& _result);
+            void getUserLanguage(std::string& _buffer, const std::string& _result);
 
-            void lookupPaidCall(std::string& _buffer, PaidCallResponse& _result);
+            void lookupPaidCall(std::string& _buffer, const PaidCallResponse& _result);
 
-            void getReverseCompactContacts(std::string& _buffer, std::map<std::string, CompactContact>& _result);
+            void getReverseCompactContacts(std::string& _buffer, const std::map<std::string, CompactContact>& _result);
 
-            void getPaidCallAdStatus(std::string& _buffer, PaidCallAdResult& _result);
+            void getPaidCallAdStatus(std::string& _buffer, const PaidCallAdResult& _result);
 
-            void findContactByUseridWithoutAbuseBlockForChannel(std::string& _buffer, Contact& _result);
+            void findContactByUseridWithoutAbuseBlockForChannel(std::string& _buffer, const Contact& _result);
 
-            void getGroupMemberMids(std::string& _buffer, std::vector<std::string>& _result);
+            void getGroupMemberMids(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void sendMessageWithoutRelationship(std::string& _buffer, Message& _result);
+            void sendMessageWithoutRelationship(std::string& _buffer, const Message& _result);
 
-            void displayBuddySubscriberCountInBulk(std::string& _buffer, std::map<std::string, uint64_t>& _result);
+            void displayBuddySubscriberCountInBulk(std::string& _buffer, const std::map<std::string, uint64_t>& _result);
 
-            void lookupRoomMembers(std::string& _buffer, std::vector<SimpleChannelContact>& _result);
+            void lookupRoomMembers(std::string& _buffer, const std::vector<SimpleChannelContact>& _result);
 
-            void getFavoriteMidsForChannel(std::string& _buffer, std::vector<std::string>& _result);
+            void getFavoriteMidsForChannel(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getAllContactIdsForChannel(std::string& _buffer, std::vector<std::string>& _result);
+            void getAllContactIdsForChannel(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void displayBuddySubscriberCount(std::string& _buffer, uint64_t& _result);
+            void displayBuddySubscriberCount(std::string& _buffer, const uint64_t _result);
 
-            void getProfileForChannel(std::string& _buffer, Profile& _result);
+            void getProfileForChannel(std::string& _buffer, const Profile& _result);
 
-            void getUserTickets(std::string& _buffer, std::vector<UserTicketResponse>& _result);
+            void getUserTickets(std::string& _buffer, const std::vector<UserTicketResponse>& _result);
 
-            void getOAFriendMids(std::string& _buffer, std::vector<std::string>& _result);
+            void getOAFriendMids(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void searchPaidCallUserRate(std::string& _buffer, std::vector<PaidCallUserRate>& _result);
+            void searchPaidCallUserRate(std::string& _buffer, const std::vector<PaidCallUserRate>& _result);
 
-            void getJoinedGroupIdsForChannel(std::string& _buffer, std::vector<std::string>& _result);
+            void getJoinedGroupIdsForChannel(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void acquireGroupCallRoute(std::string& _buffer, GroupCallRoute& _result);
+            void acquireGroupCallRoute(std::string& _buffer, const GroupCallRoute& _result);
 
-            void getUserMidsWhoAddedMe(std::string& _buffer, std::vector<std::string>& _result);
+            void getUserMidsWhoAddedMe(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getIdentityCredential(std::string& _buffer, IdentityCredential& _result);
+            void getIdentityCredential(std::string& _buffer, const IdentityCredential& _result);
 
             void addOperationForChannel(std::string& _buffer);
 
-            void getSimpleChannelContacts(std::string& _buffer, std::vector<SimpleChannelContact>& _result);
+            void getSimpleChannelContacts(std::string& _buffer, const std::vector<SimpleChannelContact>& _result);
 
-            void getUserLastSentMessageTimeStamp(std::string& _buffer, uint64_t& _result);
+            void getUserLastSentMessageTimeStamp(std::string& _buffer, const uint64_t _result);
 
-            void registerVirtualAccount(std::string& _buffer, std::string& _result);
+            void registerVirtualAccount(std::string& _buffer, const std::string& _result);
 
             void unregisterVirtualAccount(std::string& _buffer);
 
@@ -6492,63 +6492,63 @@ namespace protocol {
 
             void requestVirtualAccountPasswordSet(std::string& _buffer);
 
-            void getRSAKey(std::string& _buffer, RSAKey& _result);
+            void getRSAKey(std::string& _buffer, const RSAKey& _result);
 
-            void queryBeaconActions(std::string& _buffer, BeaconQueryResponse& _result);
+            void queryBeaconActions(std::string& _buffer, const BeaconQueryResponse& _result);
 
             void notifyBeaconDetected(std::string& _buffer);
 
-            void getDomains(std::string& _buffer, ChannelDomains& _result);
+            void getDomains(std::string& _buffer, const ChannelDomains& _result);
 
-            void approveChannelAndIssueRequestToken(std::string& _buffer, std::string& _result);
+            void approveChannelAndIssueRequestToken(std::string& _buffer, const std::string& _result);
 
-            void issueOTP(std::string& _buffer, OTPResult& _result);
+            void issueOTP(std::string& _buffer, const OTPResult& _result);
 
-            void getChannelSettings(std::string& _buffer, ChannelSettings& _result);
+            void getChannelSettings(std::string& _buffer, const ChannelSettings& _result);
 
-            void getChannelNotificationSettings(std::string& _buffer, std::vector<ChannelNotificationSetting>& _result);
+            void getChannelNotificationSettings(std::string& _buffer, const std::vector<ChannelNotificationSetting>& _result);
 
             void updateChannelNotificationSetting(std::string& _buffer);
 
-            void updateChannelSettings(std::string& _buffer, bool& _result);
+            void updateChannelSettings(std::string& _buffer, const bool _result);
 
-            void getCommonDomains(std::string& _buffer, ChannelDomains& _result);
+            void getCommonDomains(std::string& _buffer, const ChannelDomains& _result);
 
-            void issueRequestTokenWithAuthScheme(std::string& _buffer, RequestTokenResponse& _result);
+            void issueRequestTokenWithAuthScheme(std::string& _buffer, const RequestTokenResponse& _result);
 
-            void getChannelNotificationSetting(std::string& _buffer, ChannelNotificationSetting& _result);
+            void getChannelNotificationSetting(std::string& _buffer, const ChannelNotificationSetting& _result);
 
-            void issueChannelToken(std::string& _buffer, ChannelToken& _result);
+            void issueChannelToken(std::string& _buffer, const ChannelToken& _result);
 
-            void getChannels(std::string& _buffer, ChannelInfos& _result);
+            void getChannels(std::string& _buffer, const ChannelInfos& _result);
 
-            void fetchNotificationItems(std::string& _buffer, NotificationFetchResult& _result);
+            void fetchNotificationItems(std::string& _buffer, const NotificationFetchResult& _result);
 
-            void getChannelInfo(std::string& _buffer, ChannelInfo& _result);
+            void getChannelInfo(std::string& _buffer, const ChannelInfo& _result);
 
-            void getNotificationBadgeCount(std::string& _buffer, uint32_t& _result);
+            void getNotificationBadgeCount(std::string& _buffer, const uint32_t _result);
 
-            void issueRequestToken(std::string& _buffer, std::string& _result);
+            void issueRequestToken(std::string& _buffer, const std::string& _result);
 
             void revokeChannel(std::string& _buffer);
 
-            void getApprovedChannels(std::string& _buffer, ApprovedChannelInfos& _result);
+            void getApprovedChannels(std::string& _buffer, const ApprovedChannelInfos& _result);
 
-            void getFriendChannelMatrices(std::string& _buffer, FriendChannelMatricesResponse& _result);
+            void getFriendChannelMatrices(std::string& _buffer, const FriendChannelMatricesResponse& _result);
 
-            void issueRequestTokenForAutoLogin(std::string& _buffer, std::string& _result);
+            void issueRequestTokenForAutoLogin(std::string& _buffer, const std::string& _result);
 
-            void getUpdatedChannelIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getUpdatedChannelIds(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void reserveCoinUse(std::string& _buffer, std::string& _result);
+            void reserveCoinUse(std::string& _buffer, const std::string& _result);
 
-            void syncChannelData(std::string& _buffer, ChannelSyncDatas& _result);
+            void syncChannelData(std::string& _buffer, const ChannelSyncDatas& _result);
 
-            void approveChannelAndIssueChannelToken(std::string& _buffer, ChannelToken& _result);
+            void approveChannelAndIssueChannelToken(std::string& _buffer, const ChannelToken& _result);
 
-            void getSnsFriends(std::string& _buffer, SnsFriends& _result);
+            void getSnsFriends(std::string& _buffer, const SnsFriends& _result);
 
-            void getSnsMyProfile(std::string& _buffer, SnsProfile& _result);
+            void getSnsMyProfile(std::string& _buffer, const SnsProfile& _result);
 
             void postSnsInvitationMessage(std::string& _buffer);
 
@@ -6562,73 +6562,73 @@ namespace protocol {
 
             void verifyAccountMigrationPincode(std::string& _buffer);
 
-            void registerWithExistingSnsIdAndIdentityCredential(std::string& _buffer, std::string& _result);
+            void registerWithExistingSnsIdAndIdentityCredential(std::string& _buffer, const std::string& _result);
 
-            void registerDeviceWithoutPhoneNumber(std::string& _buffer, std::string& _result);
+            void registerDeviceWithoutPhoneNumber(std::string& _buffer, const std::string& _result);
 
-            void changeVerificationMethod(std::string& _buffer, VerificationSessionData& _result);
+            void changeVerificationMethod(std::string& _buffer, const VerificationSessionData& _result);
 
             void setBuddyLocation(std::string& _buffer);
 
-            void getFriendRequests(std::string& _buffer, std::vector<FriendRequest>& _result);
+            void getFriendRequests(std::string& _buffer, const std::vector<FriendRequest>& _result);
 
             void kickoutFromGroup(std::string& _buffer);
 
-            void verifyIdentityCredentialWithResult(std::string& _buffer, UserAuthStatus& _result);
+            void verifyIdentityCredentialWithResult(std::string& _buffer, const UserAuthStatus& _result);
 
             void sendEchoPush(std::string& _buffer);
 
-            void createSession(std::string& _buffer, std::string& _result);
+            void createSession(std::string& _buffer, const std::string& _result);
 
-            void reissueDeviceCredential(std::string& _buffer, std::string& _result);
+            void reissueDeviceCredential(std::string& _buffer, const std::string& _result);
 
-            void getRecommendationIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getRecommendationIds(std::string& _buffer, const std::vector<std::string>& _result);
 
             void inviteViaEmail(std::string& _buffer);
 
-            void getRoomsV2(std::string& _buffer, std::vector<Room>& _result);
+            void getRoomsV2(std::string& _buffer, const std::vector<Room>& _result);
 
-            void getReadMessageOps(std::string& _buffer, std::vector<Operation>& _result);
+            void getReadMessageOps(std::string& _buffer, const std::vector<Operation>& _result);
 
-            void getSettingsAttributes(std::string& _buffer, Settings& _result);
+            void getSettingsAttributes(std::string& _buffer, const Settings& _result);
 
             void requestIdentityUnbind(std::string& _buffer);
 
-            void getMessagesBySequenceNumber(std::string& _buffer, std::vector<Message>& _result);
+            void getMessagesBySequenceNumber(std::string& _buffer, const std::vector<Message>& _result);
 
             void inviteIntoRoom(std::string& _buffer);
 
             void sendChatChecked(std::string& _buffer);
 
-            void removeSnsId(std::string& _buffer, std::string& _result);
+            void removeSnsId(std::string& _buffer, const std::string& _result);
 
             void reportSpammer(std::string& _buffer);
 
-            void findAndAddContactsByEmail(std::string& _buffer, std::map<std::string, Contact>& _result);
+            void findAndAddContactsByEmail(std::string& _buffer, const std::map<std::string, Contact>& _result);
 
-            void getCompactGroups(std::string& _buffer, std::vector<Group>& _result);
+            void getCompactGroups(std::string& _buffer, const std::vector<Group>& _result);
 
-            void sendMessage(std::string& _buffer, Message& _result);
+            void sendMessage(std::string& _buffer, const Message& _result);
 
-            void getRooms(std::string& _buffer, std::vector<Room>& _result);
+            void getRooms(std::string& _buffer, const std::vector<Room>& _result);
 
             void updateC2DMRegistrationId(std::string& _buffer);
 
             void sendPostback(std::string& _buffer);
 
-            void getReadMessageOpsInBulk(std::string& _buffer, std::vector<Operation>& _result);
+            void getReadMessageOpsInBulk(std::string& _buffer, const std::vector<Operation>& _result);
 
             void sendMessageIgnored(std::string& _buffer);
 
-            void getMessageBoxWrapUpListV2(std::string& _buffer, TMessageBoxWrapUpResponse& _result);
+            void getMessageBoxWrapUpListV2(std::string& _buffer, const TMessageBoxWrapUpResponse& _result);
 
-            void getOldReadMessageOpsWithRange(std::string& _buffer, std::vector<Operation>& _result);
+            void getOldReadMessageOpsWithRange(std::string& _buffer, const std::vector<Operation>& _result);
 
-            void getRSAKeyInfo(std::string& _buffer, RSAKey& _result);
+            void getRSAKeyInfo(std::string& _buffer, const RSAKey& _result);
 
             void updateProfileAttribute(std::string& _buffer);
 
-            void createAccountMigrationPincodeSession(std::string& _buffer, std::string& _result);
+            void createAccountMigrationPincodeSession(std::string& _buffer, const std::string& _result);
 
             void notifiedRedirect(std::string& _buffer);
 
@@ -6636,63 +6636,63 @@ namespace protocol {
 
             void updateApnsDeviceToken(std::string& _buffer);
 
-            void getMessageBoxCompactWrapUpListV2(std::string& _buffer, TMessageBoxWrapUpResponse& _result);
+            void getMessageBoxCompactWrapUpListV2(std::string& _buffer, const TMessageBoxWrapUpResponse& _result);
 
-            void requestEmailConfirmation(std::string& _buffer, EmailConfirmationSession& _result);
+            void requestEmailConfirmation(std::string& _buffer, const EmailConfirmationSession& _result);
 
-            void registerWithSnsIdAndIdentityCredential(std::string& _buffer, std::string& _result);
+            void registerWithSnsIdAndIdentityCredential(std::string& _buffer, const std::string& _result);
 
-            void getMessageBoxCompactWrapUp(std::string& _buffer, TMessageBoxWrapUp& _result);
+            void getMessageBoxCompactWrapUp(std::string& _buffer, const TMessageBoxWrapUp& _result);
 
-            void findContactByUserTicket(std::string& _buffer, Contact& _result);
+            void findContactByUserTicket(std::string& _buffer, const Contact& _result);
 
             void updateAccountMigrationPincode(std::string& _buffer);
 
-            void registerBuddyUser(std::string& _buffer, std::string& _result);
+            void registerBuddyUser(std::string& _buffer, const std::string& _result);
 
-            void updateSettingsV2(std::string& _buffer, uint32_t& _result);
+            void updateSettingsV2(std::string& _buffer, const uint32_t _result);
 
-            void getUserTicket(std::string& _buffer, Ticket& _result);
+            void getUserTicket(std::string& _buffer, const Ticket& _result);
 
-            void fetchOps(std::string& _buffer, std::vector<Operation>& _result);
+            void fetchOps(std::string& _buffer, const std::vector<Operation>& _result);
 
-            void commitSendMessagesToMid(std::string& _buffer, CommitSendMessagesToMidResponse& _result);
+            void commitSendMessagesToMid(std::string& _buffer, const CommitSendMessagesToMidResponse& _result);
 
-            void getMessageBoxV2(std::string& _buffer, TMessageBox& _result);
+            void getMessageBoxV2(std::string& _buffer, const TMessageBox& _result);
 
             void requestResendMessage(std::string& _buffer);
 
-            void getGroupWithoutMembers(std::string& _buffer, Group& _result);
+            void getGroupWithoutMembers(std::string& _buffer, const Group& _result);
 
             void removeAllMessages(std::string& _buffer);
 
             void verifyAccountMigration(std::string& _buffer);
 
-            void reissueGroupTicket(std::string& _buffer, std::string& _result);
+            void reissueGroupTicket(std::string& _buffer, const std::string& _result);
 
             void logoutSession(std::string& _buffer);
 
-            void getBuddyLocation(std::string& _buffer, Geolocation& _result);
+            void getBuddyLocation(std::string& _buffer, const Geolocation& _result);
 
-            void getWapInvitation(std::string& _buffer, WapInvitation& _result);
+            void getWapInvitation(std::string& _buffer, const WapInvitation& _result);
 
-            void registerDevice(std::string& _buffer, std::string& _result);
+            void registerDevice(std::string& _buffer, const std::string& _result);
 
             void clearMessageBox(std::string& _buffer);
 
-            void loginWithIdentityCredentialForCertificate(std::string& _buffer, LoginResult& _result);
+            void loginWithIdentityCredentialForCertificate(std::string& _buffer, const LoginResult& _result);
 
-            void getSuggestSettings(std::string& _buffer, SuggestDictionarySettings& _result);
+            void getSuggestSettings(std::string& _buffer, const SuggestDictionarySettings& _result);
 
-            void updateAndGetNearby(std::string& _buffer, std::vector<NearbyEntry>& _result);
+            void updateAndGetNearby(std::string& _buffer, const std::vector<NearbyEntry>& _result);
 
-            void syncContactBySnsIds(std::string& _buffer, std::vector<SnsFriendContactRegistration>& _result);
+            void syncContactBySnsIds(std::string& _buffer, const std::vector<SnsFriendContactRegistration>& _result);
 
-            void getContacts(std::string& _buffer, std::vector<Contact>& _result);
+            void getContacts(std::string& _buffer, const std::vector<Contact>& _result);
 
-            void getMessageBoxCompactWrapUpList(std::string& _buffer, TMessageBoxWrapUpResponse& _result);
+            void getMessageBoxCompactWrapUpList(std::string& _buffer, const TMessageBoxWrapUpResponse& _result);
 
-            void getProximityMatchCandidates(std::string& _buffer, std::set<Contact>& _result);
+            void getProximityMatchCandidates(std::string& _buffer, const std::set<Contact>& _result);
 
             void updateExtendedProfileAttribute(std::string& _buffer);
 
@@ -6702,19 +6702,19 @@ namespace protocol {
 
             void registerBuddyUserid(std::string& _buffer);
 
-            void findGroupByTicket(std::string& _buffer, Group& _result);
+            void findGroupByTicket(std::string& _buffer, const Group& _result);
 
-            void registerDeviceWithIdentityCredential(std::string& _buffer, std::string& _result);
+            void registerDeviceWithIdentityCredential(std::string& _buffer, const std::string& _result);
 
             void invalidateUserTicket(std::string& _buffer);
 
-            void sendEvent(std::string& _buffer, Message& _result);
+            void sendEvent(std::string& _buffer, const Message& _result);
 
-            void sendMessageToMyHome(std::string& _buffer, Message& _result);
+            void sendMessageToMyHome(std::string& _buffer, const Message& _result);
 
-            void sendContentPreviewUpdated(std::string& _buffer, std::map<std::string, std::string>& _result);
+            void sendContentPreviewUpdated(std::string& _buffer, const std::map<std::string, std::string>& _result);
 
-            void loginWithVerifier(std::string& _buffer, std::string& _result);
+            void loginWithVerifier(std::string& _buffer, const std::string& _result);
 
             void removeBuddySubscriptionAndNotifyBuddyUnregistered(std::string& _buffer);
 
@@ -6722,157 +6722,157 @@ namespace protocol {
 
             void removeBuddyLocation(std::string& _buffer);
 
-            void getRingbackTone(std::string& _buffer, RingbackTone& _result);
+            void getRingbackTone(std::string& _buffer, const RingbackTone& _result);
 
-            void getConfigurations(std::string& _buffer, Configurations& _result);
+            void getConfigurations(std::string& _buffer, const Configurations& _result);
 
-            void getProximityMatchCandidateList(std::string& _buffer, ProximityMatchCandidateResult& _result);
+            void getProximityMatchCandidateList(std::string& _buffer, const ProximityMatchCandidateResult& _result);
 
             void requestAccountPasswordReset(std::string& _buffer);
 
-            void getNextMessages(std::string& _buffer, std::vector<Message>& _result);
+            void getNextMessages(std::string& _buffer, const std::vector<Message>& _result);
 
             void reportProfile(std::string& _buffer);
 
-            void getCompactRoom(std::string& _buffer, Room& _result);
+            void getCompactRoom(std::string& _buffer, const Room& _result);
 
-            void getLastOpRevision(std::string& _buffer, uint64_t& _result);
+            void getLastOpRevision(std::string& _buffer, const uint64_t _result);
 
-            void getPreviousMessagesV2(std::string& _buffer, std::vector<Message>& _result);
+            void getPreviousMessagesV2(std::string& _buffer, const std::vector<Message>& _result);
 
-            void fetchAnnouncements(std::string& _buffer, std::vector<Announcement>& _result);
+            void fetchAnnouncements(std::string& _buffer, const std::vector<Announcement>& _result);
 
-            void acquireCallRoute(std::string& _buffer, std::vector<std::string>& _result);
+            void acquireCallRoute(std::string& _buffer, const std::vector<std::string>& _result);
 
             void updateSettingsAttribute(std::string& _buffer);
 
-            void createGroupV2(std::string& _buffer, Group& _result);
+            void createGroupV2(std::string& _buffer, const Group& _result);
 
-            void isIdentityIdentifierAvailable(std::string& _buffer, bool& _result);
+            void isIdentityIdentifierAvailable(std::string& _buffer, const bool _result);
 
             void blockContact(std::string& _buffer);
 
-            void commitUpdateProfile(std::string& _buffer, std::map<std::string, std::string>& _result);
+            void commitUpdateProfile(std::string& _buffer, const std::map<std::string, std::string>& _result);
 
-            void registerWithSnsId(std::string& _buffer, RegisterWithSnsIdResult& _result);
+            void registerWithSnsId(std::string& _buffer, const RegisterWithSnsIdResult& _result);
 
-            void updatePublicKeychain(std::string& _buffer, PublicKeychain& _result);
+            void updatePublicKeychain(std::string& _buffer, const PublicKeychain& _result);
 
-            void loginWithVerifierForCerificate(std::string& _buffer, LoginResult& _result);
+            void loginWithVerifierForCerificate(std::string& _buffer, const LoginResult& _result);
 
             void tryFriendRequest(std::string& _buffer);
 
-            void getBlockedRecommendationIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getBlockedRecommendationIds(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getGroupIdsInvited(std::string& _buffer, std::vector<std::string>& _result);
+            void getGroupIdsInvited(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getSuggestIncrements(std::string& _buffer, SuggestDictionaryIncrements& _result);
+            void getSuggestIncrements(std::string& _buffer, const SuggestDictionaryIncrements& _result);
 
             void resendPinCodeBySMS(std::string& _buffer);
 
-            void registerWithPhoneNumber(std::string& _buffer, RegisterWithPhoneNumberResult& _result);
+            void registerWithPhoneNumber(std::string& _buffer, const RegisterWithPhoneNumberResult& _result);
 
-            void getActiveBuddySubscriberIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getActiveBuddySubscriberIds(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void createRoom(std::string& _buffer, Room& _result);
+            void createRoom(std::string& _buffer, const Room& _result);
 
-            void verifyPhoneNumberForLogin(std::string& _buffer, std::string& _result);
+            void verifyPhoneNumberForLogin(std::string& _buffer, const std::string& _result);
 
-            void addSnsId(std::string& _buffer, std::string& _result);
+            void addSnsId(std::string& _buffer, const std::string& _result);
 
             void finishUpdateVerification(std::string& _buffer);
 
-            void validateContactsOnBot(std::string& _buffer, std::map<std::string, std::string>& _result);
+            void validateContactsOnBot(std::string& _buffer, const std::map<std::string, std::string>& _result);
 
-            void getRoom(std::string& _buffer, Room& _result);
+            void getRoom(std::string& _buffer, const Room& _result);
 
             void closeProximityMatch(std::string& _buffer);
 
-            void getCompactGroup(std::string& _buffer, Group& _result);
+            void getCompactGroup(std::string& _buffer, const Group& _result);
 
-            void getBlockedContactIdsByRange(std::string& _buffer, std::vector<std::string>& _result);
+            void getBlockedContactIdsByRange(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getRecentMessagesV2(std::string& _buffer, std::vector<Message>& _result);
+            void getRecentMessagesV2(std::string& _buffer, const std::vector<Message>& _result);
 
-            void reissueUserTicket(std::string& _buffer, std::string& _result);
+            void reissueUserTicket(std::string& _buffer, const std::string& _result);
 
-            void getMessageReadRange(std::string& _buffer, std::vector<TMessageReadRange>& _result);
+            void getMessageReadRange(std::string& _buffer, const std::vector<TMessageReadRange>& _result);
 
             void clearRingbackTone(std::string& _buffer);
 
             void setIdentityCredential(std::string& _buffer);
 
-            void getMessageBoxCompactWrapUpV2(std::string& _buffer, TMessageBoxWrapUp& _result);
+            void getMessageBoxCompactWrapUpV2(std::string& _buffer, const TMessageBoxWrapUp& _result);
 
-            void getServerTime(std::string& _buffer, uint64_t& _result);
+            void getServerTime(std::string& _buffer, const uint64_t _result);
 
-            void trySendMessage(std::string& _buffer, Message& _result);
+            void trySendMessage(std::string& _buffer, const Message& _result);
 
-            void getNextMessagesV2(std::string& _buffer, std::vector<Message>& _result);
+            void getNextMessagesV2(std::string& _buffer, const std::vector<Message>& _result);
 
             void notifySleep(std::string& _buffer);
 
-            void getBuddyBlockerIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getBuddyBlockerIds(std::string& _buffer, const std::vector<std::string>& _result);
 
             void removeE2EEPublicKey(std::string& _buffer);
 
-            void reissueTrackingTicket(std::string& _buffer, std::string& _result);
+            void reissueTrackingTicket(std::string& _buffer, const std::string& _result);
 
             void cancelGroupInvitation(std::string& _buffer);
 
-            void removeMessage(std::string& _buffer, bool& _result);
+            void removeMessage(std::string& _buffer, const bool _result);
 
-            void getAllReadMessageOps(std::string& _buffer, std::vector<Operation>& _result);
+            void getAllReadMessageOps(std::string& _buffer, const std::vector<Operation>& _result);
 
-            void unregisterUserAndDevice(std::string& _buffer, std::string& _result);
+            void unregisterUserAndDevice(std::string& _buffer, const std::string& _result);
 
             void acceptGroupInvitation(std::string& _buffer);
 
-            void getCompactContactsModifiedSince(std::string& _buffer, std::vector<CompactContact>& _result);
+            void getCompactContactsModifiedSince(std::string& _buffer, const std::vector<CompactContact>& _result);
 
             void releaseSession(std::string& _buffer);
 
-            void findContactsByPhone(std::string& _buffer, std::map<std::string, Contact>& _result);
+            void findContactsByPhone(std::string& _buffer, const std::map<std::string, Contact>& _result);
 
-            void getHiddenContactMids(std::string& _buffer, std::vector<std::string>& _result);
+            void getHiddenContactMids(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getEncryptedIdentity(std::string& _buffer, std::string& _result);
+            void getEncryptedIdentity(std::string& _buffer, const std::string& _result);
 
             void updateProfile(std::string& _buffer);
 
             void reportSpam(std::string& _buffer);
 
-            void getSuggestRevisions(std::string& _buffer, SuggestDictionaryRevisions& _result);
+            void getSuggestRevisions(std::string& _buffer, const SuggestDictionaryRevisions& _result);
 
-            void getPreviousMessagesV2WithReadCount(std::string& _buffer, std::vector<Message>& _result);
+            void getPreviousMessagesV2WithReadCount(std::string& _buffer, const std::vector<Message>& _result);
 
-            void fetchOperations(std::string& _buffer, std::vector<Operation>& _result);
+            void fetchOperations(std::string& _buffer, const std::vector<Operation>& _result);
 
-            void registerWapDevice(std::string& _buffer, std::string& _result);
+            void registerWapDevice(std::string& _buffer, const std::string& _result);
 
-            void getRecentFriendRequests(std::string& _buffer, FriendRequestsInfo& _result);
+            void getRecentFriendRequests(std::string& _buffer, const FriendRequestsInfo& _result);
 
-            void notifyBuddyOnAir(std::string& _buffer, std::map<std::string, std::string>& _result);
+            void notifyBuddyOnAir(std::string& _buffer, const std::map<std::string, std::string>& _result);
 
-            void getLastAnnouncementIndex(std::string& _buffer, uint32_t& _result);
+            void getLastAnnouncementIndex(std::string& _buffer, const uint32_t _result);
 
-            void sendMessageAwaitCommit(std::string& _buffer, CommitMessageResult& _result);
+            void sendMessageAwaitCommit(std::string& _buffer, const CommitMessageResult& _result);
 
-            void negotiateE2EEPublicKey(std::string& _buffer, E2EENegotiationResult& _result);
+            void negotiateE2EEPublicKey(std::string& _buffer, const E2EENegotiationResult& _result);
 
-            void registerE2EEGroupKey(std::string& _buffer, E2EEGroupSharedKey& _result);
+            void registerE2EEGroupKey(std::string& _buffer, const E2EEGroupSharedKey& _result);
 
-            void findSnsIdUserStatus(std::string& _buffer, SnsIdUserStatus& _result);
+            void findSnsIdUserStatus(std::string& _buffer, const SnsIdUserStatus& _result);
 
             void notifyUpdated(std::string& _buffer);
 
             void reportGroups(std::string& _buffer);
 
-            void getNotificationPolicy(std::string& _buffer, std::vector<NotificationType>& _result);
+            void getNotificationPolicy(std::string& _buffer, const std::vector<NotificationType>& _result);
 
-            void findAndAddContactsByUserid(std::string& _buffer, std::map<std::string, Contact>& _result);
+            void findAndAddContactsByUserid(std::string& _buffer, const std::map<std::string, Contact>& _result);
 
-            void getLastE2EEGroupSharedKey(std::string& _buffer, E2EEGroupSharedKey& _result);
+            void getLastE2EEGroupSharedKey(std::string& _buffer, const E2EEGroupSharedKey& _result);
 
             void notifyUpdatePublicKeychain(std::string& _buffer);
 
@@ -6880,127 +6880,127 @@ namespace protocol {
 
             void acceptGroupInvitationByTicket(std::string& _buffer);
 
-            void getContactRegistration(std::string& _buffer, ContactRegistration& _result);
+            void getContactRegistration(std::string& _buffer, const ContactRegistration& _result);
 
             void updateContactSetting(std::string& _buffer);
 
-            void getContactWithFriendRequestStatus(std::string& _buffer, Contact& _result);
+            void getContactWithFriendRequestStatus(std::string& _buffer, const Contact& _result);
 
-            void getMessageBoxListByStatus(std::string& _buffer, std::vector<TMessageBox>& _result);
+            void getMessageBoxListByStatus(std::string& _buffer, const std::vector<TMessageBox>& _result);
 
-            void openProximityMatch(std::string& _buffer, std::string& _result);
+            void openProximityMatch(std::string& _buffer, const std::string& _result);
 
             void logout(std::string& _buffer);
 
-            void getE2EEPublicKey(std::string& _buffer, E2EEPublicKey& _result);
+            void getE2EEPublicKey(std::string& _buffer, const E2EEPublicKey& _result);
 
-            void registerUserid(std::string& _buffer, bool& _result);
+            void registerUserid(std::string& _buffer, const bool _result);
 
-            void reportContacts(std::string& _buffer, std::vector<ContactReportResult>& _result);
+            void reportContacts(std::string& _buffer, const std::vector<ContactReportResult>& _result);
 
-            void getPublicKeychain(std::string& _buffer, PublicKeychain& _result);
+            void getPublicKeychain(std::string& _buffer, const PublicKeychain& _result);
 
             void sendContentReceipt(std::string& _buffer);
 
             void respondResendMessage(std::string& _buffer);
 
-            void getAllRoomIds(std::string& _buffer, std::set<std::string>& _result);
+            void getAllRoomIds(std::string& _buffer, const std::set<std::string>& _result);
 
             void requestE2EEKeyExchange(std::string& _buffer);
 
             void disableNearby(std::string& _buffer);
 
-            void createQrcodeBase64Image(std::string& _buffer, std::string& _result);
+            void createQrcodeBase64Image(std::string& _buffer, const std::string& _result);
 
-            void getMessageBoxList(std::string& _buffer, std::vector<TMessageBox>& _result);
+            void getMessageBoxList(std::string& _buffer, const std::vector<TMessageBox>& _result);
 
             void respondE2EEKeyExchange(std::string& _buffer);
 
-            void verifyQrcode(std::string& _buffer, std::string& _result);
+            void verifyQrcode(std::string& _buffer, const std::string& _result);
 
             void updateNotificationTokenWithBytes(std::string& _buffer);
 
-            void getPreviousMessages(std::string& _buffer, std::vector<Message>& _result);
+            void getPreviousMessages(std::string& _buffer, const std::vector<Message>& _result);
 
-            void getSettings(std::string& _buffer, Settings& _result);
+            void getSettings(std::string& _buffer, const Settings& _result);
 
-            void getLastE2EEPublicKeys(std::string& _buffer, std::map<std::string, E2EEPublicKey>& _result);
+            void getLastE2EEPublicKeys(std::string& _buffer, const std::map<std::string, E2EEPublicKey>& _result);
 
-            void registerE2EEPublicKey(std::string& _buffer, E2EEPublicKey& _result);
+            void registerE2EEPublicKey(std::string& _buffer, const E2EEPublicKey& _result);
 
-            void acquireCallTicket(std::string& _buffer, std::string& _result);
+            void acquireCallTicket(std::string& _buffer, const std::string& _result);
 
             void inviteIntoGroup(std::string& _buffer);
 
-            void makeUserAddMyselfAsContact(std::string& _buffer, ContactTransition& _result);
+            void makeUserAddMyselfAsContact(std::string& _buffer, const ContactTransition& _result);
 
-            void removeMessageFromMyHome(std::string& _buffer, bool& _result);
+            void removeMessageFromMyHome(std::string& _buffer, const bool _result);
 
-            void commitSendMessages(std::string& _buffer, std::map<std::string, std::string>& _result);
+            void commitSendMessages(std::string& _buffer, const std::map<std::string, std::string>& _result);
 
-            void registerWithPhoneNumberAndPassword(std::string& _buffer, RegisterWithPhoneNumberResult& _result);
+            void registerWithPhoneNumberAndPassword(std::string& _buffer, const RegisterWithPhoneNumberResult& _result);
 
             void leaveGroup(std::string& _buffer);
 
-            void getAnalyticsInfo(std::string& _buffer, AnalyticsInfo& _result);
+            void getAnalyticsInfo(std::string& _buffer, const AnalyticsInfo& _result);
 
             void reportClientStatistics(std::string& _buffer);
 
             void acceptProximityMatches(std::string& _buffer);
 
-            void getGroup(std::string& _buffer, Group& _result);
+            void getGroup(std::string& _buffer, const Group& _result);
 
             void clearIdentityCredential(std::string& _buffer);
 
-            void getUpdatedMessageBoxIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getUpdatedMessageBoxIds(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getGroups(std::string& _buffer, std::vector<Group>& _result);
+            void getGroups(std::string& _buffer, const std::vector<Group>& _result);
 
             void sendMessageReceipt(std::string& _buffer);
 
-            void findContactByMetaTag(std::string& _buffer, Contact& _result);
+            void findContactByMetaTag(std::string& _buffer, const Contact& _result);
 
             void destroyMessage(std::string& _buffer);
 
-            void generateUserTicket(std::string& _buffer, Ticket& _result);
+            void generateUserTicket(std::string& _buffer, const Ticket& _result);
 
-            void registerDeviceWithoutPhoneNumberWithIdentityCredential(std::string& _buffer, std::string& _result);
+            void registerDeviceWithoutPhoneNumberWithIdentityCredential(std::string& _buffer, const std::string& _result);
 
-            void getFavoriteMids(std::string& _buffer, std::vector<std::string>& _result);
+            void getFavoriteMids(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getAcceptedProximityMatches(std::string& _buffer, std::set<std::string>& _result);
+            void getAcceptedProximityMatches(std::string& _buffer, const std::set<std::string>& _result);
 
             void notifyInstalled(std::string& _buffer);
 
-            void getCountryWithRequestIp(std::string& _buffer, std::string& _result);
+            void getCountryWithRequestIp(std::string& _buffer, const std::string& _result);
 
-            void getGroupsV2(std::string& _buffer, std::vector<Group>& _result);
+            void getGroupsV2(std::string& _buffer, const std::vector<Group>& _result);
 
-            void loginWithIdentityCredential(std::string& _buffer, std::string& _result);
+            void loginWithIdentityCredential(std::string& _buffer, const std::string& _result);
 
-            void startUpdateVerification(std::string& _buffer, VerificationSessionData& _result);
+            void startUpdateVerification(std::string& _buffer, const VerificationSessionData& _result);
 
-            void getSessions(std::string& _buffer, std::vector<LoginSession>& _result);
+            void getSessions(std::string& _buffer, const std::vector<LoginSession>& _result);
 
             void updateSettings(std::string& _buffer);
 
-            void getContact(std::string& _buffer, Contact& _result);
+            void getContact(std::string& _buffer, const Contact& _result);
 
-            void getBlockedContactIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getBlockedContactIds(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void loginWithVerifierForCertificate(std::string& _buffer, LoginResult& _result);
+            void loginWithVerifierForCertificate(std::string& _buffer, const LoginResult& _result);
 
-            void getProfile(std::string& _buffer, Profile& _result);
+            void getProfile(std::string& _buffer, const Profile& _result);
 
-            void findContactsByEmail(std::string& _buffer, std::map<std::string, Contact>& _result);
+            void findContactsByEmail(std::string& _buffer, const std::map<std::string, Contact>& _result);
 
-            void getSystemConfiguration(std::string& _buffer, SystemConfiguration& _result);
+            void getSystemConfiguration(std::string& _buffer, const SystemConfiguration& _result);
 
-            void getRecentMessages(std::string& _buffer, std::vector<Message>& _result);
+            void getRecentMessages(std::string& _buffer, const std::vector<Message>& _result);
 
-            void verifyPhone(std::string& _buffer, VerificationResult& _result);
+            void verifyPhone(std::string& _buffer, const VerificationResult _result);
 
-            void createGroup(std::string& _buffer, Group& _result);
+            void createGroup(std::string& _buffer, const Group& _result);
 
             void updateBuddySetting(std::string& _buffer);
 
@@ -7010,49 +7010,49 @@ namespace protocol {
 
             void sendChatRemoved(std::string& _buffer);
 
-            void getGroupIdsJoined(std::string& _buffer, std::vector<std::string>& _result);
+            void getGroupIdsJoined(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void findContactByUserid(std::string& _buffer, Contact& _result);
+            void findContactByUserid(std::string& _buffer, const Contact& _result);
 
-            void getE2EEPublicKeys(std::string& _buffer, std::vector<E2EEPublicKey>& _result);
+            void getE2EEPublicKeys(std::string& _buffer, const std::vector<E2EEPublicKey>& _result);
 
-            void getMessageBoxWrapUpList(std::string& _buffer, TMessageBoxWrapUpResponse& _result);
+            void getMessageBoxWrapUpList(std::string& _buffer, const TMessageBoxWrapUpResponse& _result);
 
             void leaveRoom(std::string& _buffer);
 
             void unblockRecommendation(std::string& _buffer);
 
-            void findAndAddContactsByPhone(std::string& _buffer, std::map<std::string, Contact>& _result);
+            void findAndAddContactsByPhone(std::string& _buffer, const std::map<std::string, Contact>& _result);
 
-            void getAuthQrcode(std::string& _buffer, AuthQrcode& _result);
+            void getAuthQrcode(std::string& _buffer, const AuthQrcode& _result);
 
-            void getE2EEGroupSharedKey(std::string& _buffer, E2EEGroupSharedKey& _result);
+            void getE2EEGroupSharedKey(std::string& _buffer, const E2EEGroupSharedKey& _result);
 
-            void getMessageBoxWrapUp(std::string& _buffer, TMessageBoxWrapUp& _result);
+            void getMessageBoxWrapUp(std::string& _buffer, const TMessageBoxWrapUp& _result);
 
-            void updateSettingsAttributes(std::string& _buffer, uint32_t& _result);
+            void updateSettingsAttributes(std::string& _buffer, const uint32_t _result);
 
-            void startVerification(std::string& _buffer, VerificationSessionData& _result);
+            void startVerification(std::string& _buffer, const VerificationSessionData& _result);
 
             void reportRooms(std::string& _buffer);
 
             void updateGroupPreferenceAttribute(std::string& _buffer);
 
-            void getMessageBoxWrapUpV2(std::string& _buffer, TMessageBoxWrapUp& _result);
+            void getMessageBoxWrapUpV2(std::string& _buffer, const TMessageBoxWrapUp& _result);
 
-            void getCompactRooms(std::string& _buffer, std::vector<Room>& _result);
+            void getCompactRooms(std::string& _buffer, const std::vector<Room>& _result);
 
-            void findAndAddContactByMetaTag(std::string& _buffer, Contact& _result);
+            void findAndAddContactByMetaTag(std::string& _buffer, const Contact& _result);
 
             void storeUpdateProfileAttribute(std::string& _buffer);
 
-            void resendEmailConfirmation(std::string& _buffer, EmailConfirmationSession& _result);
+            void resendEmailConfirmation(std::string& _buffer, const EmailConfirmationSession& _result);
 
-            void confirmEmail(std::string& _buffer, EmailConfirmationResult& _result);
+            void confirmEmail(std::string& _buffer, const EmailConfirmationResult& _result);
 
-            void getExtendedProfile(std::string& _buffer, ExtendedProfile& _result);
+            void getExtendedProfile(std::string& _buffer, const ExtendedProfile& _result);
 
-            void isUseridAvailable(std::string& _buffer, bool& _result);
+            void isUseridAvailable(std::string& _buffer, const bool _result);
 
             void notifyRegistrationComplete(std::string& _buffer);
 
@@ -7064,65 +7064,65 @@ namespace protocol {
 
             void updateCustomModeSettings(std::string& _buffer);
 
-            void createRoomV2(std::string& _buffer, Room& _result);
+            void createRoomV2(std::string& _buffer, const Room& _result);
 
             void noop(std::string& _buffer);
 
-            void acquireEncryptedAccessToken(std::string& _buffer, std::string& _result);
+            void acquireEncryptedAccessToken(std::string& _buffer, const std::string& _result);
 
-            void getE2EEPublicKeysEx(std::string& _buffer, std::vector<E2EEPublicKey>& _result);
+            void getE2EEPublicKeysEx(std::string& _buffer, const std::vector<E2EEPublicKey>& _result);
 
-            void syncContacts(std::string& _buffer, std::map<std::string, ContactRegistration>& _result);
+            void syncContacts(std::string& _buffer, const std::map<std::string, ContactRegistration>& _result);
 
-            void findAndAddContactsByMid(std::string& _buffer, std::map<std::string, Contact>& _result);
+            void findAndAddContactsByMid(std::string& _buffer, const std::map<std::string, Contact>& _result);
 
-            void findGroupByTicketV2(std::string& _buffer, Group& _result);
+            void findGroupByTicketV2(std::string& _buffer, const Group& _result);
 
             void removeFriendRequest(std::string& _buffer);
 
-            void verifyPhoneNumber(std::string& _buffer, PhoneVerificationResult& _result);
+            void verifyPhoneNumber(std::string& _buffer, const PhoneVerificationResult& _result);
 
             void setNotificationsEnabled(std::string& _buffer);
 
-            void getAllContactIds(std::string& _buffer, std::vector<std::string>& _result);
+            void getAllContactIds(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getIdentityIdentifier(std::string& _buffer, std::string& _result);
+            void getIdentityIdentifier(std::string& _buffer, const std::string& _result);
 
             void sendDummyPush(std::string& _buffer);
 
             void inviteFriendsBySms(std::string& _buffer);
 
-            void getMessageBox(std::string& _buffer, TMessageBox& _result);
+            void getMessageBox(std::string& _buffer, const TMessageBox& _result);
 
             void unsendMessage(std::string& _buffer);
 
-            void createChatRoomAnnouncement(std::string& _buffer, ChatRoomAnnouncement& _result);
+            void createChatRoomAnnouncement(std::string& _buffer, const ChatRoomAnnouncement& _result);
 
             void removeChatRoomAnnouncement(std::string& _buffer);
 
-            void getChatRoomAnnouncements(std::string& _buffer, std::vector<ChatRoomAnnouncement>& _result);
+            void getChatRoomAnnouncements(std::string& _buffer, const std::vector<ChatRoomAnnouncement>& _result);
 
-            void getChatRoomAnnouncementsBulk(std::string& _buffer, std::vector<ChatRoomAnnouncement>& _result);
+            void getChatRoomAnnouncementsBulk(std::string& _buffer, const std::vector<ChatRoomAnnouncement>& _result);
 
             void unregisterBuddy(std::string& _buffer);
 
-            void sendBuddyContentMessageToMidsAsync(std::string& _buffer, std::string& _result);
+            void sendBuddyContentMessageToMidsAsync(std::string& _buffer, const std::string& _result);
 
-            void getAllBuddyMembers(std::string& _buffer, std::vector<std::string>& _result);
+            void getAllBuddyMembers(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getActiveMemberMidsByBuddyMid(std::string& _buffer, std::vector<std::string>& _result);
+            void getActiveMemberMidsByBuddyMid(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void updateBuddyProfileAttributes(std::string& _buffer, UpdateBuddyProfileResult& _result);
+            void updateBuddyProfileAttributes(std::string& _buffer, const UpdateBuddyProfileResult& _result);
 
-            void storePrivateMessages(std::string& _buffer, MessageStoreResult& _result);
+            void storePrivateMessages(std::string& _buffer, const MessageStoreResult& _result);
 
-            void updateBuddyProfileImageAsync(std::string& _buffer, std::string& _result);
+            void updateBuddyProfileImageAsync(std::string& _buffer, const std::string& _result);
 
             void notifyBuddyBlocked(std::string& _buffer);
 
-            void getMemberCountByBuddyMid(std::string& _buffer, uint64_t& _result);
+            void getMemberCountByBuddyMid(std::string& _buffer, const uint64_t _result);
 
-            void isBuddyOnAirByMid(std::string& _buffer, bool& _result);
+            void isBuddyOnAirByMid(std::string& _buffer, const bool _result);
 
             void commitPrivateMessages(std::string& _buffer);
 
@@ -7130,87 +7130,87 @@ namespace protocol {
 
             void addBuddyMember(std::string& _buffer);
 
-            void linkAndSendBuddyContentMessageToMids(std::string& _buffer, SendBuddyMessageResult& _result);
+            void linkAndSendBuddyContentMessageToMids(std::string& _buffer, const SendBuddyMessageResult& _result);
 
-            void storeMessages(std::string& _buffer, std::vector<SendBuddyMessageResult>& _result);
+            void storeMessages(std::string& _buffer, const std::vector<SendBuddyMessageResult>& _result);
 
-            void storeMessage(std::string& _buffer, SendBuddyMessageResult& _result);
+            void storeMessage(std::string& _buffer, const SendBuddyMessageResult& _result);
 
-            void registerBuddy(std::string& _buffer, std::string& _result);
+            void registerBuddy(std::string& _buffer, const std::string& _result);
 
-            void getUnregisterBuddyResult(std::string& _buffer, UnregisterBuddyResult& _result);
+            void getUnregisterBuddyResult(std::string& _buffer, const UnregisterBuddyResult& _result);
 
             void updateBuddySearchId(std::string& _buffer);
 
-            void uploadBuddyContent(std::string& _buffer, std::string& _result);
+            void uploadBuddyContent(std::string& _buffer, const std::string& _result);
 
-            void updateBuddyProfileImage(std::string& _buffer, UpdateBuddyProfileResult& _result);
+            void updateBuddyProfileImage(std::string& _buffer, const UpdateBuddyProfileResult& _result);
 
-            void sendBuddyMessageToAll(std::string& _buffer, SendBuddyMessageResult& _result);
+            void sendBuddyMessageToAll(std::string& _buffer, const SendBuddyMessageResult& _result);
 
-            void commitSendMessagesToAll(std::string& _buffer, SendBuddyMessageResult& _result);
+            void commitSendMessagesToAll(std::string& _buffer, const SendBuddyMessageResult& _result);
 
-            void downloadMessageContent(std::string& _buffer, std::string& _result);
+            void downloadMessageContent(std::string& _buffer, const std::string& _result);
 
-            void updateBuddyProfileRichMenu(std::string& _buffer, UpdateBuddyProfileResult& _result);
+            void updateBuddyProfileRichMenu(std::string& _buffer, const UpdateBuddyProfileResult& _result);
 
-            void setBuddyOnAir(std::string& _buffer, SetBuddyOnAirResult& _result);
+            void setBuddyOnAir(std::string& _buffer, const SetBuddyOnAirResult& _result);
 
             void unblockBuddyMember(std::string& _buffer);
 
-            void linkAndSendBuddyContentMessageToAll(std::string& _buffer, SendBuddyMessageResult& _result);
+            void linkAndSendBuddyContentMessageToAll(std::string& _buffer, const SendBuddyMessageResult& _result);
 
             void removeBuddyMember(std::string& _buffer);
 
-            void commitSendMessagesToMidAsync(std::string& _buffer, std::string& _result);
+            void commitSendMessagesToMidAsync(std::string& _buffer, const std::string& _result);
 
-            void getUpdateBuddyProfileResult(std::string& _buffer, UpdateBuddyProfileResult& _result);
+            void getUpdateBuddyProfileResult(std::string& _buffer, const UpdateBuddyProfileResult& _result);
 
             void notifyBuddyUnblocked(std::string& _buffer);
 
-            void updateBuddyProfileRichMenuAsync(std::string& _buffer, std::string& _result);
+            void updateBuddyProfileRichMenuAsync(std::string& _buffer, const std::string& _result);
 
-            void getBuddyProfile(std::string& _buffer, BuddyProfile& _result);
+            void getBuddyProfile(std::string& _buffer, const BuddyProfile& _result);
 
-            void getBlockedBuddyMembers(std::string& _buffer, std::vector<std::string>& _result);
+            void getBlockedBuddyMembers(std::string& _buffer, const std::vector<std::string>& _result);
 
             void commitPublicMessagesToAll(std::string& _buffer);
 
-            void linkAndSendBuddyContentMessageToAllAsync(std::string& _buffer, std::string& _result);
+            void linkAndSendBuddyContentMessageToAllAsync(std::string& _buffer, const std::string& _result);
 
-            void sendBuddyContentMessageToAllAsync(std::string& _buffer, std::string& _result);
+            void sendBuddyContentMessageToAllAsync(std::string& _buffer, const std::string& _result);
 
-            void getSetBuddyOnAirResult(std::string& _buffer, SetBuddyOnAirResult& _result);
+            void getSetBuddyOnAirResult(std::string& _buffer, const SetBuddyOnAirResult& _result);
 
-            void commitSendMessagesToMidsAsync(std::string& _buffer, std::string& _result);
+            void commitSendMessagesToMidsAsync(std::string& _buffer, const std::string& _result);
 
-            void commitSendMessagesToStoredMidsAsync(std::string& _buffer, std::string& _result);
+            void commitSendMessagesToStoredMidsAsync(std::string& _buffer, const std::string& _result);
 
             void updateBuddyAdminProfileAttribute(std::string& _buffer);
 
-            void setBuddyOnAirAsync(std::string& _buffer, std::string& _result);
+            void setBuddyOnAirAsync(std::string& _buffer, const std::string& _result);
 
-            void commitSendMessagesToMids(std::string& _buffer, SendBuddyMessageResult& _result);
+            void commitSendMessagesToMids(std::string& _buffer, const SendBuddyMessageResult& _result);
 
-            void sendBuddyContentMessageToAll(std::string& _buffer, SendBuddyMessageResult& _result);
+            void sendBuddyContentMessageToAll(std::string& _buffer, const SendBuddyMessageResult& _result);
 
             void updateBuddySettings(std::string& _buffer);
 
             void notifyBuddySubscribed(std::string& _buffer);
 
-            void registerBuddyAdmin(std::string& _buffer, std::string& _result);
+            void registerBuddyAdmin(std::string& _buffer, const std::string& _result);
 
-            void getBlockerCountByBuddyMid(std::string& _buffer, uint64_t& _result);
+            void getBlockerCountByBuddyMid(std::string& _buffer, const uint64_t _result);
 
-            void reissueContactTicket(std::string& _buffer, std::string& _result);
+            void reissueContactTicket(std::string& _buffer, const std::string& _result);
 
-            void validateContacts(std::string& _buffer, ValidateContactsResult& _result);
+            void validateContacts(std::string& _buffer, const ValidateContactsResult& _result);
 
-            void sendBuddyMessageToMidsAsync(std::string& _buffer, std::string& _result);
+            void sendBuddyMessageToMidsAsync(std::string& _buffer, const std::string& _result);
 
             void unregisterBuddyAsync(std::string& _buffer);
 
-            void getProfileImageUrlHash(std::string& _buffer, std::string& _result);
+            void getProfileImageUrlHash(std::string& _buffer, const std::string& _result);
 
             void blockBuddyMember(std::string& _buffer);
 
@@ -7218,7 +7218,7 @@ namespace protocol {
 
             void deleteBotProfileImage(std::string& _buffer);
 
-            void sendBuddyContentMessageToMids(std::string& _buffer, SendBuddyMessageResult& _result);
+            void sendBuddyContentMessageToMids(std::string& _buffer, const SendBuddyMessageResult& _result);
 
             void unregisterBuddyAdmin(std::string& _buffer);
 
@@ -7226,117 +7226,117 @@ namespace protocol {
 
             void removeBuddyMembers(std::string& _buffer);
 
-            void storePublicMessages(std::string& _buffer, MessageStoreResult& _result);
+            void storePublicMessages(std::string& _buffer, const MessageStoreResult& _result);
 
             void addBuddyMembers(std::string& _buffer);
 
-            void getMessageCommitResult(std::string& _buffer, MessageCommitResult& _result);
+            void getMessageCommitResult(std::string& _buffer, const MessageCommitResult& _result);
 
-            void getBuddyDetailByMid(std::string& _buffer, BuddyDetail& _result);
+            void getBuddyDetailByMid(std::string& _buffer, const BuddyDetail& _result);
 
             void notifyBuddySubscriberUnregistered(std::string& _buffer);
 
-            void sendBuddyMessageToAllAsync(std::string& _buffer, std::string& _result);
+            void sendBuddyMessageToAllAsync(std::string& _buffer, const std::string& _result);
 
-            void sendBuddyMessageToMids(std::string& _buffer, SendBuddyMessageResult& _result);
+            void sendBuddyMessageToMids(std::string& _buffer, const SendBuddyMessageResult& _result);
 
-            void commitSendMessagesToAllAsync(std::string& _buffer, std::string& _result);
+            void commitSendMessagesToAllAsync(std::string& _buffer, const std::string& _result);
 
             void notifyBuddySubscriberEmpty(std::string& _buffer);
 
             void updateBuddyAdminProfileImage(std::string& _buffer);
 
-            void updateBuddyProfileAttributesAsync(std::string& _buffer, std::string& _result);
+            void updateBuddyProfileAttributesAsync(std::string& _buffer, const std::string& _result);
 
-            void linkAndSendBuddyContentMessageToMidsAsync(std::string& _buffer, std::string& _result);
+            void linkAndSendBuddyContentMessageToMidsAsync(std::string& _buffer, const std::string& _result);
 
-            void downloadProfileImagePreview(std::string& _buffer, std::string& _result);
+            void downloadProfileImagePreview(std::string& _buffer, const std::string& _result);
 
-            void downloadProfileImage(std::string& _buffer, std::string& _result);
+            void downloadProfileImage(std::string& _buffer, const std::string& _result);
 
-            void getSendBuddyMessageResult(std::string& _buffer, SendBuddyMessageResult& _result);
+            void getSendBuddyMessageResult(std::string& _buffer, const SendBuddyMessageResult& _result);
 
-            void containsBuddyMember(std::string& _buffer, bool& _result);
+            void containsBuddyMember(std::string& _buffer, const bool _result);
 
-            void getActiveMemberCountByBuddyMid(std::string& _buffer, uint64_t& _result);
+            void getActiveMemberCountByBuddyMid(std::string& _buffer, const uint64_t _result);
 
-            void downloadMessageContentPreview(std::string& _buffer, std::string& _result);
+            void downloadMessageContentPreview(std::string& _buffer, const std::string& _result);
 
             void notifyBuddyRegistered(std::string& _buffer);
 
-            void lookupByPhoneNumber(std::string& _buffer, SpotPhoneNumberResponse& _result);
+            void lookupByPhoneNumber(std::string& _buffer, const SpotPhoneNumberResponse& _result);
 
-            void lookupNearby(std::string& _buffer, SpotNearbyResponse& _result);
+            void lookupNearby(std::string& _buffer, const SpotNearbyResponse& _result);
 
-            void checkUserAge(std::string& _buffer, UserAgeType& _result);
+            void checkUserAge(std::string& _buffer, const UserAgeType _result);
 
-            void checkUserAgeWithDocomo(std::string& _buffer, AgeCheckDocomoResult& _result);
+            void checkUserAgeWithDocomo(std::string& _buffer, const AgeCheckDocomoResult& _result);
 
-            void retrieveOpenIdAuthUrlWithDocomo(std::string& _buffer, std::string& _result);
+            void retrieveOpenIdAuthUrlWithDocomo(std::string& _buffer, const std::string& _result);
 
-            void retrieveRequestToken(std::string& _buffer, AgeCheckRequestResult& _result);
+            void retrieveRequestToken(std::string& _buffer, const AgeCheckRequestResult& _result);
 
-            void getBuddyStatusBar(std::string& _buffer, BuddyStatusBar& _result);
+            void getBuddyStatusBar(std::string& _buffer, const BuddyStatusBar& _result);
 
-            void getRichMenuContents(std::string& _buffer, BuddyRichMenuContents& _result);
+            void getRichMenuContents(std::string& _buffer, const BuddyRichMenuContents& _result);
 
-            void getBuddyProfilePopup(std::string& _buffer, BuddyProfilePopup& _result);
+            void getBuddyProfilePopup(std::string& _buffer, const BuddyProfilePopup& _result);
 
-            void getPopularBuddyBanner(std::string& _buffer, BuddyBanner& _result);
+            void getPopularBuddyBanner(std::string& _buffer, const BuddyBanner& _result);
 
-            void getPopularBuddyLists(std::string& _buffer, std::vector<BuddyList>& _result);
+            void getPopularBuddyLists(std::string& _buffer, const std::vector<BuddyList>& _result);
 
-            void findBuddyContactsByQuery(std::string& _buffer, std::vector<BuddySearchResult>& _result);
+            void findBuddyContactsByQuery(std::string& _buffer, const std::vector<BuddySearchResult>& _result);
 
-            void getBuddyNewsView(std::string& _buffer, BuddyNewsView& _result);
+            void getBuddyNewsView(std::string& _buffer, const BuddyNewsView& _result);
 
-            void getBuddyContacts(std::string& _buffer, std::vector<Contact>& _result);
+            void getBuddyContacts(std::string& _buffer, const std::vector<Contact>& _result);
 
-            void getBuddyCollectionEntries(std::string& _buffer, std::vector<BuddyCollectionEntry>& _result);
+            void getBuddyCollectionEntries(std::string& _buffer, const std::vector<BuddyCollectionEntry>& _result);
 
-            void getLatestBuddyNewsTimestamp(std::string& _buffer, uint64_t& _result);
+            void getLatestBuddyNewsTimestamp(std::string& _buffer, const uint64_t _result);
 
-            void getBuddyChatBar(std::string& _buffer, BuddyChatBar& _result);
+            void getBuddyChatBar(std::string& _buffer, const BuddyChatBar& _result);
 
-            void getCountriesServingOfficialAccountPromotionV2(std::string& _buffer, std::set<std::string>& _result);
+            void getCountriesServingOfficialAccountPromotionV2(std::string& _buffer, const std::set<std::string>& _result);
 
-            void getBuddyDetail(std::string& _buffer, BuddyDetail& _result);
+            void getBuddyDetail(std::string& _buffer, const BuddyDetail& _result);
 
-            void getBuddyOnAir(std::string& _buffer, BuddyOnAir& _result);
+            void getBuddyOnAir(std::string& _buffer, const BuddyOnAir& _result);
 
-            void getNewlyReleasedBuddyIds(std::string& _buffer, std::map<std::string, uint64_t>& _result);
+            void getNewlyReleasedBuddyIds(std::string& _buffer, const std::map<std::string, uint64_t>& _result);
 
-            void getBuddyCategoryView(std::string& _buffer, BuddyCategoryView& _result);
+            void getBuddyCategoryView(std::string& _buffer, const BuddyCategoryView& _result);
 
-            void getCountriesHavingBuddy(std::string& _buffer, std::vector<std::string>& _result);
+            void getCountriesHavingBuddy(std::string& _buffer, const std::vector<std::string>& _result);
 
-            void getPromotedBuddyContacts(std::string& _buffer, std::vector<Contact>& _result);
+            void getPromotedBuddyContacts(std::string& _buffer, const std::vector<Contact>& _result);
 
-            void getBuddyTopView(std::string& _buffer, BuddyTopView& _result);
+            void getBuddyTopView(std::string& _buffer, const BuddyTopView& _result);
 
             void notifyLeaveGroup(std::string& _buffer);
 
             void notifyLeaveRoom(std::string& _buffer);
 
-            void getBotUseInfo(std::string& _buffer, BotUseInfo& _result);
+            void getBotUseInfo(std::string& _buffer, const BotUseInfo& _result);
 
             void sendChatCheckedByWatermark(std::string& _buffer);
 
-            void normalizePhoneNumber(std::string& _buffer, std::string& _result);
+            void normalizePhoneNumber(std::string& _buffer, const std::string& _result);
 
             void respondE2EELoginRequest(std::string& _buffer);
 
-            void confirmE2EELogin(std::string& _buffer, std::string& _result);
+            void confirmE2EELogin(std::string& _buffer, const std::string& _result);
 
             void logoutZ(std::string& _buffer);
 
-            void loginZ(std::string& _buffer, LoginResult& _result);
+            void loginZ(std::string& _buffer, const LoginResult& _result);
 
-            void issueTokenForAccountMigrationSettings(std::string& _buffer, SecurityCenterResult& _result);
+            void issueTokenForAccountMigrationSettings(std::string& _buffer, const SecurityCenterResult& _result);
 
-            void issueTokenForAccountMigration(std::string& _buffer, SecurityCenterResult& _result);
+            void issueTokenForAccountMigration(std::string& _buffer, const SecurityCenterResult& _result);
 
-            void verifyQrcodeWithE2EE(std::string& _buffer, std::string& _result);
+            void verifyQrcodeWithE2EE(std::string& _buffer, const std::string& _result);
 
         } // closing result namespace
 
