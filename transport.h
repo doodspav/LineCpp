@@ -8,10 +8,13 @@
 #include <netinet/tcp.h>
 #include <string>
 #include <sys/socket.h>
+#include <tuple>
 #include <unistd.h>
 #include <unordered_map>
 
 namespace transport {
+
+	constexpr uint_fast16_t RESPONSE_BUFFER_SIZE = 512;
 
 	enum class SocketError : int_fast8_t
 	{
@@ -28,13 +31,6 @@ namespace transport {
 		std::string payload;
 	};
 
-	struct http_header_template
-	{
-		std::string header_start;
-		uint64_t content_length;
-		std::string header_end;
-	};
-
 	int32_t get_connected_socket(const char* host_name, const uint16_t port)
 	{
 		// create socket
@@ -47,12 +43,12 @@ namespace transport {
 		if (opt_result != 0)
 		{
 			close(sockfd);
-			return static_cast<int32_t>(SocketError::SETTING_OPTIONS_FAILED); 
+			return static_cast<int32_t>(SocketError::SETTING_OPTIONS_FAILED);
 		}
 
 		// lookup ip
 		hostent* server = gethostbyname(host_name);
-		if (server == nullptr) 
+		if (server == nullptr)
 		{
 			close(sockfd);
 			return static_cast<int32_t>(SocketError::IP_LOOKUP_FAILED);
@@ -72,38 +68,37 @@ namespace transport {
 			close(sockfd);
 			return static_cast<int32_t>(SocketError::CONNECTION_FAILED);
 		}
-		
+
 		// success
 		return static_cast<int32_t>(sockfd);
 	}
 
-	http_header_template create_header_template(const char* method, const char* endpoint, const std::unordered_map<std::string, std::string>& headers)
+	std::tuple<std::string, std::string> create_split_header(const char* method, const char* endpoint, const std::unordered_map<std::string, std::string>& headers, const std::string variable_header)
 	{
-		http_header_template hht;
+		std::string start, end;
 
-		// POST
-		hht.header_start += method;
-		hht.header_start += ' ';
-		hht.header_start += endpoint;
-		hht.header_start += " HTTP/1.1\r\n";
+		// method
+		start += method;
+		start += ' ';
+		start += endpoint;
+		start += " HTTP/1.1\r\n";
 
 		// headers
-		constexpr char upper_content_length[] = "Content-Length";
-		constexpr char lower_content_length[] = "content-length";
 		for (auto& pair : headers)
 		{
-			if (pair.first == upper_content_length || pair.first == lower_content_length) { continue; }
-			hht.header_start += pair.first + ": ";
-			hht.header_start += pair.second + "\r\n";
+			if (pair.first == variable_header) { continue; }
+			start += pair.first + ": ";
+			start += pair.second + "\r\n";
 		}
 
-		// content length
-		hht.header_start += "Content-Length: ";
-		hht.content_length = 0;
-		hht.header_end += "\r\n\r\n";
+		// variable header
+		start += variable_header + ": ";
+		end += "\r\n\r\n";
+
+		return std::make_tuple(start, end);
 	}
 
-	std::unordered_map<std::string, std::string> create_line_headers(const std::string& auth_token, const char* host_name, const char* user_agent, const char* app_version, bool keep_alive)
+	std::unordered_map<std::string, std::string> create_line_basic_headers(const std::string& auth_token, const char* host_name, const char* user_agent, const char* app_version, bool keep_alive)
 	{
 		std::unordered_map<std::string, std::string> headers;
 
@@ -123,14 +118,13 @@ namespace transport {
 	http_response read_http_response(int sockfd)
 	{
 		http_response ret;
-		constexpr uint_fast16_t buffer_size = 1024; // should be enough to read all headers
-		char buffer[buffer_size]{ 0 };
+		char buffer[RESPONSE_BUFFER_SIZE]{ 0 };
 		char* buf_p = buffer;
 		std::string key;
 		std::string value;
 
 		// status code
-		read(sockfd, buffer, buffer_size);
+		read(sockfd, buffer, RESPONSE_BUFFER_SIZE);
 		while (*buf_p != ' ') { ++buf_p; }  // "HTTP/1.1"
 		++buf_p; // " "
 		while (*buf_p != ' ') { key += *buf_p++; } // "200"
@@ -156,7 +150,7 @@ namespace transport {
 		int payload_size = std::stoi(ret.headers["content-length"]);
 		if (payload_size > 0)
 		{
-			int remaining_buffer = buffer_size - (buf_p - buffer);
+			int remaining_buffer = RESPONSE_BUFFER_SIZE - (buf_p - buffer);
 			ret.payload.reserve(payload_size);
 			if (payload_size <= remaining_buffer)
 			{
@@ -171,21 +165,20 @@ namespace transport {
 				read(sockfd, payload_p, payload_size);
 			}
 		}
-		
+
 		// return
 		return ret;
 	}
 
-	read_http_response(int sockfd, http_response& ret)
+	void read_http_response(int sockfd, http_response& ret)
 	{
-		constexpr uint_fast16_t buffer_size = 1024; // should be enough to read all headers
-		char buffer[buffer_size]{ 0 };
+		char buffer[RESPONSE_BUFFER_SIZE]{ 0 };
 		char* buf_p = buffer;
 		std::string key;
 		std::string value;
 
 		// status code
-		read(sockfd, buffer, buffer_size);
+		read(sockfd, buffer, RESPONSE_BUFFER_SIZE);
 		while (*buf_p != ' ') { ++buf_p; }  // "HTTP/1.1"
 		++buf_p; // " "
 		while (*buf_p != ' ') { key += *buf_p++; } // "200"
@@ -211,7 +204,7 @@ namespace transport {
 		int payload_size = std::stoi(ret.headers["content-length"]);
 		if (payload_size > 0)
 		{
-			int remaining_buffer = buffer_size - (buf_p - buffer);
+			int remaining_buffer = RESPONSE_BUFFER_SIZE - (buf_p - buffer);
 			ret.payload.reserve(payload_size);
 			if (payload_size <= remaining_buffer)
 			{
@@ -228,5 +221,6 @@ namespace transport {
 		}
 	}
 }
+
 
 #endif // !LINE_TRANSPORT_H
