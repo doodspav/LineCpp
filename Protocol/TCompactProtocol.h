@@ -25,8 +25,8 @@ private:
 	// conversion functions
 	static uint32_t i32ToZigzag(const uint32_t i32) { return (i32 << 1) ^ (i32 >> 31); }
 	static uint64_t i64ToZigzag(const uint64_t i64) { return (i64 << 1) ^ (i64 >> 63); }
-	static uint32_t zigzagToI32(const uint32_t zz32) { return (zz32 >> 1) ^ (-(zz32 & 1)); }
-	static uint64_t zigzagToI64(const uint64_t zz64) { return (zz64 >> 1) ^ (-(zz64 & 1)); }
+	static uint32_t zigzagToI32(const uint32_t zz32) { return (zz32 >> 1) ^ static_cast<uint32_t>(-static_cast<int32_t>(zz32 & 1)); }
+	static uint64_t zigzagToI64(const uint64_t zz64) { return (zz64 >> 1) ^ static_cast<uint64_t>(-static_cast<int64_t>(zz64 & 1)); }
 
 	// inline write functions
 	static void writeVarint32(std::string& buffer, uint32_t i32)
@@ -70,7 +70,7 @@ private:
 		for (uint_fast8_t i = 0; i < 10; ++i)
 		{
 			TCompactProtocol::readByte(buffer, byte);
-			temp_i64 |= static_cast<uint64_t>((byte & 0x7fu) << shift);
+			temp_i64 |= static_cast<uint64_t>(byte & 0x7fu) << shift;
 			shift += 7;
 			if (!(byte & 0x80u)) { break; }
 		}
@@ -130,8 +130,8 @@ public:
 			TCompactProtocol::writeVarint32(buffer, size);
 		}
 	}
-	static void writeListBegin(std::string & buffer, const TCompactType elemType, const uint32_t size) { writeCollectionBegin(buffer, elemType, size); }
-	static void writeSetBegin(std::string & buffer, const TCompactType elemType, const uint32_t size) { writeCollectionBegin(buffer, elemType, size); }
+	static void writeListBegin(std::string& buffer, const TCompactType elemType, const uint32_t size) { writeCollectionBegin(buffer, elemType, size); }
+	static void writeSetBegin(std::string& buffer, const TCompactType elemType, const uint32_t size) { writeCollectionBegin(buffer, elemType, size); }
 
 	// write functions
 	static void writeBool(std::string& buffer, const bool value)
@@ -249,7 +249,7 @@ public:
 		size = list_size;
 		elemType = static_cast<TCompactType>(size_and_type & 0x0fu);
 	}
-	static void readSetBegin(char const*& buffer, TCompactType & elemType, uint32_t & size) { readListBegin(buffer, elemType, size); }
+	static void readSetBegin(char const*& buffer, TCompactType& elemType, uint32_t& size) { readListBegin(buffer, elemType, size); }
 
 	// read functions
 	static void readBool(char const*& buffer, bool& value)
@@ -293,7 +293,7 @@ public:
 		u.bits = le64toh(u.bits);
 		dub = u.dit;
 	}
-	static void readString(char const*& buffer, std::string & str) { readBinary(buffer, str); }
+	static void readString(char const*& buffer, std::string& str) { readBinary(buffer, str); }
 	static void readBinary(char const*& buffer, std::string& str)
 	{
 		uint32_t size;
